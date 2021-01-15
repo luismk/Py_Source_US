@@ -1,0 +1,12 @@
+C:\Users\Cleudiana\source\repos\Pangya-Server-Source\S7\Build\PangAPI.Crypt.dll
+C:\Users\Cleudiana\source\repos\Pangya-Server-Source\S7\Build\PangAPI.Crypt.pdb
+C:\Users\Cleudiana\source\repos\Pangya-Server-Source\S7\PangyaAPI.Crypt\obj\Debug\PangyaAPI.Crypt.csprojAssemblyReference.cache
+C:\Users\Cleudiana\source\repos\Pangya-Server-Source\S7\PangyaAPI.Crypt\obj\Debug\PangyaAPI.Crypt.csproj.CoreCompileInputs.cache
+C:\Users\Cleudiana\source\repos\Pangya-Server-Source\S7\PangyaAPI.Crypt\obj\Debug\PangAPI.Crypt.dll
+C:\Users\Cleudiana\source\repos\Pangya-Server-Source\S7\PangyaAPI.Crypt\obj\Debug\PangAPI.Crypt.pdb
+C:\Users\Cleudiana\Desktop\Py_Source_US\Src\Build\PangAPI.Crypt.dll
+C:\Users\Cleudiana\Desktop\Py_Source_US\Src\Build\PangAPI.Crypt.pdb
+C:\Users\Cleudiana\Desktop\Py_Source_US\Src\PangyaAPI.Crypt\obj\Debug\PangyaAPI.Crypt.csproj.CoreCompileInputs.cache
+C:\Users\Cleudiana\Desktop\Py_Source_US\Src\PangyaAPI.Crypt\obj\Debug\PangAPI.Crypt.dll
+C:\Users\Cleudiana\Desktop\Py_Source_US\Src\PangyaAPI.Crypt\obj\Debug\PangAPI.Crypt.pdb
+C:\Users\Cleudiana\Desktop\Py_Source_US\Src\PangyaAPI.Crypt\obj\Debug\PangyaAPI.Crypt.csprojAssemblyReference.cache

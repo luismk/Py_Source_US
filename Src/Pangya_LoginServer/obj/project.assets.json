@@ -1,0 +1,643 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETFramework,Version=v4.6.1": {
+      "EntityFramework/6.4.4": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.ComponentModel.DataAnnotations"
+        ],
+        "compile": {
+          "lib/net45/EntityFramework.SqlServer.dll": {},
+          "lib/net45/EntityFramework.dll": {}
+        },
+        "runtime": {
+          "lib/net45/EntityFramework.SqlServer.dll": {},
+          "lib/net45/EntityFramework.dll": {}
+        },
+        "build": {
+          "buildTransitive/EntityFramework.props": {},
+          "buildTransitive/EntityFramework.targets": {}
+        }
+      },
+      "PangyaAPI/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.6.1",
+        "dependencies": {
+          "EntityFramework": "6.4.4",
+          "PangyaAPI.Auth": "1.0.0",
+          "PangyaAPI.Crypt": "1.0.0",
+          "PangyaAPI.Helper": "1.0.0",
+          "PangyaAPI.IFF": "1.0.0",
+          "PangyaAPI.SqlConnector": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/PangyaAPI.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PangyaAPI.dll": {}
+        }
+      },
+      "PangyaAPI.Auth/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.6.1",
+        "dependencies": {
+          "EntityFramework": "6.4.4",
+          "PangyaAPI.Helper": "1.0.0",
+          "PangyaAPI.Json": "1.0.0",
+          "PangyaAPI.SqlConnector": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/PangyaAPI.Auth.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PangyaAPI.Auth.dll": {}
+        }
+      },
+      "PangyaAPI.Crypt/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/PangyaAPI.Crypt.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PangyaAPI.Crypt.dll": {}
+        }
+      },
+      "PangyaAPI.Helper/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/PangyaAPI.Helper.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PangyaAPI.Helper.dll": {}
+        }
+      },
+      "PangyaAPI.IFF/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "PangyaAPI.Helper": "1.0.0",
+          "PangyaAPI.SqlConnector": "1.0.0",
+          "PangyaAPI.ZIP": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/PangyaAPI.IFF.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PangyaAPI.IFF.dll": {}
+        }
+      },
+      "PangyaAPI.Json/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/PangyaAPI.Json.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PangyaAPI.Json.dll": {}
+        }
+      },
+      "PangyaAPI.SqlConnector/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/PangyaAPI.SqlConnector.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PangyaAPI.SqlConnector.dll": {}
+        }
+      },
+      "PangyaAPI.ZIP/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/PangyaAPI.ZIP.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PangyaAPI.ZIP.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.6.1/win": {
+      "EntityFramework/6.4.4": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.ComponentModel.DataAnnotations"
+        ],
+        "compile": {
+          "lib/net45/EntityFramework.SqlServer.dll": {},
+          "lib/net45/EntityFramework.dll": {}
+        },
+        "runtime": {
+          "lib/net45/EntityFramework.SqlServer.dll": {},
+          "lib/net45/EntityFramework.dll": {}
+        },
+        "build": {
+          "buildTransitive/EntityFramework.props": {},
+          "buildTransitive/EntityFramework.targets": {}
+        }
+      },
+      "PangyaAPI/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.6.1",
+        "dependencies": {
+          "EntityFramework": "6.4.4",
+          "PangyaAPI.Auth": "1.0.0",
+          "PangyaAPI.Crypt": "1.0.0",
+          "PangyaAPI.Helper": "1.0.0",
+          "PangyaAPI.IFF": "1.0.0",
+          "PangyaAPI.SqlConnector": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/PangyaAPI.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PangyaAPI.dll": {}
+        }
+      },
+      "PangyaAPI.Auth/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.6.1",
+        "dependencies": {
+          "EntityFramework": "6.4.4",
+          "PangyaAPI.Helper": "1.0.0",
+          "PangyaAPI.Json": "1.0.0",
+          "PangyaAPI.SqlConnector": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/PangyaAPI.Auth.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PangyaAPI.Auth.dll": {}
+        }
+      },
+      "PangyaAPI.Crypt/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/PangyaAPI.Crypt.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PangyaAPI.Crypt.dll": {}
+        }
+      },
+      "PangyaAPI.Helper/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/PangyaAPI.Helper.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PangyaAPI.Helper.dll": {}
+        }
+      },
+      "PangyaAPI.IFF/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "PangyaAPI.Helper": "1.0.0",
+          "PangyaAPI.SqlConnector": "1.0.0",
+          "PangyaAPI.ZIP": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/PangyaAPI.IFF.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PangyaAPI.IFF.dll": {}
+        }
+      },
+      "PangyaAPI.Json/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/PangyaAPI.Json.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PangyaAPI.Json.dll": {}
+        }
+      },
+      "PangyaAPI.SqlConnector/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/PangyaAPI.SqlConnector.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PangyaAPI.SqlConnector.dll": {}
+        }
+      },
+      "PangyaAPI.ZIP/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/PangyaAPI.ZIP.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PangyaAPI.ZIP.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.6.1/win-x64": {
+      "EntityFramework/6.4.4": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.ComponentModel.DataAnnotations"
+        ],
+        "compile": {
+          "lib/net45/EntityFramework.SqlServer.dll": {},
+          "lib/net45/EntityFramework.dll": {}
+        },
+        "runtime": {
+          "lib/net45/EntityFramework.SqlServer.dll": {},
+          "lib/net45/EntityFramework.dll": {}
+        },
+        "build": {
+          "buildTransitive/EntityFramework.props": {},
+          "buildTransitive/EntityFramework.targets": {}
+        }
+      },
+      "PangyaAPI/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.6.1",
+        "dependencies": {
+          "EntityFramework": "6.4.4",
+          "PangyaAPI.Auth": "1.0.0",
+          "PangyaAPI.Crypt": "1.0.0",
+          "PangyaAPI.Helper": "1.0.0",
+          "PangyaAPI.IFF": "1.0.0",
+          "PangyaAPI.SqlConnector": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/PangyaAPI.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PangyaAPI.dll": {}
+        }
+      },
+      "PangyaAPI.Auth/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.6.1",
+        "dependencies": {
+          "EntityFramework": "6.4.4",
+          "PangyaAPI.Helper": "1.0.0",
+          "PangyaAPI.Json": "1.0.0",
+          "PangyaAPI.SqlConnector": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/PangyaAPI.Auth.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PangyaAPI.Auth.dll": {}
+        }
+      },
+      "PangyaAPI.Crypt/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/PangyaAPI.Crypt.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PangyaAPI.Crypt.dll": {}
+        }
+      },
+      "PangyaAPI.Helper/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/PangyaAPI.Helper.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PangyaAPI.Helper.dll": {}
+        }
+      },
+      "PangyaAPI.IFF/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "PangyaAPI.Helper": "1.0.0",
+          "PangyaAPI.SqlConnector": "1.0.0",
+          "PangyaAPI.ZIP": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/PangyaAPI.IFF.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PangyaAPI.IFF.dll": {}
+        }
+      },
+      "PangyaAPI.Json/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/PangyaAPI.Json.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PangyaAPI.Json.dll": {}
+        }
+      },
+      "PangyaAPI.SqlConnector/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/PangyaAPI.SqlConnector.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PangyaAPI.SqlConnector.dll": {}
+        }
+      },
+      "PangyaAPI.ZIP/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/PangyaAPI.ZIP.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PangyaAPI.ZIP.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.6.1/win-x86": {
+      "EntityFramework/6.4.4": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.ComponentModel.DataAnnotations"
+        ],
+        "compile": {
+          "lib/net45/EntityFramework.SqlServer.dll": {},
+          "lib/net45/EntityFramework.dll": {}
+        },
+        "runtime": {
+          "lib/net45/EntityFramework.SqlServer.dll": {},
+          "lib/net45/EntityFramework.dll": {}
+        },
+        "build": {
+          "buildTransitive/EntityFramework.props": {},
+          "buildTransitive/EntityFramework.targets": {}
+        }
+      },
+      "PangyaAPI/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.6.1",
+        "dependencies": {
+          "EntityFramework": "6.4.4",
+          "PangyaAPI.Auth": "1.0.0",
+          "PangyaAPI.Crypt": "1.0.0",
+          "PangyaAPI.Helper": "1.0.0",
+          "PangyaAPI.IFF": "1.0.0",
+          "PangyaAPI.SqlConnector": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/PangyaAPI.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PangyaAPI.dll": {}
+        }
+      },
+      "PangyaAPI.Auth/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.6.1",
+        "dependencies": {
+          "EntityFramework": "6.4.4",
+          "PangyaAPI.Helper": "1.0.0",
+          "PangyaAPI.Json": "1.0.0",
+          "PangyaAPI.SqlConnector": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/PangyaAPI.Auth.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PangyaAPI.Auth.dll": {}
+        }
+      },
+      "PangyaAPI.Crypt/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/PangyaAPI.Crypt.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PangyaAPI.Crypt.dll": {}
+        }
+      },
+      "PangyaAPI.Helper/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/PangyaAPI.Helper.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PangyaAPI.Helper.dll": {}
+        }
+      },
+      "PangyaAPI.IFF/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "PangyaAPI.Helper": "1.0.0",
+          "PangyaAPI.SqlConnector": "1.0.0",
+          "PangyaAPI.ZIP": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/PangyaAPI.IFF.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PangyaAPI.IFF.dll": {}
+        }
+      },
+      "PangyaAPI.Json/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/PangyaAPI.Json.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PangyaAPI.Json.dll": {}
+        }
+      },
+      "PangyaAPI.SqlConnector/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/PangyaAPI.SqlConnector.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PangyaAPI.SqlConnector.dll": {}
+        }
+      },
+      "PangyaAPI.ZIP/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/PangyaAPI.ZIP.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PangyaAPI.ZIP.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "EntityFramework/6.4.4": {
+      "sha512": "yj1+/4tci7Panu3jKDHYizxwVm0Jvm7b7m057b5h4u8NUHGCR8WIWirBTw+8EptRffwftIWPBeIRGNKD1ewEMQ==",
+      "type": "package",
+      "path": "entityframework/6.4.4",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "build/EntityFramework.DefaultItems.props",
+        "build/EntityFramework.props",
+        "build/EntityFramework.targets",
+        "build/Microsoft.Data.Entity.Build.Tasks.dll",
+        "build/netcoreapp3.0/EntityFramework.props",
+        "build/netcoreapp3.0/EntityFramework.targets",
+        "buildTransitive/EntityFramework.props",
+        "buildTransitive/EntityFramework.targets",
+        "buildTransitive/netcoreapp3.0/EntityFramework.props",
+        "buildTransitive/netcoreapp3.0/EntityFramework.targets",
+        "content/net40/App.config.install.xdt",
+        "content/net40/App.config.transform",
+        "content/net40/Web.config.install.xdt",
+        "content/net40/Web.config.transform",
+        "entityframework.6.4.4.nupkg.sha512",
+        "entityframework.nuspec",
+        "lib/net40/EntityFramework.SqlServer.dll",
+        "lib/net40/EntityFramework.SqlServer.xml",
+        "lib/net40/EntityFramework.dll",
+        "lib/net40/EntityFramework.xml",
+        "lib/net45/EntityFramework.SqlServer.dll",
+        "lib/net45/EntityFramework.SqlServer.xml",
+        "lib/net45/EntityFramework.dll",
+        "lib/net45/EntityFramework.xml",
+        "lib/netstandard2.1/EntityFramework.SqlServer.dll",
+        "lib/netstandard2.1/EntityFramework.SqlServer.xml",
+        "lib/netstandard2.1/EntityFramework.dll",
+        "lib/netstandard2.1/EntityFramework.xml",
+        "tools/EntityFramework6.PS2.psd1",
+        "tools/EntityFramework6.PS2.psm1",
+        "tools/EntityFramework6.psd1",
+        "tools/EntityFramework6.psm1",
+        "tools/about_EntityFramework6.help.txt",
+        "tools/init.ps1",
+        "tools/install.ps1",
+        "tools/net40/any/ef6.exe",
+        "tools/net40/any/ef6.pdb",
+        "tools/net40/win-x86/ef6.exe",
+        "tools/net40/win-x86/ef6.pdb",
+        "tools/net45/any/ef6.exe",
+        "tools/net45/any/ef6.pdb",
+        "tools/net45/win-x86/ef6.exe",
+        "tools/net45/win-x86/ef6.pdb",
+        "tools/netcoreapp3.0/any/ef6.dll",
+        "tools/netcoreapp3.0/any/ef6.pdb",
+        "tools/netcoreapp3.0/any/ef6.runtimeconfig.json"
+      ]
+    },
+    "PangyaAPI/1.0.0": {
+      "type": "project",
+      "path": "../PangyaAPI/PangyaAPI.csproj",
+      "msbuildProject": "../PangyaAPI/PangyaAPI.csproj"
+    },
+    "PangyaAPI.Auth/1.0.0": {
+      "type": "project",
+      "path": "../PangyaAPI.Auth/PangyaAPI.Auth.csproj",
+      "msbuildProject": "../PangyaAPI.Auth/PangyaAPI.Auth.csproj"
+    },
+    "PangyaAPI.Crypt/1.0.0": {
+      "type": "project",
+      "path": "../PangyaAPI.Crypt/PangyaAPI.Crypt.csproj",
+      "msbuildProject": "../PangyaAPI.Crypt/PangyaAPI.Crypt.csproj"
+    },
+    "PangyaAPI.Helper/1.0.0": {
+      "type": "project",
+      "path": "../PangyaAPI.Helper/PangyaAPI.Helper.csproj",
+      "msbuildProject": "../PangyaAPI.Helper/PangyaAPI.Helper.csproj"
+    },
+    "PangyaAPI.IFF/1.0.0": {
+      "type": "project",
+      "path": "../PangyaAPI.IFF/PangyaAPI.IFF.csproj",
+      "msbuildProject": "../PangyaAPI.IFF/PangyaAPI.IFF.csproj"
+    },
+    "PangyaAPI.Json/1.0.0": {
+      "type": "project",
+      "path": "../PangyaAPI.Json/PangyaAPI.Json.csproj",
+      "msbuildProject": "../PangyaAPI.Json/PangyaAPI.Json.csproj"
+    },
+    "PangyaAPI.SqlConnector/1.0.0": {
+      "type": "project",
+      "path": "../PangyaAPI.SqlConnector/PangyaAPI.SqlConnector.csproj",
+      "msbuildProject": "../PangyaAPI.SqlConnector/PangyaAPI.SqlConnector.csproj"
+    },
+    "PangyaAPI.ZIP/1.0.0": {
+      "type": "project",
+      "path": "../PangyaAPI.ZIP/PangyaAPI.ZIP.csproj",
+      "msbuildProject": "../PangyaAPI.ZIP/PangyaAPI.ZIP.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETFramework,Version=v4.6.1": [
+      "EntityFramework >= 6.4.4",
+      "PangyaAPI >= 1.0.0",
+      "PangyaAPI.Auth >= 1.0.0",
+      "PangyaAPI.Crypt >= 1.0.0",
+      "PangyaAPI.Helper >= 1.0.0",
+      "PangyaAPI.IFF >= 1.0.0",
+      "PangyaAPI.Json >= 1.0.0",
+      "PangyaAPI.SqlConnector >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Cleudiana\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\Cleudiana\\Desktop\\Py_Source_US\\Src\\Pangya_LoginServer\\Pangya_LoginServer.csproj",
+      "projectName": "Pangya_LoginServer",
+      "projectPath": "C:\\Users\\Cleudiana\\Desktop\\Py_Source_US\\Src\\Pangya_LoginServer\\Pangya_LoginServer.csproj",
+      "packagesPath": "C:\\Users\\Cleudiana\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Cleudiana\\Desktop\\Py_Source_US\\Src\\Pangya_LoginServer\\obj\\",
+      "projectStyle": "PackageReference",
+      "skipContentFileWrite": true,
+      "configFilePaths": [
+        "C:\\Users\\Cleudiana\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net461"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.myget.org/F/supersocket/api/v3/index.json": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net461": {
+          "projectReferences": {
+            "C:\\Users\\Cleudiana\\Desktop\\Py_Source_US\\Src\\PangyaAPI.Auth\\PangyaAPI.Auth.csproj": {
+              "projectPath": "C:\\Users\\Cleudiana\\Desktop\\Py_Source_US\\Src\\PangyaAPI.Auth\\PangyaAPI.Auth.csproj"
+            },
+            "C:\\Users\\Cleudiana\\Desktop\\Py_Source_US\\Src\\PangyaAPI.Crypt\\PangyaAPI.Crypt.csproj": {
+              "projectPath": "C:\\Users\\Cleudiana\\Desktop\\Py_Source_US\\Src\\PangyaAPI.Crypt\\PangyaAPI.Crypt.csproj"
+            },
+            "C:\\Users\\Cleudiana\\Desktop\\Py_Source_US\\Src\\PangyaAPI.Helper\\PangyaAPI.Helper.csproj": {
+              "projectPath": "C:\\Users\\Cleudiana\\Desktop\\Py_Source_US\\Src\\PangyaAPI.Helper\\PangyaAPI.Helper.csproj"
+            },
+            "C:\\Users\\Cleudiana\\Desktop\\Py_Source_US\\Src\\PangyaAPI.IFF\\PangyaAPI.IFF.csproj": {
+              "projectPath": "C:\\Users\\Cleudiana\\Desktop\\Py_Source_US\\Src\\PangyaAPI.IFF\\PangyaAPI.IFF.csproj"
+            },
+            "C:\\Users\\Cleudiana\\Desktop\\Py_Source_US\\Src\\PangyaAPI.Json\\PangyaAPI.Json.csproj": {
+              "projectPath": "C:\\Users\\Cleudiana\\Desktop\\Py_Source_US\\Src\\PangyaAPI.Json\\PangyaAPI.Json.csproj"
+            },
+            "C:\\Users\\Cleudiana\\Desktop\\Py_Source_US\\Src\\PangyaAPI.SqlConnector\\PangyaAPI.SqlConnector.csproj": {
+              "projectPath": "C:\\Users\\Cleudiana\\Desktop\\Py_Source_US\\Src\\PangyaAPI.SqlConnector\\PangyaAPI.SqlConnector.csproj"
+            },
+            "C:\\Users\\Cleudiana\\Desktop\\Py_Source_US\\Src\\PangyaAPI\\PangyaAPI.csproj": {
+              "projectPath": "C:\\Users\\Cleudiana\\Desktop\\Py_Source_US\\Src\\PangyaAPI\\PangyaAPI.csproj"
+            }
+          }
+        }
+      }
+    },
+    "frameworks": {
+      "net461": {
+        "dependencies": {
+          "EntityFramework": {
+            "target": "Package",
+            "version": "[6.4.4, )"
+          }
+        }
+      }
+    },
+    "runtimes": {
+      "win": {
+        "#import": []
+      },
+      "win-x64": {
+        "#import": []
+      },
+      "win-x86": {
+        "#import": []
+      }
+    }
+  }
+}

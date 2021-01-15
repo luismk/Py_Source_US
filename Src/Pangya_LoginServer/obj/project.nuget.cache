@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "2N3MT3NduISKbwMOlGOkSMrb4cNpJEzI96cRcAb5ND0d4oVL643+JfYdfKZ/F0z1/BUolKO5k7gdUB3KiL8oIQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Cleudiana\\Desktop\\Py_Source_US\\Src\\Pangya_LoginServer\\Pangya_LoginServer.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Cleudiana\\.nuget\\packages\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512"
+  ],
+  "logs": []
+}

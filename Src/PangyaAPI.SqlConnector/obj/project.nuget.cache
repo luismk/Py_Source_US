@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "i97B+jJUe9ErcDP0yjzwQbV5W92I8ztjSj5z4QKmW/q/fjvzR62m6KeS8aJO2ry/l03dTtUBOU3aZdYcq5qfGg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Cleudiana\\Desktop\\Py_Source_US\\Src\\PangyaAPI.SqlConnector\\PangyaAPI.SqlConnector.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Cleudiana\\.nuget\\packages\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512"
+  ],
+  "logs": []
+}

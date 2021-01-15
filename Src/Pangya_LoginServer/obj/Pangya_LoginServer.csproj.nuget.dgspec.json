@@ -1,0 +1,281 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Cleudiana\\Desktop\\Py_Source_US\\Src\\Pangya_LoginServer\\Pangya_LoginServer.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Cleudiana\\Desktop\\Py_Source_US\\Src\\PangyaAPI.Auth\\PangyaAPI.Auth.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Cleudiana\\Desktop\\Py_Source_US\\Src\\PangyaAPI.Auth\\PangyaAPI.Auth.csproj",
+        "projectName": "PangyaAPI.Auth",
+        "projectPath": "C:\\Users\\Cleudiana\\Desktop\\Py_Source_US\\Src\\PangyaAPI.Auth\\PangyaAPI.Auth.csproj",
+        "packagesPath": "C:\\Users\\Cleudiana\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Cleudiana\\Desktop\\Py_Source_US\\Src\\PangyaAPI.Auth\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "configFilePaths": [
+          "C:\\Users\\Cleudiana\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net461"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.myget.org/F/supersocket/api/v3/index.json": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net461": {
+            "projectReferences": {
+              "C:\\Users\\Cleudiana\\Desktop\\Py_Source_US\\Src\\PangyaAPI.Helper\\PangyaAPI.Helper.csproj": {
+                "projectPath": "C:\\Users\\Cleudiana\\Desktop\\Py_Source_US\\Src\\PangyaAPI.Helper\\PangyaAPI.Helper.csproj"
+              },
+              "C:\\Users\\Cleudiana\\Desktop\\Py_Source_US\\Src\\PangyaAPI.Json\\PangyaAPI.Json.csproj": {
+                "projectPath": "C:\\Users\\Cleudiana\\Desktop\\Py_Source_US\\Src\\PangyaAPI.Json\\PangyaAPI.Json.csproj"
+              },
+              "C:\\Users\\Cleudiana\\Desktop\\Py_Source_US\\Src\\PangyaAPI.SqlConnector\\PangyaAPI.SqlConnector.csproj": {
+                "projectPath": "C:\\Users\\Cleudiana\\Desktop\\Py_Source_US\\Src\\PangyaAPI.SqlConnector\\PangyaAPI.SqlConnector.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net461": {
+          "dependencies": {
+            "EntityFramework": {
+              "target": "Package",
+              "version": "[6.4.4, )"
+            }
+          }
+        }
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
+      }
+    },
+    "C:\\Users\\Cleudiana\\Desktop\\Py_Source_US\\Src\\PangyaAPI.Crypt\\PangyaAPI.Crypt.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Cleudiana\\Desktop\\Py_Source_US\\Src\\PangyaAPI.Crypt\\PangyaAPI.Crypt.csproj",
+        "projectName": "PangyaAPI.Crypt",
+        "projectPath": "C:\\Users\\Cleudiana\\Desktop\\Py_Source_US\\Src\\PangyaAPI.Crypt\\PangyaAPI.Crypt.csproj"
+      },
+      "frameworks": {
+        "net461": {}
+      }
+    },
+    "C:\\Users\\Cleudiana\\Desktop\\Py_Source_US\\Src\\PangyaAPI.Helper\\PangyaAPI.Helper.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Cleudiana\\Desktop\\Py_Source_US\\Src\\PangyaAPI.Helper\\PangyaAPI.Helper.csproj",
+        "projectName": "PangyaAPI.Helper",
+        "projectPath": "C:\\Users\\Cleudiana\\Desktop\\Py_Source_US\\Src\\PangyaAPI.Helper\\PangyaAPI.Helper.csproj"
+      },
+      "frameworks": {
+        "net461": {}
+      }
+    },
+    "C:\\Users\\Cleudiana\\Desktop\\Py_Source_US\\Src\\PangyaAPI.IFF\\PangyaAPI.IFF.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Cleudiana\\Desktop\\Py_Source_US\\Src\\PangyaAPI.IFF\\PangyaAPI.IFF.csproj",
+        "projectName": "PangyaAPI.IFF",
+        "projectPath": "C:\\Users\\Cleudiana\\Desktop\\Py_Source_US\\Src\\PangyaAPI.IFF\\PangyaAPI.IFF.csproj",
+        "frameworks": {
+          "net461": {
+            "projectReferences": {
+              "C:\\Users\\Cleudiana\\Desktop\\Py_Source_US\\Src\\PangyaAPI.Helper\\PangyaAPI.Helper.csproj": {
+                "projectPath": "C:\\Users\\Cleudiana\\Desktop\\Py_Source_US\\Src\\PangyaAPI.Helper\\PangyaAPI.Helper.csproj"
+              },
+              "C:\\Users\\Cleudiana\\Desktop\\Py_Source_US\\Src\\PangyaAPI.SqlConnector\\PangyaAPI.SqlConnector.csproj": {
+                "projectPath": "C:\\Users\\Cleudiana\\Desktop\\Py_Source_US\\Src\\PangyaAPI.SqlConnector\\PangyaAPI.SqlConnector.csproj"
+              },
+              "C:\\Users\\Cleudiana\\Desktop\\Py_Source_US\\Src\\PangyaAPI.ZIP\\PangyaAPI.ZIP.csproj": {
+                "projectPath": "C:\\Users\\Cleudiana\\Desktop\\Py_Source_US\\Src\\PangyaAPI.ZIP\\PangyaAPI.ZIP.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net461": {}
+      }
+    },
+    "C:\\Users\\Cleudiana\\Desktop\\Py_Source_US\\Src\\PangyaAPI.Json\\PangyaAPI.Json.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Cleudiana\\Desktop\\Py_Source_US\\Src\\PangyaAPI.Json\\PangyaAPI.Json.csproj",
+        "projectName": "PangyaAPI.Json",
+        "projectPath": "C:\\Users\\Cleudiana\\Desktop\\Py_Source_US\\Src\\PangyaAPI.Json\\PangyaAPI.Json.csproj"
+      },
+      "frameworks": {
+        "net461": {}
+      }
+    },
+    "C:\\Users\\Cleudiana\\Desktop\\Py_Source_US\\Src\\PangyaAPI.SqlConnector\\PangyaAPI.SqlConnector.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Cleudiana\\Desktop\\Py_Source_US\\Src\\PangyaAPI.SqlConnector\\PangyaAPI.SqlConnector.csproj",
+        "projectName": "PangyaAPI.SqlConnector",
+        "projectPath": "C:\\Users\\Cleudiana\\Desktop\\Py_Source_US\\Src\\PangyaAPI.SqlConnector\\PangyaAPI.SqlConnector.csproj"
+      },
+      "frameworks": {
+        "net461": {}
+      }
+    },
+    "C:\\Users\\Cleudiana\\Desktop\\Py_Source_US\\Src\\PangyaAPI.ZIP\\PangyaAPI.ZIP.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Cleudiana\\Desktop\\Py_Source_US\\Src\\PangyaAPI.ZIP\\PangyaAPI.ZIP.csproj",
+        "projectName": "PangyaAPI.ZIP",
+        "projectPath": "C:\\Users\\Cleudiana\\Desktop\\Py_Source_US\\Src\\PangyaAPI.ZIP\\PangyaAPI.ZIP.csproj"
+      },
+      "frameworks": {
+        "net461": {}
+      }
+    },
+    "C:\\Users\\Cleudiana\\Desktop\\Py_Source_US\\Src\\PangyaAPI\\PangyaAPI.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Cleudiana\\Desktop\\Py_Source_US\\Src\\PangyaAPI\\PangyaAPI.csproj",
+        "projectName": "PangyaAPI",
+        "projectPath": "C:\\Users\\Cleudiana\\Desktop\\Py_Source_US\\Src\\PangyaAPI\\PangyaAPI.csproj",
+        "packagesPath": "C:\\Users\\Cleudiana\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Cleudiana\\Desktop\\Py_Source_US\\Src\\PangyaAPI\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "configFilePaths": [
+          "C:\\Users\\Cleudiana\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net461"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.myget.org/F/supersocket/api/v3/index.json": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net461": {
+            "projectReferences": {
+              "C:\\Users\\Cleudiana\\Desktop\\Py_Source_US\\Src\\PangyaAPI.Auth\\PangyaAPI.Auth.csproj": {
+                "projectPath": "C:\\Users\\Cleudiana\\Desktop\\Py_Source_US\\Src\\PangyaAPI.Auth\\PangyaAPI.Auth.csproj"
+              },
+              "C:\\Users\\Cleudiana\\Desktop\\Py_Source_US\\Src\\PangyaAPI.Crypt\\PangyaAPI.Crypt.csproj": {
+                "projectPath": "C:\\Users\\Cleudiana\\Desktop\\Py_Source_US\\Src\\PangyaAPI.Crypt\\PangyaAPI.Crypt.csproj"
+              },
+              "C:\\Users\\Cleudiana\\Desktop\\Py_Source_US\\Src\\PangyaAPI.Helper\\PangyaAPI.Helper.csproj": {
+                "projectPath": "C:\\Users\\Cleudiana\\Desktop\\Py_Source_US\\Src\\PangyaAPI.Helper\\PangyaAPI.Helper.csproj"
+              },
+              "C:\\Users\\Cleudiana\\Desktop\\Py_Source_US\\Src\\PangyaAPI.IFF\\PangyaAPI.IFF.csproj": {
+                "projectPath": "C:\\Users\\Cleudiana\\Desktop\\Py_Source_US\\Src\\PangyaAPI.IFF\\PangyaAPI.IFF.csproj"
+              },
+              "C:\\Users\\Cleudiana\\Desktop\\Py_Source_US\\Src\\PangyaAPI.SqlConnector\\PangyaAPI.SqlConnector.csproj": {
+                "projectPath": "C:\\Users\\Cleudiana\\Desktop\\Py_Source_US\\Src\\PangyaAPI.SqlConnector\\PangyaAPI.SqlConnector.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net461": {
+          "dependencies": {
+            "EntityFramework": {
+              "target": "Package",
+              "version": "[6.4.4, )"
+            }
+          }
+        }
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
+      }
+    },
+    "C:\\Users\\Cleudiana\\Desktop\\Py_Source_US\\Src\\Pangya_LoginServer\\Pangya_LoginServer.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Cleudiana\\Desktop\\Py_Source_US\\Src\\Pangya_LoginServer\\Pangya_LoginServer.csproj",
+        "projectName": "Pangya_LoginServer",
+        "projectPath": "C:\\Users\\Cleudiana\\Desktop\\Py_Source_US\\Src\\Pangya_LoginServer\\Pangya_LoginServer.csproj",
+        "packagesPath": "C:\\Users\\Cleudiana\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Cleudiana\\Desktop\\Py_Source_US\\Src\\Pangya_LoginServer\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "configFilePaths": [
+          "C:\\Users\\Cleudiana\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net461"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.myget.org/F/supersocket/api/v3/index.json": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net461": {
+            "projectReferences": {
+              "C:\\Users\\Cleudiana\\Desktop\\Py_Source_US\\Src\\PangyaAPI.Auth\\PangyaAPI.Auth.csproj": {
+                "projectPath": "C:\\Users\\Cleudiana\\Desktop\\Py_Source_US\\Src\\PangyaAPI.Auth\\PangyaAPI.Auth.csproj"
+              },
+              "C:\\Users\\Cleudiana\\Desktop\\Py_Source_US\\Src\\PangyaAPI.Crypt\\PangyaAPI.Crypt.csproj": {
+                "projectPath": "C:\\Users\\Cleudiana\\Desktop\\Py_Source_US\\Src\\PangyaAPI.Crypt\\PangyaAPI.Crypt.csproj"
+              },
+              "C:\\Users\\Cleudiana\\Desktop\\Py_Source_US\\Src\\PangyaAPI.Helper\\PangyaAPI.Helper.csproj": {
+                "projectPath": "C:\\Users\\Cleudiana\\Desktop\\Py_Source_US\\Src\\PangyaAPI.Helper\\PangyaAPI.Helper.csproj"
+              },
+              "C:\\Users\\Cleudiana\\Desktop\\Py_Source_US\\Src\\PangyaAPI.IFF\\PangyaAPI.IFF.csproj": {
+                "projectPath": "C:\\Users\\Cleudiana\\Desktop\\Py_Source_US\\Src\\PangyaAPI.IFF\\PangyaAPI.IFF.csproj"
+              },
+              "C:\\Users\\Cleudiana\\Desktop\\Py_Source_US\\Src\\PangyaAPI.Json\\PangyaAPI.Json.csproj": {
+                "projectPath": "C:\\Users\\Cleudiana\\Desktop\\Py_Source_US\\Src\\PangyaAPI.Json\\PangyaAPI.Json.csproj"
+              },
+              "C:\\Users\\Cleudiana\\Desktop\\Py_Source_US\\Src\\PangyaAPI.SqlConnector\\PangyaAPI.SqlConnector.csproj": {
+                "projectPath": "C:\\Users\\Cleudiana\\Desktop\\Py_Source_US\\Src\\PangyaAPI.SqlConnector\\PangyaAPI.SqlConnector.csproj"
+              },
+              "C:\\Users\\Cleudiana\\Desktop\\Py_Source_US\\Src\\PangyaAPI\\PangyaAPI.csproj": {
+                "projectPath": "C:\\Users\\Cleudiana\\Desktop\\Py_Source_US\\Src\\PangyaAPI\\PangyaAPI.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net461": {
+          "dependencies": {
+            "EntityFramework": {
+              "target": "Package",
+              "version": "[6.4.4, )"
+            }
+          }
+        }
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
+      }
+    }
+  }
+}

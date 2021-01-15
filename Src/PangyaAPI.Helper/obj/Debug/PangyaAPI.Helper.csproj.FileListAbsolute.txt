@@ -1,0 +1,8 @@
+C:\Users\Cleudiana\Desktop\Py_Source_US\Src\PangyaAPI.Helper\bin\Debug\PangyaAPI.Helper.dll
+C:\Users\Cleudiana\Desktop\Py_Source_US\Src\PangyaAPI.Helper\bin\Debug\PangyaAPI.Helper.pdb
+C:\Users\Cleudiana\Desktop\Py_Source_US\Src\Build\PangyaAPI.Helper.dll
+C:\Users\Cleudiana\Desktop\Py_Source_US\Src\Build\PangyaAPI.Helper.pdb
+C:\Users\Cleudiana\Desktop\Py_Source_US\Src\PangyaAPI.Helper\obj\Debug\PangyaAPI.Helper.csprojAssemblyReference.cache
+C:\Users\Cleudiana\Desktop\Py_Source_US\Src\PangyaAPI.Helper\obj\Debug\PangyaAPI.Helper.csproj.CoreCompileInputs.cache
+C:\Users\Cleudiana\Desktop\Py_Source_US\Src\PangyaAPI.Helper\obj\Debug\PangyaAPI.Helper.dll
+C:\Users\Cleudiana\Desktop\Py_Source_US\Src\PangyaAPI.Helper\obj\Debug\PangyaAPI.Helper.pdb

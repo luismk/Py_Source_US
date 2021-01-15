@@ -1,0 +1,16 @@
+C:\Users\AdminServer\Desktop\S7\Build\PangAPI.SqlConnector.dll.config
+C:\Users\AdminServer\Desktop\S7\Build\PangAPI.SqlConnector.dll
+C:\Users\AdminServer\Desktop\S7\Build\PangAPI.SqlConnector.pdb
+C:\Users\AdminServer\Desktop\S7\PangyaAPI.SqlConnector\obj\Debug\PangyaAPI.SqlConnector.csprojAssemblyReference.cache
+C:\Users\AdminServer\Desktop\S7\PangyaAPI.SqlConnector\obj\Debug\PangyaAPI.SqlConnector.csproj.CoreCompileInputs.cache
+C:\Users\AdminServer\Desktop\S7\PangyaAPI.SqlConnector\obj\Debug\PangyaAPI.SqlConnector.csproj.CopyComplete
+C:\Users\AdminServer\Desktop\S7\PangyaAPI.SqlConnector\obj\Debug\PangAPI.SqlConnector.dll
+C:\Users\AdminServer\Desktop\S7\PangyaAPI.SqlConnector\obj\Debug\PangAPI.SqlConnector.pdb
+C:\Users\Cleudiana\Desktop\Py_Source_US\Src\Build\PangAPI.SqlConnector.dll.config
+C:\Users\Cleudiana\Desktop\Py_Source_US\Src\Build\PangAPI.SqlConnector.dll
+C:\Users\Cleudiana\Desktop\Py_Source_US\Src\Build\PangAPI.SqlConnector.pdb
+C:\Users\Cleudiana\Desktop\Py_Source_US\Src\PangyaAPI.SqlConnector\obj\Debug\PangyaAPI.SqlConnector.csprojAssemblyReference.cache
+C:\Users\Cleudiana\Desktop\Py_Source_US\Src\PangyaAPI.SqlConnector\obj\Debug\PangyaAPI.SqlConnector.csproj.CoreCompileInputs.cache
+C:\Users\Cleudiana\Desktop\Py_Source_US\Src\PangyaAPI.SqlConnector\obj\Debug\PangyaAPI.SqlConnector.csproj.CopyComplete
+C:\Users\Cleudiana\Desktop\Py_Source_US\Src\PangyaAPI.SqlConnector\obj\Debug\PangAPI.SqlConnector.dll
+C:\Users\Cleudiana\Desktop\Py_Source_US\Src\PangyaAPI.SqlConnector\obj\Debug\PangAPI.SqlConnector.pdb

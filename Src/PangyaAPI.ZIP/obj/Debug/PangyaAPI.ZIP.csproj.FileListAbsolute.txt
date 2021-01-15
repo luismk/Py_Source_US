@@ -1,0 +1,12 @@
+C:\Users\Cleudiana\source\repos\Pangya-Server-Source\S7\Build\PangAPI.ZIP.dll
+C:\Users\Cleudiana\source\repos\Pangya-Server-Source\S7\Build\PangAPI.ZIP.pdb
+C:\Users\Cleudiana\source\repos\Pangya-Server-Source\S7\PangyaAPI.ZIP\obj\Debug\PangyaAPI.ZIP.csprojAssemblyReference.cache
+C:\Users\Cleudiana\source\repos\Pangya-Server-Source\S7\PangyaAPI.ZIP\obj\Debug\PangyaAPI.ZIP.csproj.CoreCompileInputs.cache
+C:\Users\Cleudiana\source\repos\Pangya-Server-Source\S7\PangyaAPI.ZIP\obj\Debug\PangAPI.ZIP.dll
+C:\Users\Cleudiana\source\repos\Pangya-Server-Source\S7\PangyaAPI.ZIP\obj\Debug\PangAPI.ZIP.pdb
+C:\Users\Cleudiana\Desktop\Py_Source_US\Src\Build\PangAPI.ZIP.dll
+C:\Users\Cleudiana\Desktop\Py_Source_US\Src\Build\PangAPI.ZIP.pdb
+C:\Users\Cleudiana\Desktop\Py_Source_US\Src\PangyaAPI.ZIP\obj\Debug\PangyaAPI.ZIP.csproj.CoreCompileInputs.cache
+C:\Users\Cleudiana\Desktop\Py_Source_US\Src\PangyaAPI.ZIP\obj\Debug\PangAPI.ZIP.dll
+C:\Users\Cleudiana\Desktop\Py_Source_US\Src\PangyaAPI.ZIP\obj\Debug\PangAPI.ZIP.pdb
+C:\Users\Cleudiana\Desktop\Py_Source_US\Src\PangyaAPI.ZIP\obj\Debug\PangyaAPI.ZIP.csprojAssemblyReference.cache

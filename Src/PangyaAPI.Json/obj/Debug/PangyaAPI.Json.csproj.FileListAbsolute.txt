@@ -1,0 +1,14 @@
+C:\Users\Cleudiana\source\repos\Pangya-Server-Source\S7\PangyaAPI.Json\bin\Debug\PangAPI.Json.dll
+C:\Users\Cleudiana\source\repos\Pangya-Server-Source\S7\PangyaAPI.Json\bin\Debug\PangAPI.Json.pdb
+C:\Users\Cleudiana\source\repos\Pangya-Server-Source\S7\PangyaAPI.Json\obj\Debug\PangyaAPI.Json.csprojAssemblyReference.cache
+C:\Users\Cleudiana\source\repos\Pangya-Server-Source\S7\PangyaAPI.Json\obj\Debug\PangyaAPI.Json.csproj.CoreCompileInputs.cache
+C:\Users\Cleudiana\source\repos\Pangya-Server-Source\S7\PangyaAPI.Json\obj\Debug\PangAPI.Json.dll
+C:\Users\Cleudiana\source\repos\Pangya-Server-Source\S7\PangyaAPI.Json\obj\Debug\PangAPI.Json.pdb
+C:\Users\Cleudiana\Desktop\Py_Source_US\Src\PangyaAPI.Json\bin\Debug\PangAPI.Json.dll
+C:\Users\Cleudiana\Desktop\Py_Source_US\Src\PangyaAPI.Json\bin\Debug\PangAPI.Json.pdb
+C:\Users\Cleudiana\Desktop\Py_Source_US\Src\Build\PangAPI.Json.dll
+C:\Users\Cleudiana\Desktop\Py_Source_US\Src\Build\PangAPI.Json.pdb
+C:\Users\Cleudiana\Desktop\Py_Source_US\Src\PangyaAPI.Json\obj\Debug\PangyaAPI.Json.csproj.CoreCompileInputs.cache
+C:\Users\Cleudiana\Desktop\Py_Source_US\Src\PangyaAPI.Json\obj\Debug\PangAPI.Json.dll
+C:\Users\Cleudiana\Desktop\Py_Source_US\Src\PangyaAPI.Json\obj\Debug\PangAPI.Json.pdb
+C:\Users\Cleudiana\Desktop\Py_Source_US\Src\PangyaAPI.Json\obj\Debug\PangyaAPI.Json.csprojAssemblyReference.cache

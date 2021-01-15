@@ -1,0 +1,37 @@
+C:\Users\Cleudiana\Desktop\Py_Source_US\Src\Pangya_LoginServer\bin\Debug\data\pangya_gb.iff
+C:\Users\Cleudiana\Desktop\Py_Source_US\Src\Pangya_LoginServer\bin\Debug\Config\Login.ini
+C:\Users\Cleudiana\Desktop\Py_Source_US\Src\Pangya_LoginServer\bin\Debug\data\invisible item.bat
+C:\Users\Cleudiana\Desktop\Py_Source_US\Src\Pangya_LoginServer\bin\Debug\Pangya_LoginServer.exe.config
+C:\Users\Cleudiana\Desktop\Py_Source_US\Src\Pangya_LoginServer\bin\Debug\Pangya_LoginServer.exe
+C:\Users\Cleudiana\Desktop\Py_Source_US\Src\Pangya_LoginServer\bin\Debug\Pangya_LoginServer.pdb
+C:\Users\Cleudiana\Desktop\Py_Source_US\Src\Pangya_LoginServer\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Cleudiana\Desktop\Py_Source_US\Src\Pangya_LoginServer\bin\Debug\EntityFramework.dll
+C:\Users\Cleudiana\Desktop\Py_Source_US\Src\Pangya_LoginServer\bin\Debug\PangAPI.Auth.dll
+C:\Users\Cleudiana\Desktop\Py_Source_US\Src\Pangya_LoginServer\bin\Debug\PangAPI.dll
+C:\Users\Cleudiana\Desktop\Py_Source_US\Src\Pangya_LoginServer\bin\Debug\PangAPI.IFF.dll
+C:\Users\Cleudiana\Desktop\Py_Source_US\Src\Pangya_LoginServer\bin\Debug\PangAPI.Json.dll
+C:\Users\Cleudiana\Desktop\Py_Source_US\Src\Pangya_LoginServer\bin\Debug\PangAPI.SqlConnector.dll
+C:\Users\Cleudiana\Desktop\Py_Source_US\Src\Pangya_LoginServer\bin\Debug\PangyaAPI.Helper.dll
+C:\Users\Cleudiana\Desktop\Py_Source_US\Src\Pangya_LoginServer\bin\Debug\PangAPI.ZIP.dll
+C:\Users\Cleudiana\Desktop\Py_Source_US\Src\Pangya_LoginServer\bin\Debug\PangAPI.Crypt.dll
+C:\Users\Cleudiana\Desktop\Py_Source_US\Src\Pangya_LoginServer\bin\Debug\PangAPI.Auth.pdb
+C:\Users\Cleudiana\Desktop\Py_Source_US\Src\Pangya_LoginServer\bin\Debug\PangyaAPI.Helper.pdb
+C:\Users\Cleudiana\Desktop\Py_Source_US\Src\Pangya_LoginServer\bin\Debug\PangAPI.IFF.pdb
+C:\Users\Cleudiana\Desktop\Py_Source_US\Src\Pangya_LoginServer\bin\Debug\PangAPI.Json.pdb
+C:\Users\Cleudiana\Desktop\Py_Source_US\Src\Pangya_LoginServer\bin\Debug\PangAPI.SqlConnector.pdb
+C:\Users\Cleudiana\Desktop\Py_Source_US\Src\Pangya_LoginServer\bin\Debug\PangAPI.SqlConnector.dll.config
+C:\Users\Cleudiana\Desktop\Py_Source_US\Src\Pangya_LoginServer\bin\Debug\PangAPI.pdb
+C:\Users\Cleudiana\Desktop\Py_Source_US\Src\Pangya_LoginServer\bin\Debug\PangAPI.dll.config
+C:\Users\Cleudiana\Desktop\Py_Source_US\Src\Pangya_LoginServer\bin\Debug\PangAPI.ZIP.pdb
+C:\Users\Cleudiana\Desktop\Py_Source_US\Src\Pangya_LoginServer\bin\Debug\PangAPI.Crypt.pdb
+C:\Users\Cleudiana\Desktop\Py_Source_US\Src\Pangya_LoginServer\obj\Debug\Pangya_LoginServer.csprojAssemblyReference.cache
+C:\Users\Cleudiana\Desktop\Py_Source_US\Src\Pangya_LoginServer\obj\Debug\Pangya_LoginServer.csproj.CoreCompileInputs.cache
+C:\Users\Cleudiana\Desktop\Py_Source_US\Src\Build\data\pangya_gb.iff
+C:\Users\Cleudiana\Desktop\Py_Source_US\Src\Build\Config\Login.ini
+C:\Users\Cleudiana\Desktop\Py_Source_US\Src\Build\data\invisible item.bat
+C:\Users\Cleudiana\Desktop\Py_Source_US\Src\Build\Pangya_LoginServer.exe.config
+C:\Users\Cleudiana\Desktop\Py_Source_US\Src\Build\Pangya_LoginServer.exe
+C:\Users\Cleudiana\Desktop\Py_Source_US\Src\Build\Pangya_LoginServer.pdb
+C:\Users\Cleudiana\Desktop\Py_Source_US\Src\Pangya_LoginServer\obj\Debug\Pangya_LoginServer.csproj.CopyComplete
+C:\Users\Cleudiana\Desktop\Py_Source_US\Src\Pangya_LoginServer\obj\Debug\Pangya_LoginServer.exe
+C:\Users\Cleudiana\Desktop\Py_Source_US\Src\Pangya_LoginServer\obj\Debug\Pangya_LoginServer.pdb

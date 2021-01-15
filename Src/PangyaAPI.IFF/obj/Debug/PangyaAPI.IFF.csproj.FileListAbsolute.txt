@@ -1,0 +1,18 @@
+C:\Users\Cleudiana\source\repos\Pangya-Server-Source\S7\Build\data\pangya_gb.iff
+C:\Users\Cleudiana\source\repos\Pangya-Server-Source\S7\Build\data\invisible item.bat
+C:\Users\Cleudiana\source\repos\Pangya-Server-Source\S7\Build\PangAPI.IFF.dll
+C:\Users\Cleudiana\source\repos\Pangya-Server-Source\S7\Build\PangAPI.IFF.pdb
+C:\Users\Cleudiana\source\repos\Pangya-Server-Source\S7\PangyaAPI.IFF\obj\Debug\PangyaAPI.IFF.csprojAssemblyReference.cache
+C:\Users\Cleudiana\source\repos\Pangya-Server-Source\S7\PangyaAPI.IFF\obj\Debug\PangyaAPI.IFF.csproj.CoreCompileInputs.cache
+C:\Users\Cleudiana\source\repos\Pangya-Server-Source\S7\PangyaAPI.IFF\obj\Debug\PangyaAPI.IFF.csproj.CopyComplete
+C:\Users\Cleudiana\source\repos\Pangya-Server-Source\S7\PangyaAPI.IFF\obj\Debug\PangAPI.IFF.dll
+C:\Users\Cleudiana\source\repos\Pangya-Server-Source\S7\PangyaAPI.IFF\obj\Debug\PangAPI.IFF.pdb
+C:\Users\Cleudiana\Desktop\Py_Source_US\Src\Build\data\pangya_gb.iff
+C:\Users\Cleudiana\Desktop\Py_Source_US\Src\Build\data\invisible item.bat
+C:\Users\Cleudiana\Desktop\Py_Source_US\Src\Build\PangAPI.IFF.dll
+C:\Users\Cleudiana\Desktop\Py_Source_US\Src\Build\PangAPI.IFF.pdb
+C:\Users\Cleudiana\Desktop\Py_Source_US\Src\PangyaAPI.IFF\obj\Debug\PangyaAPI.IFF.csprojAssemblyReference.cache
+C:\Users\Cleudiana\Desktop\Py_Source_US\Src\PangyaAPI.IFF\obj\Debug\PangyaAPI.IFF.csproj.CoreCompileInputs.cache
+C:\Users\Cleudiana\Desktop\Py_Source_US\Src\PangyaAPI.IFF\obj\Debug\PangyaAPI.IFF.csproj.CopyComplete
+C:\Users\Cleudiana\Desktop\Py_Source_US\Src\PangyaAPI.IFF\obj\Debug\PangAPI.IFF.dll
+C:\Users\Cleudiana\Desktop\Py_Source_US\Src\PangyaAPI.IFF\obj\Debug\PangAPI.IFF.pdb

@@ -1,0 +1,1436 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="PangyaModelStoreContainer" CdmEntityContainer="PangyaEntities">
+    <EntitySetMapping Name="Achievement_Counter_Data">
+      <EntityTypeMapping TypeName="PangyaModel.Achievement_Counter_Data">
+        <MappingFragment StoreEntitySet="Achievement_Counter_Data">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Enable" ColumnName="Enable" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="TypeID" ColumnName="TypeID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Pangya_Achievement">
+      <EntityTypeMapping TypeName="PangyaModel.Pangya_Achievement">
+        <MappingFragment StoreEntitySet="Pangya_Achievement">
+          <ScalarProperty Name="UID" ColumnName="UID" />
+          <ScalarProperty Name="TypeID" ColumnName="TypeID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Valid" ColumnName="Valid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Pangya_Achievement_Counter">
+      <EntityTypeMapping TypeName="PangyaModel.Pangya_Achievement_Counter">
+        <MappingFragment StoreEntitySet="Pangya_Achievement_Counter">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="UID" ColumnName="UID" />
+          <ScalarProperty Name="TypeID" ColumnName="TypeID" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Pangya_Achievement_Quest">
+      <EntityTypeMapping TypeName="PangyaModel.Pangya_Achievement_Quest">
+        <MappingFragment StoreEntitySet="Pangya_Achievement_Quest">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="UID" ColumnName="UID" />
+          <ScalarProperty Name="Achievement_Index" ColumnName="Achievement_Index" />
+          <ScalarProperty Name="Achivement_Quest_TypeID" ColumnName="Achivement_Quest_TypeID" />
+          <ScalarProperty Name="Counter_Index" ColumnName="Counter_Index" />
+          <ScalarProperty Name="SuccessDate" ColumnName="SuccessDate" />
+          <ScalarProperty Name="Count" ColumnName="Count" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Pangya_Caddie">
+      <EntityTypeMapping TypeName="PangyaModel.Pangya_Caddie">
+        <MappingFragment StoreEntitySet="Pangya_Caddie">
+          <ScalarProperty Name="CID" ColumnName="CID" />
+          <ScalarProperty Name="UID" ColumnName="UID" />
+          <ScalarProperty Name="TYPEID" ColumnName="TYPEID" />
+          <ScalarProperty Name="EXP" ColumnName="EXP" />
+          <ScalarProperty Name="cLevel" ColumnName="cLevel" />
+          <ScalarProperty Name="SKIN_TYPEID" ColumnName="SKIN_TYPEID" />
+          <ScalarProperty Name="RentFlag" ColumnName="RentFlag" />
+          <ScalarProperty Name="RegDate" ColumnName="RegDate" />
+          <ScalarProperty Name="END_DATE" ColumnName="END_DATE" />
+          <ScalarProperty Name="SKIN_END_DATE" ColumnName="SKIN_END_DATE" />
+          <ScalarProperty Name="TriggerPay" ColumnName="TriggerPay" />
+          <ScalarProperty Name="VALID" ColumnName="VALID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Pangya_Card">
+      <EntityTypeMapping TypeName="PangyaModel.Pangya_Card">
+        <MappingFragment StoreEntitySet="Pangya_Card">
+          <ScalarProperty Name="CARD_IDX" ColumnName="CARD_IDX" />
+          <ScalarProperty Name="UID" ColumnName="UID" />
+          <ScalarProperty Name="CARD_TYPEID" ColumnName="CARD_TYPEID" />
+          <ScalarProperty Name="QTY" ColumnName="QTY" />
+          <ScalarProperty Name="RegData" ColumnName="RegData" />
+          <ScalarProperty Name="VALID" ColumnName="VALID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Pangya_Card_Equip">
+      <EntityTypeMapping TypeName="PangyaModel.Pangya_Card_Equip">
+        <MappingFragment StoreEntitySet="Pangya_Card_Equip">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="UID" ColumnName="UID" />
+          <ScalarProperty Name="CID" ColumnName="CID" />
+          <ScalarProperty Name="CHAR_TYPEID" ColumnName="CHAR_TYPEID" />
+          <ScalarProperty Name="CARD_TYPEID" ColumnName="CARD_TYPEID" />
+          <ScalarProperty Name="SLOT" ColumnName="SLOT" />
+          <ScalarProperty Name="REGDATE" ColumnName="REGDATE" />
+          <ScalarProperty Name="ENDDATE" ColumnName="ENDDATE" />
+          <ScalarProperty Name="FLAG" ColumnName="FLAG" />
+          <ScalarProperty Name="VALID" ColumnName="VALID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Pangya_Character">
+      <EntityTypeMapping TypeName="PangyaModel.Pangya_Character">
+        <MappingFragment StoreEntitySet="Pangya_Character">
+          <ScalarProperty Name="CID" ColumnName="CID" />
+          <ScalarProperty Name="UID" ColumnName="UID" />
+          <ScalarProperty Name="TYPEID" ColumnName="TYPEID" />
+          <ScalarProperty Name="GIFT_FLAG" ColumnName="GIFT_FLAG" />
+          <ScalarProperty Name="HAIR_COLOR" ColumnName="HAIR_COLOR" />
+          <ScalarProperty Name="POWER" ColumnName="POWER" />
+          <ScalarProperty Name="CONTROL" ColumnName="CONTROL" />
+          <ScalarProperty Name="IMPACT" ColumnName="IMPACT" />
+          <ScalarProperty Name="SPIN" ColumnName="SPIN" />
+          <ScalarProperty Name="CURVE" ColumnName="CURVE" />
+          <ScalarProperty Name="CUTIN" ColumnName="CUTIN" />
+          <ScalarProperty Name="AuxPart" ColumnName="AuxPart" />
+          <ScalarProperty Name="AuxPart2" ColumnName="AuxPart2" />
+          <ScalarProperty Name="PART_TYPEID_1" ColumnName="PART_TYPEID_1" />
+          <ScalarProperty Name="PART_TYPEID_2" ColumnName="PART_TYPEID_2" />
+          <ScalarProperty Name="PART_TYPEID_3" ColumnName="PART_TYPEID_3" />
+          <ScalarProperty Name="PART_TYPEID_4" ColumnName="PART_TYPEID_4" />
+          <ScalarProperty Name="PART_TYPEID_5" ColumnName="PART_TYPEID_5" />
+          <ScalarProperty Name="PART_TYPEID_6" ColumnName="PART_TYPEID_6" />
+          <ScalarProperty Name="PART_TYPEID_7" ColumnName="PART_TYPEID_7" />
+          <ScalarProperty Name="PART_TYPEID_8" ColumnName="PART_TYPEID_8" />
+          <ScalarProperty Name="PART_TYPEID_9" ColumnName="PART_TYPEID_9" />
+          <ScalarProperty Name="PART_TYPEID_10" ColumnName="PART_TYPEID_10" />
+          <ScalarProperty Name="PART_TYPEID_11" ColumnName="PART_TYPEID_11" />
+          <ScalarProperty Name="PART_TYPEID_12" ColumnName="PART_TYPEID_12" />
+          <ScalarProperty Name="PART_TYPEID_13" ColumnName="PART_TYPEID_13" />
+          <ScalarProperty Name="PART_TYPEID_14" ColumnName="PART_TYPEID_14" />
+          <ScalarProperty Name="PART_TYPEID_15" ColumnName="PART_TYPEID_15" />
+          <ScalarProperty Name="PART_TYPEID_16" ColumnName="PART_TYPEID_16" />
+          <ScalarProperty Name="PART_TYPEID_17" ColumnName="PART_TYPEID_17" />
+          <ScalarProperty Name="PART_TYPEID_18" ColumnName="PART_TYPEID_18" />
+          <ScalarProperty Name="PART_TYPEID_19" ColumnName="PART_TYPEID_19" />
+          <ScalarProperty Name="PART_TYPEID_20" ColumnName="PART_TYPEID_20" />
+          <ScalarProperty Name="PART_TYPEID_21" ColumnName="PART_TYPEID_21" />
+          <ScalarProperty Name="PART_TYPEID_22" ColumnName="PART_TYPEID_22" />
+          <ScalarProperty Name="PART_TYPEID_23" ColumnName="PART_TYPEID_23" />
+          <ScalarProperty Name="PART_TYPEID_24" ColumnName="PART_TYPEID_24" />
+          <ScalarProperty Name="PART_IDX_1" ColumnName="PART_IDX_1" />
+          <ScalarProperty Name="PART_IDX_2" ColumnName="PART_IDX_2" />
+          <ScalarProperty Name="PART_IDX_3" ColumnName="PART_IDX_3" />
+          <ScalarProperty Name="PART_IDX_4" ColumnName="PART_IDX_4" />
+          <ScalarProperty Name="PART_IDX_5" ColumnName="PART_IDX_5" />
+          <ScalarProperty Name="PART_IDX_6" ColumnName="PART_IDX_6" />
+          <ScalarProperty Name="PART_IDX_7" ColumnName="PART_IDX_7" />
+          <ScalarProperty Name="PART_IDX_8" ColumnName="PART_IDX_8" />
+          <ScalarProperty Name="PART_IDX_9" ColumnName="PART_IDX_9" />
+          <ScalarProperty Name="PART_IDX_10" ColumnName="PART_IDX_10" />
+          <ScalarProperty Name="PART_IDX_11" ColumnName="PART_IDX_11" />
+          <ScalarProperty Name="PART_IDX_12" ColumnName="PART_IDX_12" />
+          <ScalarProperty Name="PART_IDX_13" ColumnName="PART_IDX_13" />
+          <ScalarProperty Name="PART_IDX_14" ColumnName="PART_IDX_14" />
+          <ScalarProperty Name="PART_IDX_15" ColumnName="PART_IDX_15" />
+          <ScalarProperty Name="PART_IDX_16" ColumnName="PART_IDX_16" />
+          <ScalarProperty Name="PART_IDX_17" ColumnName="PART_IDX_17" />
+          <ScalarProperty Name="PART_IDX_18" ColumnName="PART_IDX_18" />
+          <ScalarProperty Name="PART_IDX_19" ColumnName="PART_IDX_19" />
+          <ScalarProperty Name="PART_IDX_20" ColumnName="PART_IDX_20" />
+          <ScalarProperty Name="PART_IDX_21" ColumnName="PART_IDX_21" />
+          <ScalarProperty Name="PART_IDX_22" ColumnName="PART_IDX_22" />
+          <ScalarProperty Name="PART_IDX_23" ColumnName="PART_IDX_23" />
+          <ScalarProperty Name="PART_IDX_24" ColumnName="PART_IDX_24" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Pangya_Club_Info">
+      <EntityTypeMapping TypeName="PangyaModel.Pangya_Club_Info">
+        <MappingFragment StoreEntitySet="Pangya_Club_Info">
+          <ScalarProperty Name="ITEM_ID" ColumnName="ITEM_ID" />
+          <ScalarProperty Name="C0_SLOT" ColumnName="C0_SLOT" />
+          <ScalarProperty Name="C1_SLOT" ColumnName="C1_SLOT" />
+          <ScalarProperty Name="C2_SLOT" ColumnName="C2_SLOT" />
+          <ScalarProperty Name="C3_SLOT" ColumnName="C3_SLOT" />
+          <ScalarProperty Name="C4_SLOT" ColumnName="C4_SLOT" />
+          <ScalarProperty Name="CLUB_POINT" ColumnName="CLUB_POINT" />
+          <ScalarProperty Name="CLUB_WORK_COUNT" ColumnName="CLUB_WORK_COUNT" />
+          <ScalarProperty Name="CLUB_SLOT_CANCEL" ColumnName="CLUB_SLOT_CANCEL" />
+          <ScalarProperty Name="CLUB_POINT_TOTAL_LOG" ColumnName="CLUB_POINT_TOTAL_LOG" />
+          <ScalarProperty Name="CLUB_UPGRADE_PANG_LOG" ColumnName="CLUB_UPGRADE_PANG_LOG" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Pangya_Daily_Quest">
+      <EntityTypeMapping TypeName="PangyaModel.Pangya_Daily_Quest">
+        <MappingFragment StoreEntitySet="Pangya_Daily_Quest">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="UID" ColumnName="UID" />
+          <ScalarProperty Name="QuestID1" ColumnName="QuestID1" />
+          <ScalarProperty Name="QuestID2" ColumnName="QuestID2" />
+          <ScalarProperty Name="QuestID3" ColumnName="QuestID3" />
+          <ScalarProperty Name="LastAccept" ColumnName="LastAccept" />
+          <ScalarProperty Name="LastCancel" ColumnName="LastCancel" />
+          <ScalarProperty Name="RegDate" ColumnName="RegDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Pangya_Guild_Emblem">
+      <EntityTypeMapping TypeName="PangyaModel.Pangya_Guild_Emblem">
+        <MappingFragment StoreEntitySet="Pangya_Guild_Emblem">
+          <ScalarProperty Name="EMBLEM_IDX" ColumnName="EMBLEM_IDX" />
+          <ScalarProperty Name="GUILD_ID" ColumnName="GUILD_ID" />
+          <ScalarProperty Name="GUILD_MARK_IMG" ColumnName="GUILD_MARK_IMG" />
+          <ScalarProperty Name="GUILD_MARK_ISVALID" ColumnName="GUILD_MARK_ISVALID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Pangya_Guild_Info">
+      <EntityTypeMapping TypeName="PangyaModel.Pangya_Guild_Info">
+        <MappingFragment StoreEntitySet="Pangya_Guild_Info">
+          <ScalarProperty Name="GUILD_INDEX" ColumnName="GUILD_INDEX" />
+          <ScalarProperty Name="GUILD_NAME" ColumnName="GUILD_NAME" />
+          <ScalarProperty Name="GUILD_INTRODUCING" ColumnName="GUILD_INTRODUCING" />
+          <ScalarProperty Name="GUILD_NOTICE" ColumnName="GUILD_NOTICE" />
+          <ScalarProperty Name="GUILD_LEADER_UID" ColumnName="GUILD_LEADER_UID" />
+          <ScalarProperty Name="GUILD_POINT" ColumnName="GUILD_POINT" />
+          <ScalarProperty Name="GUILD_PANG" ColumnName="GUILD_PANG" />
+          <ScalarProperty Name="GUILD_IMAGE" ColumnName="GUILD_IMAGE" />
+          <ScalarProperty Name="GUILD_IMAGE_KEY_UPLOAD" ColumnName="GUILD_IMAGE_KEY_UPLOAD" />
+          <ScalarProperty Name="GUILD_CREATE_DATE" ColumnName="GUILD_CREATE_DATE" />
+          <ScalarProperty Name="GUILD_VALID" ColumnName="GUILD_VALID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Pangya_Guild_Member">
+      <EntityTypeMapping TypeName="PangyaModel.Pangya_Guild_Member">
+        <MappingFragment StoreEntitySet="Pangya_Guild_Member">
+          <ScalarProperty Name="GUILD_ID" ColumnName="GUILD_ID" />
+          <ScalarProperty Name="GUILD_MEMBER_UID" ColumnName="GUILD_MEMBER_UID" />
+          <ScalarProperty Name="GUILD_POSITION" ColumnName="GUILD_POSITION" />
+          <ScalarProperty Name="GUILD_MESSAGE" ColumnName="GUILD_MESSAGE" />
+          <ScalarProperty Name="GUILD_ENTERED_TIME" ColumnName="GUILD_ENTERED_TIME" />
+          <ScalarProperty Name="GUILD_MEMBER_STATUS" ColumnName="GUILD_MEMBER_STATUS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Pangya_Locker_Item">
+      <EntityTypeMapping TypeName="PangyaModel.Pangya_Locker_Item">
+        <MappingFragment StoreEntitySet="Pangya_Locker_Item">
+          <ScalarProperty Name="INVEN_ID" ColumnName="INVEN_ID" />
+          <ScalarProperty Name="UID" ColumnName="UID" />
+          <ScalarProperty Name="TypeID" ColumnName="TypeID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="FROM_ID" ColumnName="FROM_ID" />
+          <ScalarProperty Name="Valid" ColumnName="Valid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Pangya_Mail">
+      <EntityTypeMapping TypeName="PangyaModel.Pangya_Mail">
+        <MappingFragment StoreEntitySet="Pangya_Mail">
+          <ScalarProperty Name="Mail_Index" ColumnName="Mail_Index" />
+          <ScalarProperty Name="UID" ColumnName="UID" />
+          <ScalarProperty Name="Sender" ColumnName="Sender" />
+          <ScalarProperty Name="Sender_UID" ColumnName="Sender_UID" />
+          <ScalarProperty Name="Receiver" ColumnName="Receiver" />
+          <ScalarProperty Name="Receiver_UID" ColumnName="Receiver_UID" />
+          <ScalarProperty Name="Subject" ColumnName="Subject" />
+          <ScalarProperty Name="Msg" ColumnName="Msg" />
+          <ScalarProperty Name="ReadDate" ColumnName="ReadDate" />
+          <ScalarProperty Name="ReceiveDate" ColumnName="ReceiveDate" />
+          <ScalarProperty Name="DeleteDate" ColumnName="DeleteDate" />
+          <ScalarProperty Name="RegDate" ColumnName="RegDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Pangya_Mail_Item">
+      <EntityTypeMapping TypeName="PangyaModel.Pangya_Mail_Item">
+        <MappingFragment StoreEntitySet="Pangya_Mail_Item">
+          <ScalarProperty Name="Mail_Index" ColumnName="Mail_Index" />
+          <ScalarProperty Name="TYPEID" ColumnName="TYPEID" />
+          <ScalarProperty Name="SETTYPEID" ColumnName="SETTYPEID" />
+          <ScalarProperty Name="QTY" ColumnName="QTY" />
+          <ScalarProperty Name="DAY" ColumnName="DAY" />
+          <ScalarProperty Name="UCC_UNIQUE" ColumnName="UCC_UNIQUE" />
+          <ScalarProperty Name="ITEM_GRP" ColumnName="ITEM_GRP" />
+          <ScalarProperty Name="TO_UID" ColumnName="TO_UID" />
+          <ScalarProperty Name="IN_DATE" ColumnName="IN_DATE" />
+          <ScalarProperty Name="RELEASE_DATE" ColumnName="RELEASE_DATE" />
+          <ScalarProperty Name="APPLY_ITEM_ID" ColumnName="APPLY_ITEM_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Pangya_Map_Statistics">
+      <EntityTypeMapping TypeName="PangyaModel.Pangya_Map_Statistics">
+        <MappingFragment StoreEntitySet="Pangya_Map_Statistics">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="UID" ColumnName="UID" />
+          <ScalarProperty Name="Map" ColumnName="Map" />
+          <ScalarProperty Name="Drive" ColumnName="Drive" />
+          <ScalarProperty Name="Putt" ColumnName="Putt" />
+          <ScalarProperty Name="Hole" ColumnName="Hole" />
+          <ScalarProperty Name="Fairway" ColumnName="Fairway" />
+          <ScalarProperty Name="Holein" ColumnName="Holein" />
+          <ScalarProperty Name="PuttIn" ColumnName="PuttIn" />
+          <ScalarProperty Name="TotalScore" ColumnName="TotalScore" />
+          <ScalarProperty Name="BestScore" ColumnName="BestScore" />
+          <ScalarProperty Name="MaxPang" ColumnName="MaxPang" />
+          <ScalarProperty Name="CharTypeId" ColumnName="CharTypeId" />
+          <ScalarProperty Name="EventScore" ColumnName="EventScore" />
+          <ScalarProperty Name="Assist" ColumnName="Assist" />
+          <ScalarProperty Name="REGDATE" ColumnName="REGDATE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Pangya_Member">
+      <EntityTypeMapping TypeName="PangyaModel.Pangya_Member">
+        <MappingFragment StoreEntitySet="Pangya_Member">
+          <ScalarProperty Name="UID" ColumnName="UID" />
+          <ScalarProperty Name="Username" ColumnName="Username" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="IDState" ColumnName="IDState" />
+          <ScalarProperty Name="FirstSet" ColumnName="FirstSet" />
+          <ScalarProperty Name="LastLogonTime" ColumnName="LastLogonTime" />
+          <ScalarProperty Name="Logon" ColumnName="Logon" />
+          <ScalarProperty Name="Nickname" ColumnName="Nickname" />
+          <ScalarProperty Name="Sex" ColumnName="Sex" />
+          <ScalarProperty Name="IPAddress" ColumnName="IPAddress" />
+          <ScalarProperty Name="LogonCount" ColumnName="LogonCount" />
+          <ScalarProperty Name="Capabilities" ColumnName="Capabilities" />
+          <ScalarProperty Name="RegDate" ColumnName="RegDate" />
+          <ScalarProperty Name="AuthKey_Login" ColumnName="AuthKey_Login" />
+          <ScalarProperty Name="AuthKey_Game" ColumnName="AuthKey_Game" />
+          <ScalarProperty Name="GUILDINDEX" ColumnName="GUILDINDEX" />
+          <ScalarProperty Name="DailyLoginCount" ColumnName="DailyLoginCount" />
+          <ScalarProperty Name="Tutorial" ColumnName="Tutorial" />
+          <ScalarProperty Name="BirthDay" ColumnName="BirthDay" />
+          <ScalarProperty Name="Event1" ColumnName="Event1" />
+          <ScalarProperty Name="Event2" ColumnName="Event2" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Pangya_Memorial_Log">
+      <EntityTypeMapping TypeName="PangyaModel.Pangya_Memorial_Log">
+        <MappingFragment StoreEntitySet="Pangya_Memorial_Log">
+          <ScalarProperty Name="LogID" ColumnName="LogID" />
+          <ScalarProperty Name="UID" ColumnName="UID" />
+          <ScalarProperty Name="ItemName" ColumnName="ItemName" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="DateIN" ColumnName="DateIN" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Pangya_Personal">
+      <EntityTypeMapping TypeName="PangyaModel.Pangya_Personal">
+        <MappingFragment StoreEntitySet="Pangya_Personal">
+          <ScalarProperty Name="UID" ColumnName="UID" />
+          <ScalarProperty Name="CookieAmt" ColumnName="CookieAmt" />
+          <ScalarProperty Name="PangLockerAmt" ColumnName="PangLockerAmt" />
+          <ScalarProperty Name="LockerPwd" ColumnName="LockerPwd" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Pangya_SelfDesign">
+      <EntityTypeMapping TypeName="PangyaModel.Pangya_SelfDesign">
+        <MappingFragment StoreEntitySet="Pangya_SelfDesign">
+          <ScalarProperty Name="UID" ColumnName="UID" />
+          <ScalarProperty Name="ITEM_ID" ColumnName="ITEM_ID" />
+          <ScalarProperty Name="UCC_UNIQE" ColumnName="UCC_UNIQE" />
+          <ScalarProperty Name="TYPEID" ColumnName="TYPEID" />
+          <ScalarProperty Name="UCC_STATUS" ColumnName="UCC_STATUS" />
+          <ScalarProperty Name="UCC_KEY" ColumnName="UCC_KEY" />
+          <ScalarProperty Name="UCC_NAME" ColumnName="UCC_NAME" />
+          <ScalarProperty Name="UCC_DRAWER" ColumnName="UCC_DRAWER" />
+          <ScalarProperty Name="UCC_COPY_COUNT" ColumnName="UCC_COPY_COUNT" />
+          <ScalarProperty Name="IN_DATE" ColumnName="IN_DATE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Pangya_Server">
+      <EntityTypeMapping TypeName="PangyaModel.Pangya_Server">
+        <MappingFragment StoreEntitySet="Pangya_Server">
+          <ScalarProperty Name="ServerID" ColumnName="ServerID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="IP" ColumnName="IP" />
+          <ScalarProperty Name="Port" ColumnName="Port" />
+          <ScalarProperty Name="MaxUser" ColumnName="MaxUser" />
+          <ScalarProperty Name="UsersOnline" ColumnName="UsersOnline" />
+          <ScalarProperty Name="Property" ColumnName="Property" />
+          <ScalarProperty Name="BlockFunc" ColumnName="BlockFunc" />
+          <ScalarProperty Name="ImgNo" ColumnName="ImgNo" />
+          <ScalarProperty Name="ImgEvent" ColumnName="ImgEvent" />
+          <ScalarProperty Name="ServerType" ColumnName="ServerType" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Pangya_User_Equip">
+      <EntityTypeMapping TypeName="PangyaModel.Pangya_User_Equip">
+        <MappingFragment StoreEntitySet="Pangya_User_Equip">
+          <ScalarProperty Name="UID" ColumnName="UID" />
+          <ScalarProperty Name="CADDIE" ColumnName="CADDIE" />
+          <ScalarProperty Name="CHARACTER_ID" ColumnName="CHARACTER_ID" />
+          <ScalarProperty Name="CLUB_ID" ColumnName="CLUB_ID" />
+          <ScalarProperty Name="BALL_ID" ColumnName="BALL_ID" />
+          <ScalarProperty Name="ITEM_SLOT_1" ColumnName="ITEM_SLOT_1" />
+          <ScalarProperty Name="ITEM_SLOT_2" ColumnName="ITEM_SLOT_2" />
+          <ScalarProperty Name="ITEM_SLOT_3" ColumnName="ITEM_SLOT_3" />
+          <ScalarProperty Name="ITEM_SLOT_4" ColumnName="ITEM_SLOT_4" />
+          <ScalarProperty Name="ITEM_SLOT_5" ColumnName="ITEM_SLOT_5" />
+          <ScalarProperty Name="ITEM_SLOT_6" ColumnName="ITEM_SLOT_6" />
+          <ScalarProperty Name="ITEM_SLOT_7" ColumnName="ITEM_SLOT_7" />
+          <ScalarProperty Name="ITEM_SLOT_8" ColumnName="ITEM_SLOT_8" />
+          <ScalarProperty Name="ITEM_SLOT_9" ColumnName="ITEM_SLOT_9" />
+          <ScalarProperty Name="ITEM_SLOT_10" ColumnName="ITEM_SLOT_10" />
+          <ScalarProperty Name="Skin_1" ColumnName="Skin_1" />
+          <ScalarProperty Name="Skin_2" ColumnName="Skin_2" />
+          <ScalarProperty Name="Skin_3" ColumnName="Skin_3" />
+          <ScalarProperty Name="Skin_4" ColumnName="Skin_4" />
+          <ScalarProperty Name="Skin_5" ColumnName="Skin_5" />
+          <ScalarProperty Name="Skin_6" ColumnName="Skin_6" />
+          <ScalarProperty Name="MASCOT_ID" ColumnName="MASCOT_ID" />
+          <ScalarProperty Name="POSTER_1" ColumnName="POSTER_1" />
+          <ScalarProperty Name="POSTER_2" ColumnName="POSTER_2" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Pangya_User_Message">
+      <EntityTypeMapping TypeName="PangyaModel.Pangya_User_Message">
+        <MappingFragment StoreEntitySet="Pangya_User_Message">
+          <ScalarProperty Name="ID_MSG" ColumnName="ID_MSG" />
+          <ScalarProperty Name="UID" ColumnName="UID" />
+          <ScalarProperty Name="UID_FROM" ColumnName="UID_FROM" />
+          <ScalarProperty Name="Valid" ColumnName="Valid" />
+          <ScalarProperty Name="Message" ColumnName="Message" />
+          <ScalarProperty Name="Reg_Date" ColumnName="Reg_Date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Pangya_Warehouse">
+      <EntityTypeMapping TypeName="PangyaModel.Pangya_Warehouse">
+        <MappingFragment StoreEntitySet="Pangya_Warehouse">
+          <ScalarProperty Name="item_id" ColumnName="item_id" />
+          <ScalarProperty Name="UID" ColumnName="UID" />
+          <ScalarProperty Name="TYPEID" ColumnName="TYPEID" />
+          <ScalarProperty Name="C0" ColumnName="C0" />
+          <ScalarProperty Name="C1" ColumnName="C1" />
+          <ScalarProperty Name="C2" ColumnName="C2" />
+          <ScalarProperty Name="C3" ColumnName="C3" />
+          <ScalarProperty Name="C4" ColumnName="C4" />
+          <ScalarProperty Name="RegDate" ColumnName="RegDate" />
+          <ScalarProperty Name="DateEnd" ColumnName="DateEnd" />
+          <ScalarProperty Name="VALID" ColumnName="VALID" />
+          <ScalarProperty Name="ItemType" ColumnName="ItemType" />
+          <ScalarProperty Name="Flag" ColumnName="Flag" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Achievement_Data">
+      <EntityTypeMapping TypeName="PangyaModel.Achievement_Data">
+        <MappingFragment StoreEntitySet="Achievement_Data">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ACHIEVEMENT_ENABLE" ColumnName="ACHIEVEMENT_ENABLE" />
+          <ScalarProperty Name="ACHIEVEMENT_TYPEID" ColumnName="ACHIEVEMENT_TYPEID" />
+          <ScalarProperty Name="ACHIEVEMENT_NAME" ColumnName="ACHIEVEMENT_NAME" />
+          <ScalarProperty Name="ACHIEVEMENT_QUEST_TYPEID" ColumnName="ACHIEVEMENT_QUEST_TYPEID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Achievement_QuestItem">
+      <EntityTypeMapping TypeName="PangyaModel.Achievement_QuestItem">
+        <MappingFragment StoreEntitySet="Achievement_QuestItem">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="TypeID" ColumnName="TypeID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="QuestTypeID" ColumnName="QuestTypeID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Achievement_QuestStuffs">
+      <EntityTypeMapping TypeName="PangyaModel.Achievement_QuestStuffs">
+        <MappingFragment StoreEntitySet="Achievement_QuestStuffs">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Enable" ColumnName="Enable" />
+          <ScalarProperty Name="TypeID" ColumnName="TypeID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="CounterTypeID" ColumnName="CounterTypeID" />
+          <ScalarProperty Name="CounterQuantity" ColumnName="CounterQuantity" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Daily_Quest">
+      <EntityTypeMapping TypeName="PangyaModel.Daily_Quest">
+        <MappingFragment StoreEntitySet="Daily_Quest">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="QuestTypeID1" ColumnName="QuestTypeID1" />
+          <ScalarProperty Name="QuestTypeID2" ColumnName="QuestTypeID2" />
+          <ScalarProperty Name="QuestTypeID3" ColumnName="QuestTypeID3" />
+          <ScalarProperty Name="RegDate" ColumnName="RegDate" />
+          <ScalarProperty Name="Day" ColumnName="Day" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Pangya_Exception_Log">
+      <EntityTypeMapping TypeName="PangyaModel.Pangya_Exception_Log">
+        <MappingFragment StoreEntitySet="Pangya_Exception_Log">
+          <ScalarProperty Name="ExceptionID" ColumnName="ExceptionID" />
+          <ScalarProperty Name="UID" ColumnName="UID" />
+          <ScalarProperty Name="Username" ColumnName="Username" />
+          <ScalarProperty Name="ExceptionMessage" ColumnName="ExceptionMessage" />
+          <ScalarProperty Name="Server" ColumnName="Server" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Pangya_Friend">
+      <EntityTypeMapping TypeName="PangyaModel.Pangya_Friend">
+        <MappingFragment StoreEntitySet="Pangya_Friend">
+          <ScalarProperty Name="Owner" ColumnName="Owner" />
+          <ScalarProperty Name="Friend" ColumnName="Friend" />
+          <ScalarProperty Name="IsAccept" ColumnName="IsAccept" />
+          <ScalarProperty Name="GroupName" ColumnName="GroupName" />
+          <ScalarProperty Name="IsAgree" ColumnName="IsAgree" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="Memo" ColumnName="Memo" />
+          <ScalarProperty Name="IsBlock" ColumnName="IsBlock" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Pangya_Game_Macro">
+      <EntityTypeMapping TypeName="PangyaModel.Pangya_Game_Macro">
+        <MappingFragment StoreEntitySet="Pangya_Game_Macro">
+          <ScalarProperty Name="UID" ColumnName="UID" />
+          <ScalarProperty Name="Macro1" ColumnName="Macro1" />
+          <ScalarProperty Name="Macro2" ColumnName="Macro2" />
+          <ScalarProperty Name="Macro3" ColumnName="Macro3" />
+          <ScalarProperty Name="Macro4" ColumnName="Macro4" />
+          <ScalarProperty Name="Macro5" ColumnName="Macro5" />
+          <ScalarProperty Name="Macro6" ColumnName="Macro6" />
+          <ScalarProperty Name="Macro7" ColumnName="Macro7" />
+          <ScalarProperty Name="Macro8" ColumnName="Macro8" />
+          <ScalarProperty Name="Macro9" ColumnName="Macro9" />
+          <ScalarProperty Name="Macro10" ColumnName="Macro10" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Pangya_Guild_Log">
+      <EntityTypeMapping TypeName="PangyaModel.Pangya_Guild_Log">
+        <MappingFragment StoreEntitySet="Pangya_Guild_Log">
+          <ScalarProperty Name="UID" ColumnName="UID" />
+          <ScalarProperty Name="GUILD_ID" ColumnName="GUILD_ID" />
+          <ScalarProperty Name="GUILD_NAME" ColumnName="GUILD_NAME" />
+          <ScalarProperty Name="GUILD_ACTION" ColumnName="GUILD_ACTION" />
+          <ScalarProperty Name="GUILD_ACTION_DATE" ColumnName="GUILD_ACTION_DATE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Pangya_Item_Daily">
+      <EntityTypeMapping TypeName="PangyaModel.Pangya_Item_Daily">
+        <MappingFragment StoreEntitySet="Pangya_Item_Daily">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ItemTypeID" ColumnName="ItemTypeID" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="ItemType" ColumnName="ItemType" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Pangya_Item_Daily_Log">
+      <EntityTypeMapping TypeName="PangyaModel.Pangya_Item_Daily_Log">
+        <MappingFragment StoreEntitySet="Pangya_Item_Daily_Log">
+          <ScalarProperty Name="UID" ColumnName="UID" />
+          <ScalarProperty Name="Counter" ColumnName="Counter" />
+          <ScalarProperty Name="Item_TypeID" ColumnName="Item_TypeID" />
+          <ScalarProperty Name="Item_Quantity" ColumnName="Item_Quantity" />
+          <ScalarProperty Name="Item_TypeID_Next" ColumnName="Item_TypeID_Next" />
+          <ScalarProperty Name="Item_Quantity_Next" ColumnName="Item_Quantity_Next" />
+          <ScalarProperty Name="LoginCount" ColumnName="LoginCount" />
+          <ScalarProperty Name="RegDate" ColumnName="RegDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Pangya_Mascot">
+      <EntityTypeMapping TypeName="PangyaModel.Pangya_Mascot">
+        <MappingFragment StoreEntitySet="Pangya_Mascot">
+          <ScalarProperty Name="MID" ColumnName="MID" />
+          <ScalarProperty Name="UID" ColumnName="UID" />
+          <ScalarProperty Name="MASCOT_TYPEID" ColumnName="MASCOT_TYPEID" />
+          <ScalarProperty Name="MESSAGE" ColumnName="MESSAGE" />
+          <ScalarProperty Name="DateEnd" ColumnName="DateEnd" />
+          <ScalarProperty Name="VALID" ColumnName="VALID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Pangya_Personal_Log">
+      <EntityTypeMapping TypeName="PangyaModel.Pangya_Personal_Log">
+        <MappingFragment StoreEntitySet="Pangya_Personal_Log">
+          <ScalarProperty Name="LogID" ColumnName="LogID" />
+          <ScalarProperty Name="ActionType" ColumnName="ActionType" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="UID" ColumnName="UID" />
+          <ScalarProperty Name="LockerPang" ColumnName="LockerPang" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Pangya_String">
+      <EntityTypeMapping TypeName="PangyaModel.Pangya_String">
+        <MappingFragment StoreEntitySet="Pangya_String">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="str" ColumnName="str" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Pangya_Transaction_Log">
+      <EntityTypeMapping TypeName="PangyaModel.Pangya_Transaction_Log">
+        <MappingFragment StoreEntitySet="Pangya_Transaction_Log">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="UID" ColumnName="UID" />
+          <ScalarProperty Name="String" ColumnName="String" />
+          <ScalarProperty Name="ERROR_NUMBER" ColumnName="ERROR_NUMBER" />
+          <ScalarProperty Name="ERROR_SEVERITY" ColumnName="ERROR_SEVERITY" />
+          <ScalarProperty Name="ERROR_STATE" ColumnName="ERROR_STATE" />
+          <ScalarProperty Name="ERROR_PROCEDURE" ColumnName="ERROR_PROCEDURE" />
+          <ScalarProperty Name="ERROR_LINE" ColumnName="ERROR_LINE" />
+          <ScalarProperty Name="ERROR_MESSAGE" ColumnName="ERROR_MESSAGE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Pangya_User_MatchHistory">
+      <EntityTypeMapping TypeName="PangyaModel.Pangya_User_MatchHistory">
+        <MappingFragment StoreEntitySet="Pangya_User_MatchHistory">
+          <ScalarProperty Name="UID" ColumnName="UID" />
+          <ScalarProperty Name="UID1" ColumnName="UID1" />
+          <ScalarProperty Name="UID2" ColumnName="UID2" />
+          <ScalarProperty Name="UID3" ColumnName="UID3" />
+          <ScalarProperty Name="UID4" ColumnName="UID4" />
+          <ScalarProperty Name="UID5" ColumnName="UID5" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Pangya_User_Statistics">
+      <EntityTypeMapping TypeName="PangyaModel.Pangya_User_Statistics">
+        <MappingFragment StoreEntitySet="Pangya_User_Statistics">
+          <ScalarProperty Name="UID" ColumnName="UID" />
+          <ScalarProperty Name="Drive" ColumnName="Drive" />
+          <ScalarProperty Name="Putt" ColumnName="Putt" />
+          <ScalarProperty Name="Playtime" ColumnName="Playtime" />
+          <ScalarProperty Name="Longest" ColumnName="Longest" />
+          <ScalarProperty Name="Distance" ColumnName="Distance" />
+          <ScalarProperty Name="Pangya" ColumnName="Pangya" />
+          <ScalarProperty Name="Hole" ColumnName="Hole" />
+          <ScalarProperty Name="TeamHole" ColumnName="TeamHole" />
+          <ScalarProperty Name="Holeinone" ColumnName="Holeinone" />
+          <ScalarProperty Name="OB" ColumnName="OB" />
+          <ScalarProperty Name="Bunker" ColumnName="Bunker" />
+          <ScalarProperty Name="Fairway" ColumnName="Fairway" />
+          <ScalarProperty Name="Albatross" ColumnName="Albatross" />
+          <ScalarProperty Name="Holein" ColumnName="Holein" />
+          <ScalarProperty Name="Pang" ColumnName="Pang" />
+          <ScalarProperty Name="Timeout" ColumnName="Timeout" />
+          <ScalarProperty Name="Game_Level" ColumnName="Game_Level" />
+          <ScalarProperty Name="Game_Point" ColumnName="Game_Point" />
+          <ScalarProperty Name="PuttIn" ColumnName="PuttIn" />
+          <ScalarProperty Name="LongestPuttIn" ColumnName="LongestPuttIn" />
+          <ScalarProperty Name="LongestChipIn" ColumnName="LongestChipIn" />
+          <ScalarProperty Name="NoMannerGameCount" ColumnName="NoMannerGameCount" />
+          <ScalarProperty Name="ShotTime" ColumnName="ShotTime" />
+          <ScalarProperty Name="GameCount" ColumnName="GameCount" />
+          <ScalarProperty Name="DisconnectGames" ColumnName="DisconnectGames" />
+          <ScalarProperty Name="wTeamWin" ColumnName="wTeamWin" />
+          <ScalarProperty Name="wTeamGames" ColumnName="wTeamGames" />
+          <ScalarProperty Name="LadderPoint" ColumnName="LadderPoint" />
+          <ScalarProperty Name="LadderWin" ColumnName="LadderWin" />
+          <ScalarProperty Name="LadderLose" ColumnName="LadderLose" />
+          <ScalarProperty Name="LadderDraw" ColumnName="LadderDraw" />
+          <ScalarProperty Name="ComboCount" ColumnName="ComboCount" />
+          <ScalarProperty Name="MaxComboCount" ColumnName="MaxComboCount" />
+          <ScalarProperty Name="TotalScore" ColumnName="TotalScore" />
+          <ScalarProperty Name="BestScore0" ColumnName="BestScore0" />
+          <ScalarProperty Name="BestScore1" ColumnName="BestScore1" />
+          <ScalarProperty Name="BestScore2" ColumnName="BestScore2" />
+          <ScalarProperty Name="BestScore3" ColumnName="BestScore3" />
+          <ScalarProperty Name="BESTSCORE4" ColumnName="BESTSCORE4" />
+          <ScalarProperty Name="MaxPang0" ColumnName="MaxPang0" />
+          <ScalarProperty Name="MaxPang1" ColumnName="MaxPang1" />
+          <ScalarProperty Name="MaxPang2" ColumnName="MaxPang2" />
+          <ScalarProperty Name="MaxPang3" ColumnName="MaxPang3" />
+          <ScalarProperty Name="MAXPANG4" ColumnName="MAXPANG4" />
+          <ScalarProperty Name="SumPang" ColumnName="SumPang" />
+          <ScalarProperty Name="LadderHole" ColumnName="LadderHole" />
+          <ScalarProperty Name="GameCountSeason" ColumnName="GameCountSeason" />
+          <ScalarProperty Name="SkinsPang" ColumnName="SkinsPang" />
+          <ScalarProperty Name="SkinsWin" ColumnName="SkinsWin" />
+          <ScalarProperty Name="SkinsLose" ColumnName="SkinsLose" />
+          <ScalarProperty Name="SkinsRunHoles" ColumnName="SkinsRunHoles" />
+          <ScalarProperty Name="SkinsStrikePoint" ColumnName="SkinsStrikePoint" />
+          <ScalarProperty Name="SkinsAllinCount" ColumnName="SkinsAllinCount" />
+          <ScalarProperty Name="EventValue" ColumnName="EventValue" />
+          <ScalarProperty Name="EventFlag" ColumnName="EventFlag" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TD_ROOM_DATA">
+      <EntityTypeMapping TypeName="PangyaModel.TD_ROOM_DATA">
+        <MappingFragment StoreEntitySet="TD_ROOM_DATA">
+          <ScalarProperty Name="IDX" ColumnName="IDX" />
+          <ScalarProperty Name="UID" ColumnName="UID" />
+          <ScalarProperty Name="TYPEID" ColumnName="TYPEID" />
+          <ScalarProperty Name="POS_X" ColumnName="POS_X" />
+          <ScalarProperty Name="POS_Y" ColumnName="POS_Y" />
+          <ScalarProperty Name="POS_Z" ColumnName="POS_Z" />
+          <ScalarProperty Name="POS_R" ColumnName="POS_R" />
+          <ScalarProperty Name="VALID" ColumnName="VALID" />
+          <ScalarProperty Name="GETDATE" ColumnName="GETDATE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="ProcAddItem" FunctionName="PangyaModel.Store.ProcAddItem">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="PangyaModel.ProcAddItem_Result">
+          <ScalarProperty Name="IDX" ColumnName="IDX" />
+          <ScalarProperty Name="iffTypeId" ColumnName="iffTypeId" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="UCC_KEY" ColumnName="UCC_KEY" />
+          <ScalarProperty Name="GROUPS" ColumnName="GROUPS" />
+          <ScalarProperty Name="Flag" ColumnName="Flag" />
+          <ScalarProperty Name="END_DATE" ColumnName="END_DATE" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="ProcAddItemTutorial" FunctionName="PangyaModel.Store.ProcAddItemTutorial" />
+    <FunctionImportMapping FunctionImportName="ProcAddRent" FunctionName="PangyaModel.Store.ProcAddRent">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="PangyaModel.ProcAddRent_Result">
+          <ScalarProperty Name="ITEM_INDEX" ColumnName="ITEM_INDEX" />
+          <ScalarProperty Name="ITEM_TYPEID" ColumnName="ITEM_TYPEID" />
+          <ScalarProperty Name="ITEM_FLAG" ColumnName="ITEM_FLAG" />
+          <ScalarProperty Name="ITEM_DATE_END" ColumnName="ITEM_DATE_END" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="ProcAddUserMessage" FunctionName="PangyaModel.Store.ProcAddUserMessage" />
+    <FunctionImportMapping FunctionImportName="ProcAlterAchievement" FunctionName="PangyaModel.Store.ProcAlterAchievement" />
+    <FunctionImportMapping FunctionImportName="ProcAlterDaily" FunctionName="PangyaModel.Store.ProcAlterDaily">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="PangyaModel.ProcAlterDaily_Result">
+          <ScalarProperty Name="counter" ColumnName="counter" />
+          <ScalarProperty Name="Item_TypeID" ColumnName="Item_TypeID" />
+          <ScalarProperty Name="Item_Quantity" ColumnName="Item_Quantity" />
+          <ScalarProperty Name="Item_TypeID_Next" ColumnName="Item_TypeID_Next" />
+          <ScalarProperty Name="Item_Quantity_Next" ColumnName="Item_Quantity_Next" />
+          <ScalarProperty Name="LoginCount" ColumnName="LoginCount" />
+          <ScalarProperty Name="CODE" ColumnName="CODE" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="ProcCheckUsername" FunctionName="PangyaModel.Store.ProcCheckUsername">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="PangyaModel.ProcCheckUsername_Result">
+          <ScalarProperty Name="UID" ColumnName="UID" />
+          <ScalarProperty Name="Username" ColumnName="Username" />
+          <ScalarProperty Name="Nickname" ColumnName="Nickname" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="ProcCreateAchievement" FunctionName="PangyaModel.Store.ProcCreateAchievement" />
+    <FunctionImportMapping FunctionImportName="ProcDeleteRentItem" FunctionName="PangyaModel.Store.ProcDeleteRentItem" />
+    <FunctionImportMapping FunctionImportName="ProcDelMail" FunctionName="PangyaModel.Store.ProcDelMail" />
+    <FunctionImportMapping FunctionImportName="ProcFixPartsCharacter" FunctionName="PangyaModel.Store.ProcFixPartsCharacter" />
+    <FunctionImportMapping FunctionImportName="ProcGet_UserInfo" FunctionName="PangyaModel.Store.ProcGet_UserInfo">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="PangyaModel.ProcGet_UserInfo_Result">
+          <ScalarProperty Name="UID" ColumnName="UID" />
+          <ScalarProperty Name="Username" ColumnName="Username" />
+          <ScalarProperty Name="Nickname" ColumnName="Nickname" />
+          <ScalarProperty Name="Sex" ColumnName="Sex" />
+          <ScalarProperty Name="GUILDINDEX" ColumnName="GUILDINDEX" />
+          <ScalarProperty Name="GUILD_NAME" ColumnName="GUILD_NAME" />
+          <ScalarProperty Name="GUILD_IMAGE" ColumnName="GUILD_IMAGE" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="ProcGetAchievement" FunctionName="PangyaModel.Store.ProcGetAchievement">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="PangyaModel.ProcGetAchievement_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="TypeID" ColumnName="TypeID" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="ProcGetCaddies" FunctionName="PangyaModel.Store.ProcGetCaddies">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="PangyaModel.ProcGetCaddies_Result">
+          <ScalarProperty Name="CID" ColumnName="CID" />
+          <ScalarProperty Name="TYPEID" ColumnName="TYPEID" />
+          <ScalarProperty Name="EXP" ColumnName="EXP" />
+          <ScalarProperty Name="SKIN_TYPEID" ColumnName="SKIN_TYPEID" />
+          <ScalarProperty Name="TriggerPay" ColumnName="TriggerPay" />
+          <ScalarProperty Name="cLevel" ColumnName="cLevel" />
+          <ScalarProperty Name="SKIN_HOUR_LEFT" ColumnName="SKIN_HOUR_LEFT" />
+          <ScalarProperty Name="DAY_LEFT" ColumnName="DAY_LEFT" />
+          <ScalarProperty Name="END_DATE" ColumnName="END_DATE" />
+          <ScalarProperty Name="RentFlag" ColumnName="RentFlag" />
+          <ScalarProperty Name="SKIN_END_DATE" ColumnName="SKIN_END_DATE" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="ProcGetCard" FunctionName="PangyaModel.Store.ProcGetCard">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="PangyaModel.ProcGetCard_Result">
+          <ScalarProperty Name="CARD_IDX" ColumnName="CARD_IDX" />
+          <ScalarProperty Name="CARD_TYPEID" ColumnName="CARD_TYPEID" />
+          <ScalarProperty Name="QTY" ColumnName="QTY" />
+          <ScalarProperty Name="VALID" ColumnName="VALID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="ProcGetCardEquip" FunctionName="PangyaModel.Store.ProcGetCardEquip">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="PangyaModel.ProcGetCardEquip_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="CID" ColumnName="CID" />
+          <ScalarProperty Name="CHAR_TYPEID" ColumnName="CHAR_TYPEID" />
+          <ScalarProperty Name="CARD_TYPEID" ColumnName="CARD_TYPEID" />
+          <ScalarProperty Name="SLOT" ColumnName="SLOT" />
+          <ScalarProperty Name="FLAG" ColumnName="FLAG" />
+          <ScalarProperty Name="REGDATE" ColumnName="REGDATE" />
+          <ScalarProperty Name="ENDDATE" ColumnName="ENDDATE" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="ProcGetCharacter" FunctionName="PangyaModel.Store.ProcGetCharacter">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="PangyaModel.ProcGetCharacter_Result">
+          <ScalarProperty Name="CID" ColumnName="CID" />
+          <ScalarProperty Name="UID" ColumnName="UID" />
+          <ScalarProperty Name="TYPEID" ColumnName="TYPEID" />
+          <ScalarProperty Name="GIFT_FLAG" ColumnName="GIFT_FLAG" />
+          <ScalarProperty Name="HAIR_COLOR" ColumnName="HAIR_COLOR" />
+          <ScalarProperty Name="POWER" ColumnName="POWER" />
+          <ScalarProperty Name="CONTROL" ColumnName="CONTROL" />
+          <ScalarProperty Name="IMPACT" ColumnName="IMPACT" />
+          <ScalarProperty Name="SPIN" ColumnName="SPIN" />
+          <ScalarProperty Name="CURVE" ColumnName="CURVE" />
+          <ScalarProperty Name="CUTIN" ColumnName="CUTIN" />
+          <ScalarProperty Name="AuxPart" ColumnName="AuxPart" />
+          <ScalarProperty Name="AuxPart2" ColumnName="AuxPart2" />
+          <ScalarProperty Name="PART_TYPEID_1" ColumnName="PART_TYPEID_1" />
+          <ScalarProperty Name="PART_TYPEID_2" ColumnName="PART_TYPEID_2" />
+          <ScalarProperty Name="PART_TYPEID_3" ColumnName="PART_TYPEID_3" />
+          <ScalarProperty Name="PART_TYPEID_4" ColumnName="PART_TYPEID_4" />
+          <ScalarProperty Name="PART_TYPEID_5" ColumnName="PART_TYPEID_5" />
+          <ScalarProperty Name="PART_TYPEID_6" ColumnName="PART_TYPEID_6" />
+          <ScalarProperty Name="PART_TYPEID_7" ColumnName="PART_TYPEID_7" />
+          <ScalarProperty Name="PART_TYPEID_8" ColumnName="PART_TYPEID_8" />
+          <ScalarProperty Name="PART_TYPEID_9" ColumnName="PART_TYPEID_9" />
+          <ScalarProperty Name="PART_TYPEID_10" ColumnName="PART_TYPEID_10" />
+          <ScalarProperty Name="PART_TYPEID_11" ColumnName="PART_TYPEID_11" />
+          <ScalarProperty Name="PART_TYPEID_12" ColumnName="PART_TYPEID_12" />
+          <ScalarProperty Name="PART_TYPEID_13" ColumnName="PART_TYPEID_13" />
+          <ScalarProperty Name="PART_TYPEID_14" ColumnName="PART_TYPEID_14" />
+          <ScalarProperty Name="PART_TYPEID_15" ColumnName="PART_TYPEID_15" />
+          <ScalarProperty Name="PART_TYPEID_16" ColumnName="PART_TYPEID_16" />
+          <ScalarProperty Name="PART_TYPEID_17" ColumnName="PART_TYPEID_17" />
+          <ScalarProperty Name="PART_TYPEID_18" ColumnName="PART_TYPEID_18" />
+          <ScalarProperty Name="PART_TYPEID_19" ColumnName="PART_TYPEID_19" />
+          <ScalarProperty Name="PART_TYPEID_20" ColumnName="PART_TYPEID_20" />
+          <ScalarProperty Name="PART_TYPEID_21" ColumnName="PART_TYPEID_21" />
+          <ScalarProperty Name="PART_TYPEID_22" ColumnName="PART_TYPEID_22" />
+          <ScalarProperty Name="PART_TYPEID_23" ColumnName="PART_TYPEID_23" />
+          <ScalarProperty Name="PART_TYPEID_24" ColumnName="PART_TYPEID_24" />
+          <ScalarProperty Name="PART_IDX_1" ColumnName="PART_IDX_1" />
+          <ScalarProperty Name="PART_IDX_2" ColumnName="PART_IDX_2" />
+          <ScalarProperty Name="PART_IDX_3" ColumnName="PART_IDX_3" />
+          <ScalarProperty Name="PART_IDX_4" ColumnName="PART_IDX_4" />
+          <ScalarProperty Name="PART_IDX_5" ColumnName="PART_IDX_5" />
+          <ScalarProperty Name="PART_IDX_6" ColumnName="PART_IDX_6" />
+          <ScalarProperty Name="PART_IDX_7" ColumnName="PART_IDX_7" />
+          <ScalarProperty Name="PART_IDX_8" ColumnName="PART_IDX_8" />
+          <ScalarProperty Name="PART_IDX_9" ColumnName="PART_IDX_9" />
+          <ScalarProperty Name="PART_IDX_10" ColumnName="PART_IDX_10" />
+          <ScalarProperty Name="PART_IDX_11" ColumnName="PART_IDX_11" />
+          <ScalarProperty Name="PART_IDX_12" ColumnName="PART_IDX_12" />
+          <ScalarProperty Name="PART_IDX_13" ColumnName="PART_IDX_13" />
+          <ScalarProperty Name="PART_IDX_14" ColumnName="PART_IDX_14" />
+          <ScalarProperty Name="PART_IDX_15" ColumnName="PART_IDX_15" />
+          <ScalarProperty Name="PART_IDX_16" ColumnName="PART_IDX_16" />
+          <ScalarProperty Name="PART_IDX_17" ColumnName="PART_IDX_17" />
+          <ScalarProperty Name="PART_IDX_18" ColumnName="PART_IDX_18" />
+          <ScalarProperty Name="PART_IDX_19" ColumnName="PART_IDX_19" />
+          <ScalarProperty Name="PART_IDX_20" ColumnName="PART_IDX_20" />
+          <ScalarProperty Name="PART_IDX_21" ColumnName="PART_IDX_21" />
+          <ScalarProperty Name="PART_IDX_22" ColumnName="PART_IDX_22" />
+          <ScalarProperty Name="PART_IDX_23" ColumnName="PART_IDX_23" />
+          <ScalarProperty Name="PART_IDX_24" ColumnName="PART_IDX_24" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="ProcGetGameServer" FunctionName="PangyaModel.Store.ProcGetGameServer">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="PangyaModel.ProcGetGameServer_Result">
+          <ScalarProperty Name="ServerID" ColumnName="ServerID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="IP" ColumnName="IP" />
+          <ScalarProperty Name="Port" ColumnName="Port" />
+          <ScalarProperty Name="ImgNo" ColumnName="ImgNo" />
+          <ScalarProperty Name="ImgEvent" ColumnName="ImgEvent" />
+          <ScalarProperty Name="Property" ColumnName="Property" />
+          <ScalarProperty Name="MaxUser" ColumnName="MaxUser" />
+          <ScalarProperty Name="UsersOnline" ColumnName="UsersOnline" />
+          <ScalarProperty Name="BlockFunc" ColumnName="BlockFunc" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="ProcGetItemWarehouse" FunctionName="PangyaModel.Store.ProcGetItemWarehouse">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="PangyaModel.ProcGetItemWarehouse_Result">
+          <ScalarProperty Name="IDX" ColumnName="IDX" />
+          <ScalarProperty Name="TYPEID" ColumnName="TYPEID" />
+          <ScalarProperty Name="C0" ColumnName="C0" />
+          <ScalarProperty Name="C1" ColumnName="C1" />
+          <ScalarProperty Name="C2" ColumnName="C2" />
+          <ScalarProperty Name="C3" ColumnName="C3" />
+          <ScalarProperty Name="C4" ColumnName="C4" />
+          <ScalarProperty Name="Flag" ColumnName="Flag" />
+          <ScalarProperty Name="HOURLEFT" ColumnName="HOURLEFT" />
+          <ScalarProperty Name="RegDate" ColumnName="RegDate" />
+          <ScalarProperty Name="DateEnd" ColumnName="DateEnd" />
+          <ScalarProperty Name="UCC_UNIQE" ColumnName="UCC_UNIQE" />
+          <ScalarProperty Name="UCC_STATUS" ColumnName="UCC_STATUS" />
+          <ScalarProperty Name="UCC_COPY_COUNT" ColumnName="UCC_COPY_COUNT" />
+          <ScalarProperty Name="UCC_NAME" ColumnName="UCC_NAME" />
+          <ScalarProperty Name="UCC_DRAWER" ColumnName="UCC_DRAWER" />
+          <ScalarProperty Name="UCC_DRAWER_UID" ColumnName="UCC_DRAWER_UID" />
+          <ScalarProperty Name="CLUB_POINT" ColumnName="CLUB_POINT" />
+          <ScalarProperty Name="CLUB_WORK_COUNT" ColumnName="CLUB_WORK_COUNT" />
+          <ScalarProperty Name="C0_SLOT" ColumnName="C0_SLOT" />
+          <ScalarProperty Name="C1_SLOT" ColumnName="C1_SLOT" />
+          <ScalarProperty Name="C2_SLOT" ColumnName="C2_SLOT" />
+          <ScalarProperty Name="C3_SLOT" ColumnName="C3_SLOT" />
+          <ScalarProperty Name="C4_SLOT" ColumnName="C4_SLOT" />
+          <ScalarProperty Name="CLUB_SLOT_CANCEL" ColumnName="CLUB_SLOT_CANCEL" />
+          <ScalarProperty Name="CLUB_POINT_TOTAL_LOG" ColumnName="CLUB_POINT_TOTAL_LOG" />
+          <ScalarProperty Name="CLUB_UPGRADE_PANG_LOG" ColumnName="CLUB_UPGRADE_PANG_LOG" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="ProcGetLockerItem" FunctionName="PangyaModel.Store.ProcGetLockerItem" />
+    <FunctionImportMapping FunctionImportName="ProcGetMacro" FunctionName="PangyaModel.Store.ProcGetMacro">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="PangyaModel.ProcGetMacro_Result">
+          <ScalarProperty Name="Macro1" ColumnName="Macro1" />
+          <ScalarProperty Name="Macro2" ColumnName="Macro2" />
+          <ScalarProperty Name="Macro3" ColumnName="Macro3" />
+          <ScalarProperty Name="Macro4" ColumnName="Macro4" />
+          <ScalarProperty Name="Macro5" ColumnName="Macro5" />
+          <ScalarProperty Name="Macro6" ColumnName="Macro6" />
+          <ScalarProperty Name="Macro7" ColumnName="Macro7" />
+          <ScalarProperty Name="Macro8" ColumnName="Macro8" />
+          <ScalarProperty Name="Macro9" ColumnName="Macro9" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="ProcGetMail" FunctionName="PangyaModel.Store.ProcGetMail">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="PangyaModel.ProcGetMail_Result">
+          <ScalarProperty Name="PAGE_TOTAL" ColumnName="PAGE_TOTAL" />
+          <ScalarProperty Name="Mail_Index" ColumnName="Mail_Index" />
+          <ScalarProperty Name="Sender" ColumnName="Sender" />
+          <ScalarProperty Name="IsRead" ColumnName="IsRead" />
+          <ScalarProperty Name="TYPEID" ColumnName="TYPEID" />
+          <ScalarProperty Name="QTY" ColumnName="QTY" />
+          <ScalarProperty Name="IsTimer" ColumnName="IsTimer" />
+          <ScalarProperty Name="DAY" ColumnName="DAY" />
+          <ScalarProperty Name="UCC_UNIQUE" ColumnName="UCC_UNIQUE" />
+          <ScalarProperty Name="SETTYPEID" ColumnName="SETTYPEID" />
+          <ScalarProperty Name="Mail_Item_Count" ColumnName="Mail_Item_Count" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="ProcGetMapStatistics" FunctionName="PangyaModel.Store.ProcGetMapStatistics">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="PangyaModel.ProcGetMapStatistics_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="UID" ColumnName="UID" />
+          <ScalarProperty Name="Map" ColumnName="Map" />
+          <ScalarProperty Name="Drive" ColumnName="Drive" />
+          <ScalarProperty Name="Putt" ColumnName="Putt" />
+          <ScalarProperty Name="Hole" ColumnName="Hole" />
+          <ScalarProperty Name="Fairway" ColumnName="Fairway" />
+          <ScalarProperty Name="Holein" ColumnName="Holein" />
+          <ScalarProperty Name="PuttIn" ColumnName="PuttIn" />
+          <ScalarProperty Name="TotalScore" ColumnName="TotalScore" />
+          <ScalarProperty Name="BestScore" ColumnName="BestScore" />
+          <ScalarProperty Name="MaxPang" ColumnName="MaxPang" />
+          <ScalarProperty Name="CharTypeId" ColumnName="CharTypeId" />
+          <ScalarProperty Name="EventScore" ColumnName="EventScore" />
+          <ScalarProperty Name="Assist" ColumnName="Assist" />
+          <ScalarProperty Name="REGDATE" ColumnName="REGDATE" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="ProcGetMascot" FunctionName="PangyaModel.Store.ProcGetMascot">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="PangyaModel.ProcGetMascot_Result">
+          <ScalarProperty Name="MID" ColumnName="MID" />
+          <ScalarProperty Name="MASCOT_TYPEID" ColumnName="MASCOT_TYPEID" />
+          <ScalarProperty Name="MESSAGE" ColumnName="MESSAGE" />
+          <ScalarProperty Name="DateEnd" ColumnName="DateEnd" />
+          <ScalarProperty Name="END_DATE_INT" ColumnName="END_DATE_INT" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="ProcGetMatchHistory" FunctionName="PangyaModel.Store.ProcGetMatchHistory">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="PangyaModel.ProcGetMatchHistory_Result">
+          <ScalarProperty Name="UID" ColumnName="UID" />
+          <ScalarProperty Name="SEX" ColumnName="SEX" />
+          <ScalarProperty Name="NICKNAME" ColumnName="NICKNAME" />
+          <ScalarProperty Name="USERID" ColumnName="USERID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="ProcGetMessengerServer" FunctionName="PangyaModel.Store.ProcGetMessengerServer">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="PangyaModel.ProcGetMessengerServer_Result">
+          <ScalarProperty Name="ServerID" ColumnName="ServerID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="IP" ColumnName="IP" />
+          <ScalarProperty Name="Port" ColumnName="Port" />
+          <ScalarProperty Name="ImgNo" ColumnName="ImgNo" />
+          <ScalarProperty Name="ImgEvent" ColumnName="ImgEvent" />
+          <ScalarProperty Name="Property" ColumnName="Property" />
+          <ScalarProperty Name="MaxUser" ColumnName="MaxUser" />
+          <ScalarProperty Name="UsersOnline" ColumnName="UsersOnline" />
+          <ScalarProperty Name="BlockFunc" ColumnName="BlockFunc" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="ProcGetRoomData" FunctionName="PangyaModel.Store.ProcGetRoomData">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="PangyaModel.ProcGetRoomData_Result">
+          <ScalarProperty Name="IDX" ColumnName="IDX" />
+          <ScalarProperty Name="TYPEID" ColumnName="TYPEID" />
+          <ScalarProperty Name="POS_X" ColumnName="POS_X" />
+          <ScalarProperty Name="POS_Y" ColumnName="POS_Y" />
+          <ScalarProperty Name="POS_Z" ColumnName="POS_Z" />
+          <ScalarProperty Name="POS_R" ColumnName="POS_R" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="ProcGetStatistic" FunctionName="PangyaModel.Store.ProcGetStatistic">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="PangyaModel.ProcGetStatistic_Result">
+          <ScalarProperty Name="Drive" ColumnName="Drive" />
+          <ScalarProperty Name="Putt" ColumnName="Putt" />
+          <ScalarProperty Name="Playtime" ColumnName="Playtime" />
+          <ScalarProperty Name="Longest" ColumnName="Longest" />
+          <ScalarProperty Name="Distance" ColumnName="Distance" />
+          <ScalarProperty Name="Pangya" ColumnName="Pangya" />
+          <ScalarProperty Name="Hole" ColumnName="Hole" />
+          <ScalarProperty Name="TeamHole" ColumnName="TeamHole" />
+          <ScalarProperty Name="Holeinone" ColumnName="Holeinone" />
+          <ScalarProperty Name="OB" ColumnName="OB" />
+          <ScalarProperty Name="Bunker" ColumnName="Bunker" />
+          <ScalarProperty Name="Fairway" ColumnName="Fairway" />
+          <ScalarProperty Name="Albatross" ColumnName="Albatross" />
+          <ScalarProperty Name="Holein" ColumnName="Holein" />
+          <ScalarProperty Name="Pang" ColumnName="Pang" />
+          <ScalarProperty Name="Timeout" ColumnName="Timeout" />
+          <ScalarProperty Name="Game_Level" ColumnName="Game_Level" />
+          <ScalarProperty Name="Game_Point" ColumnName="Game_Point" />
+          <ScalarProperty Name="PuttIn" ColumnName="PuttIn" />
+          <ScalarProperty Name="LongestPuttin" ColumnName="LongestPuttin" />
+          <ScalarProperty Name="LongestChipIn" ColumnName="LongestChipIn" />
+          <ScalarProperty Name="NoMannerGameCount" ColumnName="NoMannerGameCount" />
+          <ScalarProperty Name="ShotTime" ColumnName="ShotTime" />
+          <ScalarProperty Name="GameCount" ColumnName="GameCount" />
+          <ScalarProperty Name="DisconnectGames" ColumnName="DisconnectGames" />
+          <ScalarProperty Name="wTeamWin" ColumnName="wTeamWin" />
+          <ScalarProperty Name="wTeamGames" ColumnName="wTeamGames" />
+          <ScalarProperty Name="LadderPoint" ColumnName="LadderPoint" />
+          <ScalarProperty Name="LadderWin" ColumnName="LadderWin" />
+          <ScalarProperty Name="LadderLose" ColumnName="LadderLose" />
+          <ScalarProperty Name="LadderDraw" ColumnName="LadderDraw" />
+          <ScalarProperty Name="ComboCount" ColumnName="ComboCount" />
+          <ScalarProperty Name="MaxComboCount" ColumnName="MaxComboCount" />
+          <ScalarProperty Name="TotalScore" ColumnName="TotalScore" />
+          <ScalarProperty Name="BestScore0" ColumnName="BestScore0" />
+          <ScalarProperty Name="BestScore1" ColumnName="BestScore1" />
+          <ScalarProperty Name="BestScore2" ColumnName="BestScore2" />
+          <ScalarProperty Name="BestScore3" ColumnName="BestScore3" />
+          <ScalarProperty Name="BESTSCORE4" ColumnName="BESTSCORE4" />
+          <ScalarProperty Name="MaxPang0" ColumnName="MaxPang0" />
+          <ScalarProperty Name="MaxPang1" ColumnName="MaxPang1" />
+          <ScalarProperty Name="MaxPang2" ColumnName="MaxPang2" />
+          <ScalarProperty Name="MaxPang3" ColumnName="MaxPang3" />
+          <ScalarProperty Name="MaxPang4" ColumnName="MaxPang4" />
+          <ScalarProperty Name="SumPang" ColumnName="SumPang" />
+          <ScalarProperty Name="LadderHole" ColumnName="LadderHole" />
+          <ScalarProperty Name="GameCountSeason" ColumnName="GameCountSeason" />
+          <ScalarProperty Name="SkinsPang" ColumnName="SkinsPang" />
+          <ScalarProperty Name="SkinsWin" ColumnName="SkinsWin" />
+          <ScalarProperty Name="SkinsLose" ColumnName="SkinsLose" />
+          <ScalarProperty Name="SkinsRunHoles" ColumnName="SkinsRunHoles" />
+          <ScalarProperty Name="SkinsStrikePoint" ColumnName="SkinsStrikePoint" />
+          <ScalarProperty Name="SkinsAllinCount" ColumnName="SkinsAllinCount" />
+          <ScalarProperty Name="EventValue" ColumnName="EventValue" />
+          <ScalarProperty Name="EventFlag" ColumnName="EventFlag" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="ProcGetToolbar" FunctionName="PangyaModel.Store.ProcGetToolbar">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="PangyaModel.ProcGetToolbar_Result">
+          <ScalarProperty Name="CADDIE" ColumnName="CADDIE" />
+          <ScalarProperty Name="CHARACTER_ID" ColumnName="CHARACTER_ID" />
+          <ScalarProperty Name="CLUB_ID" ColumnName="CLUB_ID" />
+          <ScalarProperty Name="BALL_ID" ColumnName="BALL_ID" />
+          <ScalarProperty Name="MASCOT_ID" ColumnName="MASCOT_ID" />
+          <ScalarProperty Name="ITEM_SLOT_1" ColumnName="ITEM_SLOT_1" />
+          <ScalarProperty Name="ITEM_SLOT_2" ColumnName="ITEM_SLOT_2" />
+          <ScalarProperty Name="ITEM_SLOT_3" ColumnName="ITEM_SLOT_3" />
+          <ScalarProperty Name="ITEM_SLOT_4" ColumnName="ITEM_SLOT_4" />
+          <ScalarProperty Name="ITEM_SLOT_5" ColumnName="ITEM_SLOT_5" />
+          <ScalarProperty Name="ITEM_SLOT_6" ColumnName="ITEM_SLOT_6" />
+          <ScalarProperty Name="ITEM_SLOT_7" ColumnName="ITEM_SLOT_7" />
+          <ScalarProperty Name="ITEM_SLOT_8" ColumnName="ITEM_SLOT_8" />
+          <ScalarProperty Name="ITEM_SLOT_9" ColumnName="ITEM_SLOT_9" />
+          <ScalarProperty Name="ITEM_SLOT_10" ColumnName="ITEM_SLOT_10" />
+          <ScalarProperty Name="Skin_1" ColumnName="Skin_1" />
+          <ScalarProperty Name="Skin_2" ColumnName="Skin_2" />
+          <ScalarProperty Name="Skin_3" ColumnName="Skin_3" />
+          <ScalarProperty Name="Skin_4" ColumnName="Skin_4" />
+          <ScalarProperty Name="Skin_5" ColumnName="Skin_5" />
+          <ScalarProperty Name="Skin_6" ColumnName="Skin_6" />
+          <ScalarProperty Name="POSTER_1" ColumnName="POSTER_1" />
+          <ScalarProperty Name="POSTER_2" ColumnName="POSTER_2" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="ProcGetTutorial" FunctionName="PangyaModel.Store.ProcGetTutorial">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="PangyaModel.ProcGetTutorial_Result">
+          <ScalarProperty Name="Rookie" ColumnName="Rookie" />
+          <ScalarProperty Name="Beginner" ColumnName="Beginner" />
+          <ScalarProperty Name="Advancer" ColumnName="Advancer" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="ProcGetUCCData" FunctionName="PangyaModel.Store.ProcGetUCCData">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="PangyaModel.ProcGetUCCData_Result">
+          <ScalarProperty Name="TYPEID" ColumnName="TYPEID" />
+          <ScalarProperty Name="item_id" ColumnName="item_id" />
+          <ScalarProperty Name="UCC_UNIQE" ColumnName="UCC_UNIQE" />
+          <ScalarProperty Name="UCC_NAME" ColumnName="UCC_NAME" />
+          <ScalarProperty Name="UCC_STATUS" ColumnName="UCC_STATUS" />
+          <ScalarProperty Name="UCC_COPY_COUNT" ColumnName="UCC_COPY_COUNT" />
+          <ScalarProperty Name="Nickname" ColumnName="Nickname" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="ProcGetUserMessage" FunctionName="PangyaModel.Store.ProcGetUserMessage">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="PangyaModel.ProcGetUserMessage_Result">
+          <ScalarProperty Name="ID_MSG" ColumnName="ID_MSG" />
+          <ScalarProperty Name="uid" ColumnName="uid" />
+          <ScalarProperty Name="Nickname" ColumnName="Nickname" />
+          <ScalarProperty Name="Message" ColumnName="Message" />
+          <ScalarProperty Name="reg_date" ColumnName="reg_date" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="ProcGuildGetData" FunctionName="PangyaModel.Store.ProcGuildGetData" />
+    <FunctionImportMapping FunctionImportName="ProcGuildGetList" FunctionName="PangyaModel.Store.ProcGuildGetList">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="PangyaModel.ProcGuildGetList_Result">
+          <ScalarProperty Name="GUILD_TOTAL" ColumnName="GUILD_TOTAL" />
+          <ScalarProperty Name="GUILD_INDEX" ColumnName="GUILD_INDEX" />
+          <ScalarProperty Name="GUILD_NAME" ColumnName="GUILD_NAME" />
+          <ScalarProperty Name="GUILD_INTRODUCING" ColumnName="GUILD_INTRODUCING" />
+          <ScalarProperty Name="GUILD_LEADER_UID" ColumnName="GUILD_LEADER_UID" />
+          <ScalarProperty Name="GUILD_POINT" ColumnName="GUILD_POINT" />
+          <ScalarProperty Name="GUILD_PANG" ColumnName="GUILD_PANG" />
+          <ScalarProperty Name="GUILD_CREATE_DATE" ColumnName="GUILD_CREATE_DATE" />
+          <ScalarProperty Name="GUILD_LEADER_NICKNAME" ColumnName="GUILD_LEADER_NICKNAME" />
+          <ScalarProperty Name="GUILD_TOTAL_MEMBER" ColumnName="GUILD_TOTAL_MEMBER" />
+          <ScalarProperty Name="GUILD_IMAGE" ColumnName="GUILD_IMAGE" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="ProcGuildGetLog" FunctionName="PangyaModel.Store.ProcGuildGetLog">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="PangyaModel.ProcGuildGetLog_Result">
+          <ScalarProperty Name="UID" ColumnName="UID" />
+          <ScalarProperty Name="GUILD_ID" ColumnName="GUILD_ID" />
+          <ScalarProperty Name="GUILD_NAME" ColumnName="GUILD_NAME" />
+          <ScalarProperty Name="GUILD_ACTION" ColumnName="GUILD_ACTION" />
+          <ScalarProperty Name="GUILD_ACTION_DATE" ColumnName="GUILD_ACTION_DATE" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="ProcGuildGetPlayerData" FunctionName="PangyaModel.Store.ProcGuildGetPlayerData">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="PangyaModel.ProcGuildGetPlayerData_Result">
+          <ScalarProperty Name="GUILD_INDEX" ColumnName="GUILD_INDEX" />
+          <ScalarProperty Name="GUILD_NAME" ColumnName="GUILD_NAME" />
+          <ScalarProperty Name="GUILD_INTRODUCING" ColumnName="GUILD_INTRODUCING" />
+          <ScalarProperty Name="GUILD_NOTICE" ColumnName="GUILD_NOTICE" />
+          <ScalarProperty Name="GUILD_LEADER_UID" ColumnName="GUILD_LEADER_UID" />
+          <ScalarProperty Name="GUILD_CREATE_DATE" ColumnName="GUILD_CREATE_DATE" />
+          <ScalarProperty Name="GUILD_TOTAL_MEMBER" ColumnName="GUILD_TOTAL_MEMBER" />
+          <ScalarProperty Name="GUILD_LEADER_NICKNAME" ColumnName="GUILD_LEADER_NICKNAME" />
+          <ScalarProperty Name="GUILD_POSITION" ColumnName="GUILD_POSITION" />
+          <ScalarProperty Name="GUILD_IMAGE" ColumnName="GUILD_IMAGE" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="ProcGuildNameAvailable" FunctionName="PangyaModel.Store.ProcGuildNameAvailable" />
+    <FunctionImportMapping FunctionImportName="ProcInsertDailyQuest" FunctionName="PangyaModel.Store.ProcInsertDailyQuest" />
+    <FunctionImportMapping FunctionImportName="ProcInsertMail" FunctionName="PangyaModel.Store.ProcInsertMail" />
+    <FunctionImportMapping FunctionImportName="ProcLogMemorial" FunctionName="PangyaModel.Store.ProcLogMemorial" />
+    <FunctionImportMapping FunctionImportName="ProcMailInsert" FunctionName="PangyaModel.Store.ProcMailInsert" />
+    <FunctionImportMapping FunctionImportName="ProcMailItem" FunctionName="PangyaModel.Store.ProcMailItem">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="PangyaModel.ProcMailItem_Result">
+          <ScalarProperty Name="Mail_Index" ColumnName="Mail_Index" />
+          <ScalarProperty Name="TYPEID" ColumnName="TYPEID" />
+          <ScalarProperty Name="QTY" ColumnName="QTY" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="ProcReadMail" FunctionName="PangyaModel.Store.ProcReadMail">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="PangyaModel.ProcReadMail_Result">
+          <ScalarProperty Name="Mail_Index" ColumnName="Mail_Index" />
+          <ScalarProperty Name="Sender" ColumnName="Sender" />
+          <ScalarProperty Name="RegDate" ColumnName="RegDate" />
+          <ScalarProperty Name="Msg" ColumnName="Msg" />
+          <ScalarProperty Name="TYPEID" ColumnName="TYPEID" />
+          <ScalarProperty Name="QTY" ColumnName="QTY" />
+          <ScalarProperty Name="IsTime" ColumnName="IsTime" />
+          <ScalarProperty Name="DAY" ColumnName="DAY" />
+          <ScalarProperty Name="UCC_UNIQUE" ColumnName="UCC_UNIQUE" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="ProcSaveCaddies" FunctionName="PangyaModel.Store.ProcSaveCaddies" />
+    <FunctionImportMapping FunctionImportName="ProcSaveCard" FunctionName="PangyaModel.Store.ProcSaveCard" />
+    <FunctionImportMapping FunctionImportName="ProcSaveCardEquip" FunctionName="PangyaModel.Store.ProcSaveCardEquip" />
+    <FunctionImportMapping FunctionImportName="ProcSaveCharacter" FunctionName="PangyaModel.Store.ProcSaveCharacter" />
+    <FunctionImportMapping FunctionImportName="ProcSaveExceptionLog" FunctionName="PangyaModel.Store.ProcSaveExceptionLog" />
+    <FunctionImportMapping FunctionImportName="ProcSaveItem" FunctionName="PangyaModel.Store.ProcSaveItem" />
+    <FunctionImportMapping FunctionImportName="ProcSaveMacro" FunctionName="PangyaModel.Store.ProcSaveMacro" />
+    <FunctionImportMapping FunctionImportName="ProcSavePersonalLog" FunctionName="PangyaModel.Store.ProcSavePersonalLog" />
+    <FunctionImportMapping FunctionImportName="ProcSaveToolbar" FunctionName="PangyaModel.Store.ProcSaveToolbar" />
+    <FunctionImportMapping FunctionImportName="ProcSaveUCC" FunctionName="PangyaModel.Store.ProcSaveUCC" />
+    <FunctionImportMapping FunctionImportName="ProcSaveUCCCopy" FunctionName="PangyaModel.Store.ProcSaveUCCCopy">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="PangyaModel.ProcSaveUCCCopy_Result">
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="ITEM_ID" ColumnName="ITEM_ID" />
+          <ScalarProperty Name="TYPEID" ColumnName="TYPEID" />
+          <ScalarProperty Name="UCC_UNIQE" ColumnName="UCC_UNIQE" />
+          <ScalarProperty Name="UCC_COPY_COUNT" ColumnName="UCC_COPY_COUNT" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="ProcSetLockerPwd" FunctionName="PangyaModel.Store.ProcSetLockerPwd" />
+    <FunctionImportMapping FunctionImportName="ProcTutorialEvent" FunctionName="PangyaModel.Store.ProcTutorialEvent" />
+    <FunctionImportMapping FunctionImportName="ProcTutorialSet" FunctionName="PangyaModel.Store.ProcTutorialSet" />
+    <FunctionImportMapping FunctionImportName="ProcUpdateAuth" FunctionName="PangyaModel.Store.ProcUpdateAuth" />
+    <FunctionImportMapping FunctionImportName="ProcUpdateMail" FunctionName="PangyaModel.Store.ProcUpdateMail" />
+    <FunctionImportMapping FunctionImportName="ProcUpdateMapStatistics" FunctionName="PangyaModel.Store.ProcUpdateMapStatistics" />
+    <FunctionImportMapping FunctionImportName="ProcUpdateNickname" FunctionName="PangyaModel.Store.ProcUpdateNickname" />
+    <FunctionImportMapping FunctionImportName="USP_ADD_CARD_EQUIP" FunctionName="PangyaModel.Store.USP_ADD_CARD_EQUIP">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="PangyaModel.USP_ADD_CARD_EQUIP_Result">
+          <ScalarProperty Name="CODE" ColumnName="CODE" />
+          <ScalarProperty Name="OUT_INDEX" ColumnName="OUT_INDEX" />
+          <ScalarProperty Name="CID" ColumnName="CID" />
+          <ScalarProperty Name="CHARTYPEID" ColumnName="CHARTYPEID" />
+          <ScalarProperty Name="CARDTYPEID" ColumnName="CARDTYPEID" />
+          <ScalarProperty Name="SLOT" ColumnName="SLOT" />
+          <ScalarProperty Name="REGDATE" ColumnName="REGDATE" />
+          <ScalarProperty Name="ENDDATE" ColumnName="ENDDATE" />
+          <ScalarProperty Name="FLAG" ColumnName="FLAG" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="USP_DAILYQUEST_ACCEPT" FunctionName="PangyaModel.Store.USP_DAILYQUEST_ACCEPT">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="PangyaModel.USP_DAILYQUEST_ACCEPT_Result">
+          <ScalarProperty Name="TypeID" ColumnName="TypeID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="USP_DAILYQUEST_LOAD" FunctionName="PangyaModel.Store.USP_DAILYQUEST_LOAD">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="PangyaModel.USP_DAILYQUEST_LOAD_Result">
+          <ScalarProperty Name="TypeID" ColumnName="TypeID" />
+          <ScalarProperty Name="QuestIndex" ColumnName="QuestIndex" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="USP_FIRST_CREATION" FunctionName="PangyaModel.Store.USP_FIRST_CREATION" />
+    <FunctionImportMapping FunctionImportName="USP_GAME_LOGIN" FunctionName="PangyaModel.Store.USP_GAME_LOGIN">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="PangyaModel.USP_GAME_LOGIN_Result">
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Username" ColumnName="Username" />
+          <ScalarProperty Name="Nickname" ColumnName="Nickname" />
+          <ScalarProperty Name="Sex" ColumnName="Sex" />
+          <ScalarProperty Name="Capabilities" ColumnName="Capabilities" />
+          <ScalarProperty Name="LockerPwd" ColumnName="LockerPwd" />
+          <ScalarProperty Name="Game_Level" ColumnName="Game_Level" />
+          <ScalarProperty Name="Game_Point" ColumnName="Game_Point" />
+          <ScalarProperty Name="Cookie" ColumnName="Cookie" />
+          <ScalarProperty Name="PangLockerAmt" ColumnName="PangLockerAmt" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="USP_GAME_LOGOUT" FunctionName="PangyaModel.Store.USP_GAME_LOGOUT" />
+    <FunctionImportMapping FunctionImportName="USP_GET_ACHIEVEMENT" FunctionName="PangyaModel.Store.USP_GET_ACHIEVEMENT">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="PangyaModel.USP_GET_ACHIEVEMENT_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="TypeID" ColumnName="TypeID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="USP_GET_COUNTER" FunctionName="PangyaModel.Store.USP_GET_COUNTER">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="PangyaModel.USP_GET_COUNTER_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="TypeID" ColumnName="TypeID" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="USP_GUILD_ACTION" FunctionName="PangyaModel.Store.USP_GUILD_ACTION" />
+    <FunctionImportMapping FunctionImportName="USP_GUILD_CANCELJOIN" FunctionName="PangyaModel.Store.USP_GUILD_CANCELJOIN" />
+    <FunctionImportMapping FunctionImportName="USP_GUILD_CREATE" FunctionName="PangyaModel.Store.USP_GUILD_CREATE" />
+    <FunctionImportMapping FunctionImportName="USP_GUILD_EMBLEM" FunctionName="PangyaModel.Store.USP_GUILD_EMBLEM">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="PangyaModel.USP_GUILD_EMBLEM_Result">
+          <ScalarProperty Name="CODE" ColumnName="CODE" />
+          <ScalarProperty Name="EMBLEM_IDX" ColumnName="EMBLEM_IDX" />
+          <ScalarProperty Name="GUILD_MARK_IMG" ColumnName="GUILD_MARK_IMG" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="USP_GUILD_JOIN" FunctionName="PangyaModel.Store.USP_GUILD_JOIN" />
+    <FunctionImportMapping FunctionImportName="USP_INVEN_POP" FunctionName="PangyaModel.Store.USP_INVEN_POP">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="PangyaModel.USP_INVEN_POP_Result">
+          <ScalarProperty Name="ERROR" ColumnName="ERROR" />
+          <ScalarProperty Name="ITEM_ID" ColumnName="ITEM_ID" />
+          <ScalarProperty Name="TYPEID" ColumnName="TYPEID" />
+          <ScalarProperty Name="C0" ColumnName="C0" />
+          <ScalarProperty Name="C1" ColumnName="C1" />
+          <ScalarProperty Name="C2" ColumnName="C2" />
+          <ScalarProperty Name="C3" ColumnName="C3" />
+          <ScalarProperty Name="C4" ColumnName="C4" />
+          <ScalarProperty Name="DateEnd" ColumnName="DateEnd" />
+          <ScalarProperty Name="FLAG" ColumnName="FLAG" />
+          <ScalarProperty Name="UCC_UNIQE" ColumnName="UCC_UNIQE" />
+          <ScalarProperty Name="UCC_STATUS" ColumnName="UCC_STATUS" />
+          <ScalarProperty Name="UCC_NAME" ColumnName="UCC_NAME" />
+          <ScalarProperty Name="UCC_DRAWER_UID" ColumnName="UCC_DRAWER_UID" />
+          <ScalarProperty Name="UCC_DRAWER_NICKNAME" ColumnName="UCC_DRAWER_NICKNAME" />
+          <ScalarProperty Name="UCC_COPY_COUNT" ColumnName="UCC_COPY_COUNT" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="USP_INVEN_PUSH" FunctionName="PangyaModel.Store.USP_INVEN_PUSH" />
+    <FunctionImportMapping FunctionImportName="USP_LOGIN_SERVER" FunctionName="PangyaModel.Store.USP_LOGIN_SERVER">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="PangyaModel.USP_LOGIN_SERVER_Result">
+          <ScalarProperty Name="CODE" ColumnName="CODE" />
+          <ScalarProperty Name="UID" ColumnName="UID" />
+          <ScalarProperty Name="Nickname" ColumnName="Nickname" />
+          <ScalarProperty Name="FirstSet" ColumnName="FirstSet" />
+          <ScalarProperty Name="IDState" ColumnName="IDState" />
+          <ScalarProperty Name="Logon" ColumnName="Logon" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="USP_LOGIN_SERVER_US" FunctionName="PangyaModel.Store.USP_LOGIN_SERVER_US">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="PangyaModel.USP_LOGIN_SERVER_US_Result">
+          <ScalarProperty Name="CODE" ColumnName="CODE" />
+          <ScalarProperty Name="UID" ColumnName="UID" />
+          <ScalarProperty Name="Nickname" ColumnName="Nickname" />
+          <ScalarProperty Name="FirstSet" ColumnName="FirstSet" />
+          <ScalarProperty Name="IDState" ColumnName="IDState" />
+          <ScalarProperty Name="Logon" ColumnName="Logon" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="USP_MAIL_UPDATE" FunctionName="PangyaModel.Store.USP_MAIL_UPDATE" />
+    <FunctionImportMapping FunctionImportName="USP_MESSENGER_1PLAYER_GUILD" FunctionName="PangyaModel.Store.USP_MESSENGER_1PLAYER_GUILD">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="PangyaModel.USP_MESSENGER_1PLAYER_GUILD_Result">
+          <ScalarProperty Name="GUILD_MEMBER_UID" ColumnName="GUILD_MEMBER_UID" />
+          <ScalarProperty Name="GUILD_ID" ColumnName="GUILD_ID" />
+          <ScalarProperty Name="Username" ColumnName="Username" />
+          <ScalarProperty Name="Nickname" ColumnName="Nickname" />
+          <ScalarProperty Name="Game_Level" ColumnName="Game_Level" />
+          <ScalarProperty Name="Logon" ColumnName="Logon" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="USP_MESSENGER_LOGIN" FunctionName="PangyaModel.Store.USP_MESSENGER_LOGIN">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="PangyaModel.USP_MESSENGER_LOGIN_Result">
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Username" ColumnName="Username" />
+          <ScalarProperty Name="Nickname" ColumnName="Nickname" />
+          <ScalarProperty Name="UID" ColumnName="UID" />
+          <ScalarProperty Name="GUILD_ID" ColumnName="GUILD_ID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="USP_MESSENGER_PLAYER_GUILD" FunctionName="PangyaModel.Store.USP_MESSENGER_PLAYER_GUILD" />
+    <FunctionImportMapping FunctionImportName="USP_NICKNAME_CHECK" FunctionName="PangyaModel.Store.USP_NICKNAME_CHECK" />
+    <FunctionImportMapping FunctionImportName="USP_QUEST_ALTER" FunctionName="PangyaModel.Store.USP_QUEST_ALTER" />
+    <FunctionImportMapping FunctionImportName="USP_SAVE_CADDIE" FunctionName="PangyaModel.Store.USP_SAVE_CADDIE" />
+    <FunctionImportMapping FunctionImportName="USP_SAVE_CARD" FunctionName="PangyaModel.Store.USP_SAVE_CARD" />
+    <FunctionImportMapping FunctionImportName="USP_SAVE_CARD_EQUIP" FunctionName="PangyaModel.Store.USP_SAVE_CARD_EQUIP" />
+    <FunctionImportMapping FunctionImportName="USP_SAVE_CHARACTER_EQUIP" FunctionName="PangyaModel.Store.USP_SAVE_CHARACTER_EQUIP" />
+    <FunctionImportMapping FunctionImportName="USP_SAVE_CHARACTER_STATS" FunctionName="PangyaModel.Store.USP_SAVE_CHARACTER_STATS" />
+    <FunctionImportMapping FunctionImportName="USP_SAVE_ITEM" FunctionName="PangyaModel.Store.USP_SAVE_ITEM" />
+    <FunctionImportMapping FunctionImportName="USP_SAVE_MASCOT" FunctionName="PangyaModel.Store.USP_SAVE_MASCOT" />
+    <FunctionImportMapping FunctionImportName="USP_SAVE_TOOLBAR" FunctionName="PangyaModel.Store.USP_SAVE_TOOLBAR" />
+    <FunctionImportMapping FunctionImportName="USP_UCC_REQUEST_UPLOAD" FunctionName="PangyaModel.Store.USP_UCC_REQUEST_UPLOAD">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="PangyaModel.USP_UCC_REQUEST_UPLOAD_Result">
+          <ScalarProperty Name="CODE" ColumnName="CODE" />
+          <ScalarProperty Name="UCCKEY" ColumnName="UCCKEY" />
+          <ScalarProperty Name="ITEM_ID" ColumnName="ITEM_ID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="WEB_GUILD_CHECK" FunctionName="PangyaModel.Store.WEB_GUILD_CHECK" />
+    <FunctionImportMapping FunctionImportName="WEB_UCC_CHECK" FunctionName="PangyaModel.Store.WEB_UCC_CHECK" />
+  </EntityContainerMapping>
+</Mapping>

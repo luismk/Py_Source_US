@@ -1,0 +1,12 @@
+C:\Users\Cleudiana\Desktop\Py_Source_US\Src\Build\data\pangya_gb.iff
+C:\Users\Cleudiana\Desktop\Py_Source_US\Src\Build\Config\Channel.ini
+C:\Users\Cleudiana\Desktop\Py_Source_US\Src\Build\Config\Game.ini
+C:\Users\Cleudiana\Desktop\Py_Source_US\Src\Build\data\invisible item.bat
+C:\Users\Cleudiana\Desktop\Py_Source_US\Src\Build\Pangya_GameServer.exe.config
+C:\Users\Cleudiana\Desktop\Py_Source_US\Src\Build\Pangya_GameServer.exe
+C:\Users\Cleudiana\Desktop\Py_Source_US\Src\Build\Pangya_GameServer.pdb
+C:\Users\Cleudiana\Desktop\Py_Source_US\Src\Pangya_GameServer\obj\Debug\Pangya_GameServer.csprojAssemblyReference.cache
+C:\Users\Cleudiana\Desktop\Py_Source_US\Src\Pangya_GameServer\obj\Debug\Pangya_GameServer.csproj.CoreCompileInputs.cache
+C:\Users\Cleudiana\Desktop\Py_Source_US\Src\Pangya_GameServer\obj\Debug\Pangya_GameServer.csproj.CopyComplete
+C:\Users\Cleudiana\Desktop\Py_Source_US\Src\Pangya_GameServer\obj\Debug\Pangya_GameServer.exe
+C:\Users\Cleudiana\Desktop\Py_Source_US\Src\Pangya_GameServer\obj\Debug\Pangya_GameServer.pdb

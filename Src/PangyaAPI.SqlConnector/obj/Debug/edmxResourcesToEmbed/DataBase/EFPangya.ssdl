@@ -1,0 +1,1495 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="PangyaModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Achievement_Counter_Data">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Enable" Type="tinyint" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="500" Nullable="false" />
+    <Property Name="TypeID" Type="int" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'DB_Pangya.dbo.Achievement_Data' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="Achievement_Data">
+    <Key>
+      <PropertyRef Name="ID" />
+      <PropertyRef Name="ACHIEVEMENT_ENABLE" />
+      <PropertyRef Name="ACHIEVEMENT_TYPEID" />
+      <PropertyRef Name="ACHIEVEMENT_NAME" />
+      <PropertyRef Name="ACHIEVEMENT_QUEST_TYPEID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ACHIEVEMENT_ENABLE" Type="tinyint" Nullable="false" />
+    <Property Name="ACHIEVEMENT_TYPEID" Type="int" Nullable="false" />
+    <Property Name="ACHIEVEMENT_NAME" Type="varchar" MaxLength="500" Nullable="false" />
+    <Property Name="ACHIEVEMENT_QUEST_TYPEID" Type="int" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'DB_Pangya.dbo.Achievement_QuestItem' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="Achievement_QuestItem">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TypeID" Type="int" />
+    <Property Name="Name" Type="varchar" MaxLength="255" />
+    <Property Name="QuestTypeID" Type="int" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'DB_Pangya.dbo.Achievement_QuestStuffs' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="Achievement_QuestStuffs">
+    <Key>
+      <PropertyRef Name="ID" />
+      <PropertyRef Name="Enable" />
+      <PropertyRef Name="TypeID" />
+      <PropertyRef Name="Name" />
+      <PropertyRef Name="CounterTypeID" />
+      <PropertyRef Name="CounterQuantity" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Enable" Type="tinyint" Nullable="false" />
+    <Property Name="TypeID" Type="int" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="500" Nullable="false" />
+    <Property Name="CounterTypeID" Type="int" Nullable="false" />
+    <Property Name="CounterQuantity" Type="int" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'DB_Pangya.dbo.Daily_Quest' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="Daily_Quest">
+    <Key>
+      <PropertyRef Name="ID" />
+      <PropertyRef Name="QuestTypeID1" />
+      <PropertyRef Name="QuestTypeID2" />
+      <PropertyRef Name="QuestTypeID3" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="QuestTypeID1" Type="int" Nullable="false" />
+    <Property Name="QuestTypeID2" Type="int" Nullable="false" />
+    <Property Name="QuestTypeID3" Type="int" Nullable="false" />
+    <Property Name="RegDate" Type="datetime" />
+    <Property Name="Day" Type="tinyint" />
+  </EntityType>
+  <EntityType Name="Pangya_Achievement">
+    <Key>
+      <PropertyRef Name="UID" />
+      <PropertyRef Name="ID" />
+      <PropertyRef Name="Type" />
+    </Key>
+    <Property Name="UID" Type="int" Nullable="false" />
+    <Property Name="TypeID" Type="int" Nullable="false" />
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Type" Type="tinyint" Nullable="false" />
+    <Property Name="Valid" Type="tinyint" />
+  </EntityType>
+  <EntityType Name="Pangya_Achievement_Counter">
+    <Key>
+      <PropertyRef Name="ID" />
+      <PropertyRef Name="UID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UID" Type="int" Nullable="false" />
+    <Property Name="TypeID" Type="int" Nullable="false" />
+    <Property Name="Quantity" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Pangya_Achievement_Quest">
+    <Key>
+      <PropertyRef Name="ID" />
+      <PropertyRef Name="UID" />
+      <PropertyRef Name="Achievement_Index" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UID" Type="int" Nullable="false" />
+    <Property Name="Achievement_Index" Type="int" Nullable="false" />
+    <Property Name="Achivement_Quest_TypeID" Type="int" Nullable="false" />
+    <Property Name="Counter_Index" Type="int" Nullable="false" />
+    <Property Name="SuccessDate" Type="datetime" />
+    <Property Name="Count" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Pangya_Caddie">
+    <Key>
+      <PropertyRef Name="CID" />
+      <PropertyRef Name="UID" />
+    </Key>
+    <Property Name="CID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UID" Type="int" Nullable="false" />
+    <Property Name="TYPEID" Type="int" Nullable="false" />
+    <Property Name="EXP" Type="int" Nullable="false" />
+    <Property Name="cLevel" Type="tinyint" Nullable="false" />
+    <Property Name="SKIN_TYPEID" Type="int" />
+    <Property Name="RentFlag" Type="tinyint" />
+    <Property Name="RegDate" Type="datetime" />
+    <Property Name="END_DATE" Type="datetime" />
+    <Property Name="SKIN_END_DATE" Type="datetime" />
+    <Property Name="TriggerPay" Type="tinyint" />
+    <Property Name="VALID" Type="tinyint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Pangya_Card">
+    <Key>
+      <PropertyRef Name="CARD_IDX" />
+    </Key>
+    <Property Name="CARD_IDX" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UID" Type="int" Nullable="false" />
+    <Property Name="CARD_TYPEID" Type="int" Nullable="false" />
+    <Property Name="QTY" Type="int" Nullable="false" />
+    <Property Name="RegData" Type="datetime" />
+    <Property Name="VALID" Type="tinyint" />
+  </EntityType>
+  <EntityType Name="Pangya_Card_Equip">
+    <Key>
+      <PropertyRef Name="ID" />
+      <PropertyRef Name="UID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UID" Type="int" Nullable="false" />
+    <Property Name="CID" Type="int" Nullable="false" />
+    <Property Name="CHAR_TYPEID" Type="int" />
+    <Property Name="CARD_TYPEID" Type="int" />
+    <Property Name="SLOT" Type="int" />
+    <Property Name="REGDATE" Type="datetime" />
+    <Property Name="ENDDATE" Type="datetime" />
+    <Property Name="FLAG" Type="tinyint" />
+    <Property Name="VALID" Type="tinyint" />
+  </EntityType>
+  <EntityType Name="Pangya_Character">
+    <Key>
+      <PropertyRef Name="CID" />
+    </Key>
+    <Property Name="CID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UID" Type="int" Nullable="false" />
+    <Property Name="TYPEID" Type="int" Nullable="false" />
+    <Property Name="GIFT_FLAG" Type="tinyint" />
+    <Property Name="HAIR_COLOR" Type="tinyint" />
+    <Property Name="POWER" Type="tinyint" />
+    <Property Name="CONTROL" Type="tinyint" />
+    <Property Name="IMPACT" Type="tinyint" />
+    <Property Name="SPIN" Type="tinyint" />
+    <Property Name="CURVE" Type="tinyint" />
+    <Property Name="CUTIN" Type="int" />
+    <Property Name="AuxPart" Type="int" />
+    <Property Name="AuxPart2" Type="int" />
+    <Property Name="PART_TYPEID_1" Type="int" />
+    <Property Name="PART_TYPEID_2" Type="int" />
+    <Property Name="PART_TYPEID_3" Type="int" />
+    <Property Name="PART_TYPEID_4" Type="int" />
+    <Property Name="PART_TYPEID_5" Type="int" />
+    <Property Name="PART_TYPEID_6" Type="int" />
+    <Property Name="PART_TYPEID_7" Type="int" />
+    <Property Name="PART_TYPEID_8" Type="int" />
+    <Property Name="PART_TYPEID_9" Type="int" />
+    <Property Name="PART_TYPEID_10" Type="int" />
+    <Property Name="PART_TYPEID_11" Type="int" />
+    <Property Name="PART_TYPEID_12" Type="int" />
+    <Property Name="PART_TYPEID_13" Type="int" />
+    <Property Name="PART_TYPEID_14" Type="int" />
+    <Property Name="PART_TYPEID_15" Type="int" />
+    <Property Name="PART_TYPEID_16" Type="int" />
+    <Property Name="PART_TYPEID_17" Type="int" />
+    <Property Name="PART_TYPEID_18" Type="int" />
+    <Property Name="PART_TYPEID_19" Type="int" />
+    <Property Name="PART_TYPEID_20" Type="int" />
+    <Property Name="PART_TYPEID_21" Type="int" />
+    <Property Name="PART_TYPEID_22" Type="int" />
+    <Property Name="PART_TYPEID_23" Type="int" />
+    <Property Name="PART_TYPEID_24" Type="int" />
+    <Property Name="PART_IDX_1" Type="int" />
+    <Property Name="PART_IDX_2" Type="int" />
+    <Property Name="PART_IDX_3" Type="int" />
+    <Property Name="PART_IDX_4" Type="int" />
+    <Property Name="PART_IDX_5" Type="int" />
+    <Property Name="PART_IDX_6" Type="int" />
+    <Property Name="PART_IDX_7" Type="int" />
+    <Property Name="PART_IDX_8" Type="int" />
+    <Property Name="PART_IDX_9" Type="int" />
+    <Property Name="PART_IDX_10" Type="int" />
+    <Property Name="PART_IDX_11" Type="int" />
+    <Property Name="PART_IDX_12" Type="int" />
+    <Property Name="PART_IDX_13" Type="int" />
+    <Property Name="PART_IDX_14" Type="int" />
+    <Property Name="PART_IDX_15" Type="int" />
+    <Property Name="PART_IDX_16" Type="int" />
+    <Property Name="PART_IDX_17" Type="int" />
+    <Property Name="PART_IDX_18" Type="int" />
+    <Property Name="PART_IDX_19" Type="int" />
+    <Property Name="PART_IDX_20" Type="int" />
+    <Property Name="PART_IDX_21" Type="int" />
+    <Property Name="PART_IDX_22" Type="int" />
+    <Property Name="PART_IDX_23" Type="int" />
+    <Property Name="PART_IDX_24" Type="int" />
+  </EntityType>
+  <EntityType Name="Pangya_Club_Info">
+    <Key>
+      <PropertyRef Name="ITEM_ID" />
+    </Key>
+    <Property Name="ITEM_ID" Type="int" Nullable="false" />
+    <Property Name="C0_SLOT" Type="smallint" />
+    <Property Name="C1_SLOT" Type="smallint" />
+    <Property Name="C2_SLOT" Type="smallint" />
+    <Property Name="C3_SLOT" Type="smallint" />
+    <Property Name="C4_SLOT" Type="smallint" />
+    <Property Name="CLUB_POINT" Type="int" />
+    <Property Name="CLUB_WORK_COUNT" Type="int" />
+    <Property Name="CLUB_SLOT_CANCEL" Type="int" />
+    <Property Name="CLUB_POINT_TOTAL_LOG" Type="int" />
+    <Property Name="CLUB_UPGRADE_PANG_LOG" Type="int" />
+  </EntityType>
+  <EntityType Name="Pangya_Daily_Quest">
+    <Key>
+      <PropertyRef Name="UID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UID" Type="int" Nullable="false" />
+    <Property Name="QuestID1" Type="int" />
+    <Property Name="QuestID2" Type="int" />
+    <Property Name="QuestID3" Type="int" />
+    <Property Name="LastAccept" Type="datetime" />
+    <Property Name="LastCancel" Type="datetime" />
+    <Property Name="RegDate" Type="datetime" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'DB_Pangya.dbo.Pangya_Exception_Log' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="Pangya_Exception_Log">
+    <Key>
+      <PropertyRef Name="ExceptionID" />
+    </Key>
+    <Property Name="ExceptionID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UID" Type="int" />
+    <Property Name="Username" Type="varchar" MaxLength="50" />
+    <Property Name="ExceptionMessage" Type="varchar" MaxLength="2000" />
+    <Property Name="Server" Type="varchar" MaxLength="50" />
+    <Property Name="CreateDate" Type="datetime" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'DB_Pangya.dbo.Pangya_Friend' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="Pangya_Friend">
+    <Key>
+      <PropertyRef Name="Owner" />
+      <PropertyRef Name="Friend" />
+      <PropertyRef Name="IsAccept" />
+      <PropertyRef Name="GroupName" />
+      <PropertyRef Name="IsAgree" />
+      <PropertyRef Name="IsDeleted" />
+      <PropertyRef Name="Memo" />
+      <PropertyRef Name="IsBlock" />
+    </Key>
+    <Property Name="Owner" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Friend" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="IsAccept" Type="tinyint" Nullable="false" />
+    <Property Name="GroupName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="IsAgree" Type="tinyint" Nullable="false" />
+    <Property Name="IsDeleted" Type="tinyint" Nullable="false" />
+    <Property Name="Memo" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="IsBlock" Type="tinyint" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'DB_Pangya.dbo.Pangya_Game_Macro' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="Pangya_Game_Macro">
+    <Key>
+      <PropertyRef Name="UID" />
+    </Key>
+    <Property Name="UID" Type="int" Nullable="false" />
+    <Property Name="Macro1" Type="varchar" MaxLength="45" />
+    <Property Name="Macro2" Type="varchar" MaxLength="45" />
+    <Property Name="Macro3" Type="varchar" MaxLength="45" />
+    <Property Name="Macro4" Type="varchar" MaxLength="45" />
+    <Property Name="Macro5" Type="varchar" MaxLength="45" />
+    <Property Name="Macro6" Type="varchar" MaxLength="45" />
+    <Property Name="Macro7" Type="varchar" MaxLength="45" />
+    <Property Name="Macro8" Type="varchar" MaxLength="45" />
+    <Property Name="Macro9" Type="varchar" MaxLength="45" />
+    <Property Name="Macro10" Type="varchar" MaxLength="45" />
+  </EntityType>
+  <EntityType Name="Pangya_Guild_Emblem">
+    <Key>
+      <PropertyRef Name="GUILD_ID" />
+    </Key>
+    <Property Name="EMBLEM_IDX" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="GUILD_ID" Type="int" Nullable="false" />
+    <Property Name="GUILD_MARK_IMG" Type="varchar" MaxLength="50" />
+    <Property Name="GUILD_MARK_ISVALID" Type="tinyint" />
+  </EntityType>
+  <EntityType Name="Pangya_Guild_Info">
+    <Key>
+      <PropertyRef Name="GUILD_INDEX" />
+    </Key>
+    <Property Name="GUILD_INDEX" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="GUILD_NAME" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="GUILD_INTRODUCING" Type="varchar" MaxLength="255" />
+    <Property Name="GUILD_NOTICE" Type="varchar" MaxLength="255" />
+    <Property Name="GUILD_LEADER_UID" Type="int" Nullable="false" />
+    <Property Name="GUILD_POINT" Type="int" />
+    <Property Name="GUILD_PANG" Type="int" />
+    <Property Name="GUILD_IMAGE" Type="varchar" MaxLength="10" />
+    <Property Name="GUILD_IMAGE_KEY_UPLOAD" Type="int" />
+    <Property Name="GUILD_CREATE_DATE" Type="datetime" />
+    <Property Name="GUILD_VALID" Type="tinyint" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'DB_Pangya.dbo.Pangya_Guild_Log' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="Pangya_Guild_Log">
+    <Key>
+      <PropertyRef Name="UID" />
+      <PropertyRef Name="GUILD_ID" />
+      <PropertyRef Name="GUILD_ACTION" />
+    </Key>
+    <Property Name="UID" Type="int" Nullable="false" />
+    <Property Name="GUILD_ID" Type="int" Nullable="false" />
+    <Property Name="GUILD_NAME" Type="varchar" MaxLength="32" />
+    <Property Name="GUILD_ACTION" Type="tinyint" Nullable="false" />
+    <Property Name="GUILD_ACTION_DATE" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Pangya_Guild_Member">
+    <Key>
+      <PropertyRef Name="GUILD_ID" />
+      <PropertyRef Name="GUILD_MEMBER_UID" />
+    </Key>
+    <Property Name="GUILD_ID" Type="int" Nullable="false" />
+    <Property Name="GUILD_MEMBER_UID" Type="int" Nullable="false" />
+    <Property Name="GUILD_POSITION" Type="tinyint" />
+    <Property Name="GUILD_MESSAGE" Type="varchar" MaxLength="255" />
+    <Property Name="GUILD_ENTERED_TIME" Type="datetime" />
+    <Property Name="GUILD_MEMBER_STATUS" Type="tinyint" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'DB_Pangya.dbo.Pangya_Item_Daily' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="Pangya_Item_Daily">
+    <Key>
+      <PropertyRef Name="ID" />
+      <PropertyRef Name="Name" />
+      <PropertyRef Name="ItemTypeID" />
+      <PropertyRef Name="ItemType" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="ItemTypeID" Type="int" Nullable="false" />
+    <Property Name="Quantity" Type="int" />
+    <Property Name="ItemType" Type="int" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'DB_Pangya.dbo.Pangya_Item_Daily_Log' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="Pangya_Item_Daily_Log">
+    <Key>
+      <PropertyRef Name="UID" />
+      <PropertyRef Name="Counter" />
+      <PropertyRef Name="Item_TypeID" />
+      <PropertyRef Name="Item_Quantity" />
+      <PropertyRef Name="Item_TypeID_Next" />
+      <PropertyRef Name="Item_Quantity_Next" />
+      <PropertyRef Name="LoginCount" />
+      <PropertyRef Name="RegDate" />
+    </Key>
+    <Property Name="UID" Type="int" Nullable="false" />
+    <Property Name="Counter" Type="int" Nullable="false" />
+    <Property Name="Item_TypeID" Type="int" Nullable="false" />
+    <Property Name="Item_Quantity" Type="int" Nullable="false" />
+    <Property Name="Item_TypeID_Next" Type="int" Nullable="false" />
+    <Property Name="Item_Quantity_Next" Type="int" Nullable="false" />
+    <Property Name="LoginCount" Type="int" Nullable="false" />
+    <Property Name="RegDate" Type="date" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Pangya_Locker_Item">
+    <Key>
+      <PropertyRef Name="INVEN_ID" />
+      <PropertyRef Name="UID" />
+    </Key>
+    <Property Name="INVEN_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UID" Type="int" Nullable="false" />
+    <Property Name="TypeID" Type="int" />
+    <Property Name="Name" Type="varchar" MaxLength="255" />
+    <Property Name="FROM_ID" Type="int" />
+    <Property Name="Valid" Type="tinyint" />
+  </EntityType>
+  <EntityType Name="Pangya_Mail">
+    <Key>
+      <PropertyRef Name="Mail_Index" />
+    </Key>
+    <Property Name="Mail_Index" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UID" Type="int" Nullable="false" />
+    <Property Name="Sender" Type="varchar" MaxLength="20" />
+    <Property Name="Sender_UID" Type="int" />
+    <Property Name="Receiver" Type="varchar" MaxLength="20" />
+    <Property Name="Receiver_UID" Type="int" />
+    <Property Name="Subject" Type="varchar" MaxLength="200" />
+    <Property Name="Msg" Type="varchar" MaxLength="2500" />
+    <Property Name="ReadDate" Type="smalldatetime" />
+    <Property Name="ReceiveDate" Type="smalldatetime" />
+    <Property Name="DeleteDate" Type="smalldatetime" />
+    <Property Name="RegDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Pangya_Mail_Item">
+    <Key>
+      <PropertyRef Name="Mail_Index" />
+      <PropertyRef Name="TYPEID" />
+    </Key>
+    <Property Name="Mail_Index" Type="int" Nullable="false" />
+    <Property Name="TYPEID" Type="int" Nullable="false" />
+    <Property Name="SETTYPEID" Type="int" />
+    <Property Name="QTY" Type="int" />
+    <Property Name="DAY" Type="smallint" />
+    <Property Name="UCC_UNIQUE" Type="varchar" MaxLength="8" />
+    <Property Name="ITEM_GRP" Type="tinyint" />
+    <Property Name="TO_UID" Type="int" />
+    <Property Name="IN_DATE" Type="datetime" />
+    <Property Name="RELEASE_DATE" Type="datetime" />
+    <Property Name="APPLY_ITEM_ID" Type="int" />
+  </EntityType>
+  <EntityType Name="Pangya_Map_Statistics">
+    <Key>
+      <PropertyRef Name="UID" />
+      <PropertyRef Name="Map" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UID" Type="int" Nullable="false" />
+    <Property Name="Map" Type="smallint" Nullable="false" />
+    <Property Name="Drive" Type="int" Nullable="false" />
+    <Property Name="Putt" Type="int" Nullable="false" />
+    <Property Name="Hole" Type="int" Nullable="false" />
+    <Property Name="Fairway" Type="int" Nullable="false" />
+    <Property Name="Holein" Type="int" Nullable="false" />
+    <Property Name="PuttIn" Type="int" Nullable="false" />
+    <Property Name="TotalScore" Type="int" Nullable="false" />
+    <Property Name="BestScore" Type="smallint" Nullable="false" />
+    <Property Name="MaxPang" Type="int" Nullable="false" />
+    <Property Name="CharTypeId" Type="int" Nullable="false" />
+    <Property Name="EventScore" Type="tinyint" Nullable="false" />
+    <Property Name="Assist" Type="tinyint" Nullable="false" />
+    <Property Name="REGDATE" Type="smalldatetime" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'DB_Pangya.dbo.Pangya_Mascot' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="Pangya_Mascot">
+    <Key>
+      <PropertyRef Name="MID" />
+      <PropertyRef Name="UID" />
+      <PropertyRef Name="MASCOT_TYPEID" />
+    </Key>
+    <Property Name="MID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UID" Type="int" Nullable="false" />
+    <Property Name="MASCOT_TYPEID" Type="int" Nullable="false" />
+    <Property Name="MESSAGE" Type="varchar" MaxLength="50" />
+    <Property Name="DateEnd" Type="datetime" />
+    <Property Name="VALID" Type="tinyint" />
+  </EntityType>
+  <EntityType Name="Pangya_Member">
+    <Key>
+      <PropertyRef Name="UID" />
+    </Key>
+    <Property Name="UID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Username" Type="varchar" MaxLength="16" Nullable="false" />
+    <Property Name="Password" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="IDState" Type="tinyint" />
+    <Property Name="FirstSet" Type="tinyint" />
+    <Property Name="LastLogonTime" Type="datetime" />
+    <Property Name="Logon" Type="tinyint" />
+    <Property Name="Nickname" Type="varchar" MaxLength="16" />
+    <Property Name="Sex" Type="tinyint" />
+    <Property Name="IPAddress" Type="varchar" MaxLength="50" />
+    <Property Name="LogonCount" Type="int" />
+    <Property Name="Capabilities" Type="tinyint" />
+    <Property Name="RegDate" Type="datetime" />
+    <Property Name="AuthKey_Login" Type="varchar" MaxLength="7" />
+    <Property Name="AuthKey_Game" Type="varchar" MaxLength="7" />
+    <Property Name="GUILDINDEX" Type="int" />
+    <Property Name="DailyLoginCount" Type="int" />
+    <Property Name="Tutorial" Type="tinyint" />
+    <Property Name="BirthDay" Type="date" />
+    <Property Name="Event1" Type="tinyint" />
+    <Property Name="Event2" Type="tinyint" />
+  </EntityType>
+  <EntityType Name="Pangya_Memorial_Log">
+    <Key>
+      <PropertyRef Name="LogID" />
+    </Key>
+    <Property Name="LogID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UID" Type="int" />
+    <Property Name="ItemName" Type="varchar" MaxLength="255" />
+    <Property Name="Quantity" Type="int" />
+    <Property Name="DateIN" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Pangya_Personal">
+    <Key>
+      <PropertyRef Name="UID" />
+    </Key>
+    <Property Name="UID" Type="int" Nullable="false" />
+    <Property Name="CookieAmt" Type="int" />
+    <Property Name="PangLockerAmt" Type="int" />
+    <Property Name="LockerPwd" Type="varchar" MaxLength="4" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'DB_Pangya.dbo.Pangya_Personal_Log' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="Pangya_Personal_Log">
+    <Key>
+      <PropertyRef Name="LogID" />
+      <PropertyRef Name="ActionType" />
+      <PropertyRef Name="UID" />
+    </Key>
+    <Property Name="LogID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ActionType" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="Amount" Type="int" />
+    <Property Name="UID" Type="int" Nullable="false" />
+    <Property Name="LockerPang" Type="int" />
+  </EntityType>
+  <EntityType Name="Pangya_SelfDesign">
+    <Key>
+      <PropertyRef Name="UID" />
+      <PropertyRef Name="ITEM_ID" />
+      <PropertyRef Name="UCC_UNIQE" />
+    </Key>
+    <Property Name="UID" Type="int" Nullable="false" />
+    <Property Name="ITEM_ID" Type="int" Nullable="false" />
+    <Property Name="UCC_UNIQE" Type="varchar" MaxLength="8" Nullable="false" />
+    <Property Name="TYPEID" Type="int" Nullable="false" />
+    <Property Name="UCC_STATUS" Type="tinyint" />
+    <Property Name="UCC_KEY" Type="varchar" MaxLength="50" />
+    <Property Name="UCC_NAME" Type="varchar" MaxLength="20" />
+    <Property Name="UCC_DRAWER" Type="int" />
+    <Property Name="UCC_COPY_COUNT" Type="int" />
+    <Property Name="IN_DATE" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Pangya_Server">
+    <Key>
+      <PropertyRef Name="ServerID" />
+    </Key>
+    <Property Name="ServerID" Type="int" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="IP" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Port" Type="int" Nullable="false" />
+    <Property Name="MaxUser" Type="int" Nullable="false" />
+    <Property Name="UsersOnline" Type="int" Nullable="false" />
+    <Property Name="Property" Type="int" Nullable="false" />
+    <Property Name="BlockFunc" Type="bigint" Nullable="false" />
+    <Property Name="ImgNo" Type="tinyint" Nullable="false" />
+    <Property Name="ImgEvent" Type="smallint" Nullable="false" />
+    <Property Name="ServerType" Type="tinyint" Nullable="false" />
+    <Property Name="Active" Type="bit" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'DB_Pangya.dbo.Pangya_String' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="Pangya_String">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="str" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="str" Type="varchar" MaxLength="8000" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'DB_Pangya.dbo.Pangya_Transaction_Log' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="Pangya_Transaction_Log">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UID" Type="int" />
+    <Property Name="String" Type="varchar" MaxLength="4096" />
+    <Property Name="ERROR_NUMBER" Type="int" />
+    <Property Name="ERROR_SEVERITY" Type="int" />
+    <Property Name="ERROR_STATE" Type="int" />
+    <Property Name="ERROR_PROCEDURE" Type="varchar" MaxLength="1024" />
+    <Property Name="ERROR_LINE" Type="int" />
+    <Property Name="ERROR_MESSAGE" Type="varchar" MaxLength="1024" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6013: The table/view 'DB_Pangya.dbo.Pangya_Tutorial' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="Pangya_Tutorial">
+          <Property Name="UID" Type="int" />
+          <Property Name="Rookie" Type="int" />
+          <Property Name="Beginner" Type="int" />
+          <Property Name="Advancer" Type="int" />
+        </EntityType>-->
+  <EntityType Name="Pangya_User_Equip">
+    <Key>
+      <PropertyRef Name="UID" />
+    </Key>
+    <Property Name="UID" Type="int" Nullable="false" />
+    <Property Name="CADDIE" Type="int" Nullable="false" />
+    <Property Name="CHARACTER_ID" Type="int" Nullable="false" />
+    <Property Name="CLUB_ID" Type="int" Nullable="false" />
+    <Property Name="BALL_ID" Type="int" Nullable="false" />
+    <Property Name="ITEM_SLOT_1" Type="int" Nullable="false" />
+    <Property Name="ITEM_SLOT_2" Type="int" Nullable="false" />
+    <Property Name="ITEM_SLOT_3" Type="int" Nullable="false" />
+    <Property Name="ITEM_SLOT_4" Type="int" Nullable="false" />
+    <Property Name="ITEM_SLOT_5" Type="int" Nullable="false" />
+    <Property Name="ITEM_SLOT_6" Type="int" Nullable="false" />
+    <Property Name="ITEM_SLOT_7" Type="int" Nullable="false" />
+    <Property Name="ITEM_SLOT_8" Type="int" Nullable="false" />
+    <Property Name="ITEM_SLOT_9" Type="int" Nullable="false" />
+    <Property Name="ITEM_SLOT_10" Type="int" Nullable="false" />
+    <Property Name="Skin_1" Type="int" Nullable="false" />
+    <Property Name="Skin_2" Type="int" Nullable="false" />
+    <Property Name="Skin_3" Type="int" Nullable="false" />
+    <Property Name="Skin_4" Type="int" Nullable="false" />
+    <Property Name="Skin_5" Type="int" Nullable="false" />
+    <Property Name="Skin_6" Type="int" Nullable="false" />
+    <Property Name="MASCOT_ID" Type="int" Nullable="false" />
+    <Property Name="POSTER_1" Type="int" Nullable="false" />
+    <Property Name="POSTER_2" Type="int" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'DB_Pangya.dbo.Pangya_User_MatchHistory' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="Pangya_User_MatchHistory">
+    <Key>
+      <PropertyRef Name="UID" />
+      <PropertyRef Name="UID1" />
+      <PropertyRef Name="UID2" />
+      <PropertyRef Name="UID3" />
+      <PropertyRef Name="UID4" />
+      <PropertyRef Name="UID5" />
+    </Key>
+    <Property Name="UID" Type="int" Nullable="false" />
+    <Property Name="UID1" Type="int" Nullable="false" />
+    <Property Name="UID2" Type="int" Nullable="false" />
+    <Property Name="UID3" Type="int" Nullable="false" />
+    <Property Name="UID4" Type="int" Nullable="false" />
+    <Property Name="UID5" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Pangya_User_Message">
+    <Key>
+      <PropertyRef Name="ID_MSG" />
+    </Key>
+    <Property Name="ID_MSG" Type="int" Nullable="false" />
+    <Property Name="UID" Type="int" Nullable="false" />
+    <Property Name="UID_FROM" Type="int" Nullable="false" />
+    <Property Name="Valid" Type="tinyint" Nullable="false" />
+    <Property Name="Message" Type="varchar" MaxLength="70" Nullable="false" />
+    <Property Name="Reg_Date" Type="datetime" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'DB_Pangya.dbo.Pangya_User_Statistics' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="Pangya_User_Statistics">
+    <Key>
+      <PropertyRef Name="UID" />
+      <PropertyRef Name="Drive" />
+      <PropertyRef Name="Putt" />
+      <PropertyRef Name="Playtime" />
+      <PropertyRef Name="Longest" />
+      <PropertyRef Name="Distance" />
+      <PropertyRef Name="Pangya" />
+      <PropertyRef Name="Hole" />
+      <PropertyRef Name="TeamHole" />
+      <PropertyRef Name="Holeinone" />
+      <PropertyRef Name="OB" />
+      <PropertyRef Name="Bunker" />
+      <PropertyRef Name="Fairway" />
+      <PropertyRef Name="Albatross" />
+      <PropertyRef Name="Holein" />
+      <PropertyRef Name="Pang" />
+      <PropertyRef Name="Timeout" />
+      <PropertyRef Name="Game_Level" />
+      <PropertyRef Name="Game_Point" />
+      <PropertyRef Name="PuttIn" />
+      <PropertyRef Name="LongestPuttIn" />
+      <PropertyRef Name="LongestChipIn" />
+      <PropertyRef Name="NoMannerGameCount" />
+      <PropertyRef Name="ShotTime" />
+      <PropertyRef Name="GameCount" />
+      <PropertyRef Name="DisconnectGames" />
+      <PropertyRef Name="wTeamWin" />
+      <PropertyRef Name="wTeamGames" />
+      <PropertyRef Name="LadderPoint" />
+      <PropertyRef Name="LadderWin" />
+      <PropertyRef Name="LadderLose" />
+      <PropertyRef Name="LadderDraw" />
+      <PropertyRef Name="ComboCount" />
+      <PropertyRef Name="MaxComboCount" />
+      <PropertyRef Name="TotalScore" />
+      <PropertyRef Name="BestScore0" />
+      <PropertyRef Name="BestScore1" />
+      <PropertyRef Name="BestScore2" />
+      <PropertyRef Name="BestScore3" />
+      <PropertyRef Name="BESTSCORE4" />
+      <PropertyRef Name="SumPang" />
+      <PropertyRef Name="LadderHole" />
+      <PropertyRef Name="GameCountSeason" />
+      <PropertyRef Name="SkinsPang" />
+      <PropertyRef Name="SkinsWin" />
+      <PropertyRef Name="SkinsLose" />
+      <PropertyRef Name="SkinsRunHoles" />
+      <PropertyRef Name="SkinsStrikePoint" />
+      <PropertyRef Name="SkinsAllinCount" />
+      <PropertyRef Name="EventValue" />
+      <PropertyRef Name="EventFlag" />
+    </Key>
+    <Property Name="UID" Type="int" Nullable="false" />
+    <Property Name="Drive" Type="int" Nullable="false" />
+    <Property Name="Putt" Type="int" Nullable="false" />
+    <Property Name="Playtime" Type="int" Nullable="false" />
+    <Property Name="Longest" Type="real" Nullable="false" />
+    <Property Name="Distance" Type="int" Nullable="false" />
+    <Property Name="Pangya" Type="int" Nullable="false" />
+    <Property Name="Hole" Type="int" Nullable="false" />
+    <Property Name="TeamHole" Type="int" Nullable="false" />
+    <Property Name="Holeinone" Type="int" Nullable="false" />
+    <Property Name="OB" Type="int" Nullable="false" />
+    <Property Name="Bunker" Type="int" Nullable="false" />
+    <Property Name="Fairway" Type="int" Nullable="false" />
+    <Property Name="Albatross" Type="int" Nullable="false" />
+    <Property Name="Holein" Type="int" Nullable="false" />
+    <Property Name="Pang" Type="int" Nullable="false" />
+    <Property Name="Timeout" Type="int" Nullable="false" />
+    <Property Name="Game_Level" Type="smallint" Nullable="false" />
+    <Property Name="Game_Point" Type="int" Nullable="false" />
+    <Property Name="PuttIn" Type="int" Nullable="false" />
+    <Property Name="LongestPuttIn" Type="real" Nullable="false" />
+    <Property Name="LongestChipIn" Type="real" Nullable="false" />
+    <Property Name="NoMannerGameCount" Type="int" Nullable="false" />
+    <Property Name="ShotTime" Type="int" Nullable="false" />
+    <Property Name="GameCount" Type="int" Nullable="false" />
+    <Property Name="DisconnectGames" Type="int" Nullable="false" />
+    <Property Name="wTeamWin" Type="int" Nullable="false" />
+    <Property Name="wTeamGames" Type="int" Nullable="false" />
+    <Property Name="LadderPoint" Type="smallint" Nullable="false" />
+    <Property Name="LadderWin" Type="smallint" Nullable="false" />
+    <Property Name="LadderLose" Type="smallint" Nullable="false" />
+    <Property Name="LadderDraw" Type="smallint" Nullable="false" />
+    <Property Name="ComboCount" Type="int" Nullable="false" />
+    <Property Name="MaxComboCount" Type="int" Nullable="false" />
+    <Property Name="TotalScore" Type="int" Nullable="false" />
+    <Property Name="BestScore0" Type="smallint" Nullable="false" />
+    <Property Name="BestScore1" Type="smallint" Nullable="false" />
+    <Property Name="BestScore2" Type="smallint" Nullable="false" />
+    <Property Name="BestScore3" Type="smallint" Nullable="false" />
+    <Property Name="BESTSCORE4" Type="smallint" Nullable="false" />
+    <Property Name="MaxPang0" Type="int" />
+    <Property Name="MaxPang1" Type="int" />
+    <Property Name="MaxPang2" Type="int" />
+    <Property Name="MaxPang3" Type="int" />
+    <Property Name="MAXPANG4" Type="int" />
+    <Property Name="SumPang" Type="int" Nullable="false" />
+    <Property Name="LadderHole" Type="smallint" Nullable="false" />
+    <Property Name="GameCountSeason" Type="int" Nullable="false" />
+    <Property Name="SkinsPang" Type="bigint" Nullable="false" />
+    <Property Name="SkinsWin" Type="int" Nullable="false" />
+    <Property Name="SkinsLose" Type="int" Nullable="false" />
+    <Property Name="SkinsRunHoles" Type="int" Nullable="false" />
+    <Property Name="SkinsStrikePoint" Type="int" Nullable="false" />
+    <Property Name="SkinsAllinCount" Type="int" Nullable="false" />
+    <Property Name="EventValue" Type="int" Nullable="false" />
+    <Property Name="EventFlag" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Pangya_Warehouse">
+    <Key>
+      <PropertyRef Name="item_id" />
+      <PropertyRef Name="UID" />
+    </Key>
+    <Property Name="item_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UID" Type="int" Nullable="false" />
+    <Property Name="TYPEID" Type="int" Nullable="false" />
+    <Property Name="C0" Type="smallint" />
+    <Property Name="C1" Type="smallint" />
+    <Property Name="C2" Type="smallint" />
+    <Property Name="C3" Type="smallint" />
+    <Property Name="C4" Type="smallint" />
+    <Property Name="RegDate" Type="datetime" />
+    <Property Name="DateEnd" Type="datetime" />
+    <Property Name="VALID" Type="tinyint" Nullable="false" />
+    <Property Name="ItemType" Type="tinyint" />
+    <Property Name="Flag" Type="tinyint" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'DB_Pangya.dbo.TD_ROOM_DATA' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="TD_ROOM_DATA">
+    <Key>
+      <PropertyRef Name="IDX" />
+      <PropertyRef Name="UID" />
+      <PropertyRef Name="TYPEID" />
+    </Key>
+    <Property Name="IDX" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UID" Type="int" Nullable="false" />
+    <Property Name="TYPEID" Type="int" Nullable="false" />
+    <Property Name="POS_X" Type="numeric" Precision="10" Scale="4" />
+    <Property Name="POS_Y" Type="numeric" Precision="10" Scale="4" />
+    <Property Name="POS_Z" Type="numeric" Precision="10" Scale="4" />
+    <Property Name="POS_R" Type="numeric" Precision="10" Scale="4" />
+    <Property Name="VALID" Type="tinyint" />
+    <Property Name="GETDATE" Type="datetime" />
+  </EntityType>
+  <Function Name="ProcAddItem" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UID" Type="int" Mode="In" />
+    <Parameter Name="IFFTYPEID" Type="int" Mode="In" />
+    <Parameter Name="QUANTITY" Type="int" Mode="In" />
+    <Parameter Name="ISUCC" Type="tinyint" Mode="In" />
+    <Parameter Name="ITEM_TYPE" Type="tinyint" Mode="In" />
+    <Parameter Name="DAY" Type="int" Mode="In" />
+  </Function>
+  <Function Name="ProcAddItemTutorial" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UID" Type="int" Mode="In" />
+    <Parameter Name="CODE" Type="int" Mode="In" />
+    <Parameter Name="OPT" Type="int" Mode="In" />
+  </Function>
+  <Function Name="ProcAddRent" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UID" Type="int" Mode="In" />
+    <Parameter Name="TYPEID" Type="int" Mode="In" />
+    <Parameter Name="DAY_IN" Type="int" Mode="In" />
+  </Function>
+  <Function Name="ProcAddUserMessage" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="from_uid" Type="int" Mode="In" />
+    <Parameter Name="uid_to" Type="int" Mode="In" />
+    <Parameter Name="msg_in" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="ProcAlterAchievement" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UID" Type="int" Mode="In" />
+    <Parameter Name="AchievementTypeID" Type="int" Mode="In" />
+    <Parameter Name="Quantity" Type="int" Mode="In" />
+  </Function>
+  <Function Name="ProcAlterDaily" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="ProcCheckUsername" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="USERNAME" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="ProcCreateAchievement" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="ProcDeleteRentItem" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="ProcDelMail" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UID" Type="int" Mode="In" />
+    <Parameter Name="MailIndex" Type="int" Mode="In" />
+  </Function>
+  <Function Name="ProcFixPartsCharacter" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UID" Type="int" Mode="In" />
+    <Parameter Name="CHARTYPE" Type="int" Mode="In" />
+    <Parameter Name="Hairs" Type="tinyint" Mode="In" />
+  </Function>
+  <Function Name="ProcGet_UserInfo" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="ProcGetAchievement" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="ProcGetCaddies" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="ProcGetCard" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="ProcGetCardEquip" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="ProcGetCharacter" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="ProcGetGameServer" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="ProcGetItemWarehouse" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="ProcGetLockerItem" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UID" Type="int" Mode="In" />
+    <Parameter Name="PAGE" Type="int" Mode="In" />
+    <Parameter Name="PAGE_TOTAL" Type="int" Mode="In" />
+  </Function>
+  <Function Name="ProcGetMacro" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="ProcGetMail" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UID" Type="int" Mode="In" />
+    <Parameter Name="PAGE" Type="int" Mode="In" />
+    <Parameter Name="TOTAL" Type="int" Mode="In" />
+    <Parameter Name="READ" Type="tinyint" Mode="In" />
+  </Function>
+  <Function Name="ProcGetMapStatistics" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UID" Type="int" Mode="In" />
+    <Parameter Name="MAP" Type="int" Mode="In" />
+    <Parameter Name="ASSIST" Type="int" Mode="In" />
+  </Function>
+  <Function Name="ProcGetMascot" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="ProcGetMatchHistory" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="ProcGetMessengerServer" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="ProcGetRoomData" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="ProcGetStatistic" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="ProcGetToolbar" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="ProcGetTutorial" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="ProcGetUCCData" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UCC_INDEX" Type="int" Mode="In" />
+  </Function>
+  <Function Name="ProcGetUserMessage" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="IDUSER" Type="int" Mode="In" />
+  </Function>
+  <Function Name="ProcGuildGetData" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="GUILDID" Type="int" Mode="In" />
+    <Parameter Name="PAGE" Type="int" Mode="In" />
+    <Parameter Name="TOTAL" Type="int" Mode="In" />
+  </Function>
+  <Function Name="ProcGuildGetList" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="PAGE" Type="int" Mode="In" />
+    <Parameter Name="TOTAL" Type="int" Mode="In" />
+    <Parameter Name="SEARCH" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="ProcGuildGetLog" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="ProcGuildGetPlayerData" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UID" Type="int" Mode="In" />
+    <Parameter Name="GUILDID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="ProcGuildNameAvailable" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="GUILDNAME" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="ProcInsertDailyQuest" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="IN_UID" Type="int" Mode="In" />
+    <Parameter Name="QUESTID" Type="int" Mode="In" />
+    <Parameter Name="DAILYQUEST" Type="int" Mode="In" />
+  </Function>
+  <Function Name="ProcInsertMail" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UID" Type="int" Mode="In" />
+    <Parameter Name="SENDER_MAIL" Type="varchar(max)" Mode="In" />
+    <Parameter Name="SENDER_MSG_MAIL" Type="varchar(max)" Mode="In" />
+    <Parameter Name="ITEM_TYPEID" Type="int" Mode="In" />
+    <Parameter Name="ITEM_SETTYPEID" Type="int" Mode="In" />
+    <Parameter Name="ITEM_QUANTITY" Type="int" Mode="In" />
+    <Parameter Name="ITEM_DAY" Type="int" Mode="In" />
+  </Function>
+  <Function Name="ProcLogMemorial" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UID" Type="int" Mode="In" />
+    <Parameter Name="ItemName" Type="varchar" Mode="In" />
+    <Parameter Name="Quantity" Type="int" Mode="In" />
+  </Function>
+  <Function Name="ProcMailInsert" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UID" Type="int" Mode="In" />
+    <Parameter Name="SENDER_MAIL" Type="varchar(max)" Mode="In" />
+    <Parameter Name="SENDER_MSG_MAIL" Type="varchar(max)" Mode="In" />
+    <Parameter Name="JSONData" Type="nvarchar(max)" Mode="In" />
+  </Function>
+  <Function Name="ProcMailItem" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UID" Type="int" Mode="In" />
+    <Parameter Name="Mail_Index" Type="int" Mode="In" />
+  </Function>
+  <Function Name="ProcReadMail" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UID" Type="int" Mode="In" />
+    <Parameter Name="Mail_Index" Type="int" Mode="In" />
+  </Function>
+  <Function Name="ProcSaveCaddies" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UID" Type="int" Mode="In" />
+    <Parameter Name="JSONData" Type="nvarchar(max)" Mode="In" />
+  </Function>
+  <Function Name="ProcSaveCard" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UID" Type="int" Mode="In" />
+    <Parameter Name="JSONData" Type="nvarchar(max)" Mode="In" />
+  </Function>
+  <Function Name="ProcSaveCardEquip" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UID" Type="int" Mode="In" />
+    <Parameter Name="JSData" Type="nvarchar(max)" Mode="In" />
+  </Function>
+  <Function Name="ProcSaveCharacter" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UID" Type="int" Mode="In" />
+    <Parameter Name="JSONData" Type="nvarchar(max)" Mode="In" />
+  </Function>
+  <Function Name="ProcSaveExceptionLog" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UID" Type="int" Mode="In" />
+    <Parameter Name="USER" Type="varchar" Mode="In" />
+    <Parameter Name="EXCEPTIONMESSAGE" Type="varchar" Mode="In" />
+    <Parameter Name="SERVER" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="ProcSaveItem" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UID" Type="int" Mode="In" />
+    <Parameter Name="JSONData" Type="nvarchar(max)" Mode="In" />
+  </Function>
+  <Function Name="ProcSaveMacro" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UID" Type="int" Mode="In" />
+    <Parameter Name="Macro1" Type="varchar" Mode="In" />
+    <Parameter Name="Macro2" Type="varchar" Mode="In" />
+    <Parameter Name="Macro3" Type="varchar" Mode="In" />
+    <Parameter Name="Macro4" Type="varchar" Mode="In" />
+    <Parameter Name="Macro5" Type="varchar" Mode="In" />
+    <Parameter Name="Macro6" Type="varchar" Mode="In" />
+    <Parameter Name="Macro7" Type="varchar" Mode="In" />
+    <Parameter Name="Macro8" Type="varchar" Mode="In" />
+    <Parameter Name="Macro9" Type="varchar" Mode="In" />
+    <Parameter Name="Macro10" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="ProcSavePersonalLog" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UID" Type="int" Mode="In" />
+    <Parameter Name="PROCESS" Type="tinyint" Mode="In" />
+    <Parameter Name="AMOUNT" Type="bigint" Mode="In" />
+  </Function>
+  <Function Name="ProcSaveToolbar" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UID" Type="int" Mode="In" />
+    <Parameter Name="JSONData" Type="nvarchar(max)" Mode="In" />
+  </Function>
+  <Function Name="ProcSaveUCC" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UID" Type="int" Mode="In" />
+    <Parameter Name="UCC_ITEMID" Type="int" Mode="In" />
+    <Parameter Name="UCC_NAME" Type="varchar" Mode="In" />
+    <Parameter Name="UCC_STATUS" Type="smallint" Mode="In" />
+    <Parameter Name="UCC_DRAWER_UID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="ProcSaveUCCCopy" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UID" Type="int" Mode="In" />
+    <Parameter Name="TYPEID" Type="int" Mode="In" />
+    <Parameter Name="UCC_UNIQUE" Type="varchar" Mode="In" />
+    <Parameter Name="UCC_IDX" Type="int" Mode="In" />
+  </Function>
+  <Function Name="ProcSetLockerPwd" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UID" Type="int" Mode="In" />
+    <Parameter Name="PWD" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="ProcTutorialEvent" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="ProcTutorialSet" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UID" Type="int" Mode="In" />
+    <Parameter Name="TIPO" Type="int" Mode="In" />
+    <Parameter Name="VALOR" Type="int" Mode="In" />
+  </Function>
+  <Function Name="ProcUpdateAuth" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="ProcUpdateMail" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UID" Type="int" Mode="In" />
+    <Parameter Name="MailIndex" Type="int" Mode="In" />
+    <Parameter Name="ItemTypeID" Type="int" Mode="In" />
+    <Parameter Name="ItemAddedIndex" Type="int" Mode="In" />
+  </Function>
+  <Function Name="ProcUpdateMapStatistics" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UID" Type="int" Mode="In" />
+    <Parameter Name="MAP" Type="smallint" Mode="In" />
+    <Parameter Name="DRIVE" Type="int" Mode="In" />
+    <Parameter Name="PUTT" Type="int" Mode="In" />
+    <Parameter Name="HOLE" Type="int" Mode="In" />
+    <Parameter Name="FAIRWAY" Type="int" Mode="In" />
+    <Parameter Name="HOLEIN" Type="int" Mode="In" />
+    <Parameter Name="PUTTIN" Type="int" Mode="In" />
+    <Parameter Name="SCORE_IN" Type="int" Mode="In" />
+    <Parameter Name="MAXPANG" Type="int" Mode="In" />
+    <Parameter Name="CHARTYPEID" Type="int" Mode="In" />
+    <Parameter Name="ASSIST" Type="int" Mode="In" />
+    <Parameter Name="EVENTSCORE" Type="int" Mode="In" />
+  </Function>
+  <Function Name="ProcUpdateNickname" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UID" Type="int" Mode="In" />
+    <Parameter Name="NICKNAME" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="UDF_ITEM_SERIAL" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" ReturnType="int">
+    <Parameter Name="TID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="UDF_PARTS_GROUP" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" ReturnType="int">
+    <Parameter Name="TID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="UNIX_TIMESTAMP" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" ReturnType="int">
+    <Parameter Name="DATETIME" Type="datetime" Mode="In" />
+  </Function>
+  <Function Name="USP_ADD_CARD_EQUIP" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UID" Type="int" Mode="In" />
+    <Parameter Name="CID" Type="int" Mode="In" />
+    <Parameter Name="CHARTYPEID" Type="int" Mode="In" />
+    <Parameter Name="CARDTYPEID" Type="int" Mode="In" />
+    <Parameter Name="SLOT" Type="tinyint" Mode="In" />
+    <Parameter Name="FLAG" Type="tinyint" Mode="In" />
+    <Parameter Name="TIME" Type="tinyint" Mode="In" />
+  </Function>
+  <Function Name="USP_DAILYQUEST_ACCEPT" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UID" Type="int" Mode="In" />
+    <Parameter Name="QUESTSTR" Type="nvarchar(max)" Mode="In" />
+  </Function>
+  <Function Name="USP_DAILYQUEST_LOAD" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="USP_FIRST_CREATION" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UID" Type="int" Mode="In" />
+    <Parameter Name="CHAR_TYPEID" Type="int" Mode="In" />
+    <Parameter Name="HAIRCOLOUR" Type="tinyint" Mode="In" />
+    <Parameter Name="NICKNAME" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="USP_GAME_LOGIN" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="USERID" Type="varchar" Mode="In" />
+    <Parameter Name="UID" Type="int" Mode="In" />
+    <Parameter Name="Code1" Type="varchar" Mode="In" />
+    <Parameter Name="Code2" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="USP_GAME_LOGOUT" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="USP_GET_ACHIEVEMENT" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="USP_GET_COUNTER" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="USP_GUILD_ACTION" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UID" Type="int" Mode="In" />
+    <Parameter Name="GUILDID" Type="int" Mode="In" />
+    <Parameter Name="GUILDACTION" Type="int" Mode="In" />
+    <Parameter Name="GUILDVALUE" Type="int" Mode="In" />
+    <Parameter Name="GUILDVALUE2" Type="int" Mode="In" />
+    <Parameter Name="GUILDVALUE3" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="USP_GUILD_CANCELJOIN" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UID" Type="int" Mode="In" />
+    <Parameter Name="GUILDID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="USP_GUILD_CREATE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UID" Type="int" Mode="In" />
+    <Parameter Name="GUILDNAME" Type="varchar" Mode="In" />
+    <Parameter Name="GUILDINTRO" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="USP_GUILD_EMBLEM" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UID" Type="int" Mode="In" />
+    <Parameter Name="GUILDID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="USP_GUILD_JOIN" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UID" Type="int" Mode="In" />
+    <Parameter Name="GUILDID" Type="int" Mode="In" />
+    <Parameter Name="INTRO" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="USP_INVEN_POP" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UID" Type="int" Mode="In" />
+    <Parameter Name="INV_ID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="USP_INVEN_PUSH" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UID" Type="int" Mode="In" />
+    <Parameter Name="TYPEID" Type="int" Mode="In" />
+    <Parameter Name="NAME" Type="varchar" Mode="In" />
+    <Parameter Name="FROM_ID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="USP_LOGIN_SERVER" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="User" Type="varchar" Mode="In" />
+    <Parameter Name="Pwd" Type="varchar" Mode="In" />
+    <Parameter Name="IPAddress" Type="varchar" Mode="In" />
+    <Parameter Name="Auth1" Type="varchar" Mode="In" />
+    <Parameter Name="Auth2" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="USP_LOGIN_SERVER_US" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="User" Type="varchar" Mode="In" />
+    <Parameter Name="Pwd" Type="varchar" Mode="In" />
+    <Parameter Name="IPAddress" Type="varchar" Mode="In" />
+    <Parameter Name="Auth1" Type="varchar" Mode="In" />
+    <Parameter Name="Auth2" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="USP_MAIL_UPDATE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UID" Type="int" Mode="In" />
+    <Parameter Name="ITEMSTR" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="USP_MESSENGER_1PLAYER_GUILD" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UID" Type="int" Mode="In" />
+    <Parameter Name="GUILDID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="USP_MESSENGER_LOGIN" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UID" Type="int" Mode="In" />
+    <Parameter Name="NICKNAME" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="USP_MESSENGER_PLAYER_GUILD" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="USP_NICKNAME_CHECK" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="NICKNAME" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="USP_QUEST_ALTER" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UID" Type="int" Mode="In" />
+    <Parameter Name="CounterTypeID" Type="int" Mode="In" />
+    <Parameter Name="AddQuantity" Type="int" Mode="In" />
+  </Function>
+  <Function Name="USP_SAVE_CADDIE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UID" Type="int" Mode="In" />
+    <Parameter Name="ITEMSTR" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="USP_SAVE_CARD" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UID" Type="int" Mode="In" />
+    <Parameter Name="ITEMSTR" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="USP_SAVE_CARD_EQUIP" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UID" Type="int" Mode="In" />
+    <Parameter Name="ITEMSTR" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="USP_SAVE_CHARACTER_EQUIP" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UID" Type="int" Mode="In" />
+    <Parameter Name="EQUIPSTR" Type="varchar(max)" Mode="In" />
+  </Function>
+  <Function Name="USP_SAVE_CHARACTER_STATS" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UID" Type="int" Mode="In" />
+    <Parameter Name="ITEMSTR" Type="varchar(max)" Mode="In" />
+  </Function>
+  <Function Name="USP_SAVE_ITEM" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UID" Type="int" Mode="In" />
+    <Parameter Name="ITEMSTR" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="USP_SAVE_MASCOT" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UID" Type="int" Mode="In" />
+    <Parameter Name="ITEMSTR" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="USP_SAVE_TOOLBAR" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UID" Type="int" Mode="In" />
+    <Parameter Name="ITEMSTR" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="USP_UCC_REQUEST_UPLOAD" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UID" Type="int" Mode="In" />
+    <Parameter Name="ITEMID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="WEB_GUILD_CHECK" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UID" Type="int" Mode="In" />
+    <Parameter Name="GUILDID" Type="int" Mode="In" />
+    <Parameter Name="EMBLEM_IDX" Type="int" Mode="In" />
+    <Parameter Name="EMBLEM" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="WEB_UCC_CHECK" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UID" Type="int" Mode="In" />
+    <Parameter Name="UCCKEY" Type="varchar" Mode="In" />
+    <Parameter Name="ITEMID" Type="int" Mode="In" />
+  </Function>
+  <EntityContainer Name="PangyaModelStoreContainer">
+    <EntitySet Name="Achievement_Counter_Data" EntityType="Self.Achievement_Counter_Data" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Pangya_Achievement" EntityType="Self.Pangya_Achievement" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Pangya_Achievement_Counter" EntityType="Self.Pangya_Achievement_Counter" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Pangya_Achievement_Quest" EntityType="Self.Pangya_Achievement_Quest" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Pangya_Caddie" EntityType="Self.Pangya_Caddie" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Pangya_Card" EntityType="Self.Pangya_Card" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Pangya_Card_Equip" EntityType="Self.Pangya_Card_Equip" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Pangya_Character" EntityType="Self.Pangya_Character" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Pangya_Club_Info" EntityType="Self.Pangya_Club_Info" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Pangya_Daily_Quest" EntityType="Self.Pangya_Daily_Quest" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Pangya_Guild_Emblem" EntityType="Self.Pangya_Guild_Emblem" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Pangya_Guild_Info" EntityType="Self.Pangya_Guild_Info" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Pangya_Guild_Member" EntityType="Self.Pangya_Guild_Member" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Pangya_Locker_Item" EntityType="Self.Pangya_Locker_Item" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Pangya_Mail" EntityType="Self.Pangya_Mail" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Pangya_Mail_Item" EntityType="Self.Pangya_Mail_Item" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Pangya_Map_Statistics" EntityType="Self.Pangya_Map_Statistics" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Pangya_Member" EntityType="Self.Pangya_Member" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Pangya_Memorial_Log" EntityType="Self.Pangya_Memorial_Log" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Pangya_Personal" EntityType="Self.Pangya_Personal" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Pangya_SelfDesign" EntityType="Self.Pangya_SelfDesign" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Pangya_Server" EntityType="Self.Pangya_Server" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Pangya_User_Equip" EntityType="Self.Pangya_User_Equip" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Pangya_User_Message" EntityType="Self.Pangya_User_Message" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Pangya_Warehouse" EntityType="Self.Pangya_Warehouse" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Achievement_Data" EntityType="Self.Achievement_Data" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [Achievement_Data].[ID] AS [ID], 
+    [Achievement_Data].[ACHIEVEMENT_ENABLE] AS [ACHIEVEMENT_ENABLE], 
+    [Achievement_Data].[ACHIEVEMENT_TYPEID] AS [ACHIEVEMENT_TYPEID], 
+    [Achievement_Data].[ACHIEVEMENT_NAME] AS [ACHIEVEMENT_NAME], 
+    [Achievement_Data].[ACHIEVEMENT_QUEST_TYPEID] AS [ACHIEVEMENT_QUEST_TYPEID]
+    FROM [dbo].[Achievement_Data] AS [Achievement_Data]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="Achievement_QuestItem" EntityType="Self.Achievement_QuestItem" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [Achievement_QuestItem].[ID] AS [ID], 
+    [Achievement_QuestItem].[TypeID] AS [TypeID], 
+    [Achievement_QuestItem].[Name] AS [Name], 
+    [Achievement_QuestItem].[QuestTypeID] AS [QuestTypeID]
+    FROM [dbo].[Achievement_QuestItem] AS [Achievement_QuestItem]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="Achievement_QuestStuffs" EntityType="Self.Achievement_QuestStuffs" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [Achievement_QuestStuffs].[ID] AS [ID], 
+    [Achievement_QuestStuffs].[Enable] AS [Enable], 
+    [Achievement_QuestStuffs].[TypeID] AS [TypeID], 
+    [Achievement_QuestStuffs].[Name] AS [Name], 
+    [Achievement_QuestStuffs].[CounterTypeID] AS [CounterTypeID], 
+    [Achievement_QuestStuffs].[CounterQuantity] AS [CounterQuantity]
+    FROM [dbo].[Achievement_QuestStuffs] AS [Achievement_QuestStuffs]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="Daily_Quest" EntityType="Self.Daily_Quest" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [Daily_Quest].[ID] AS [ID], 
+    [Daily_Quest].[QuestTypeID1] AS [QuestTypeID1], 
+    [Daily_Quest].[QuestTypeID2] AS [QuestTypeID2], 
+    [Daily_Quest].[QuestTypeID3] AS [QuestTypeID3], 
+    [Daily_Quest].[RegDate] AS [RegDate], 
+    [Daily_Quest].[Day] AS [Day]
+    FROM [dbo].[Daily_Quest] AS [Daily_Quest]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="Pangya_Exception_Log" EntityType="Self.Pangya_Exception_Log" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [Pangya_Exception_Log].[ExceptionID] AS [ExceptionID], 
+    [Pangya_Exception_Log].[UID] AS [UID], 
+    [Pangya_Exception_Log].[Username] AS [Username], 
+    [Pangya_Exception_Log].[ExceptionMessage] AS [ExceptionMessage], 
+    [Pangya_Exception_Log].[Server] AS [Server], 
+    [Pangya_Exception_Log].[CreateDate] AS [CreateDate]
+    FROM [dbo].[Pangya_Exception_Log] AS [Pangya_Exception_Log]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="Pangya_Friend" EntityType="Self.Pangya_Friend" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [Pangya_Friend].[Owner] AS [Owner], 
+    [Pangya_Friend].[Friend] AS [Friend], 
+    [Pangya_Friend].[IsAccept] AS [IsAccept], 
+    [Pangya_Friend].[GroupName] AS [GroupName], 
+    [Pangya_Friend].[IsAgree] AS [IsAgree], 
+    [Pangya_Friend].[IsDeleted] AS [IsDeleted], 
+    [Pangya_Friend].[Memo] AS [Memo], 
+    [Pangya_Friend].[IsBlock] AS [IsBlock]
+    FROM [dbo].[Pangya_Friend] AS [Pangya_Friend]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="Pangya_Game_Macro" EntityType="Self.Pangya_Game_Macro" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [Pangya_Game_Macro].[UID] AS [UID], 
+    [Pangya_Game_Macro].[Macro1] AS [Macro1], 
+    [Pangya_Game_Macro].[Macro2] AS [Macro2], 
+    [Pangya_Game_Macro].[Macro3] AS [Macro3], 
+    [Pangya_Game_Macro].[Macro4] AS [Macro4], 
+    [Pangya_Game_Macro].[Macro5] AS [Macro5], 
+    [Pangya_Game_Macro].[Macro6] AS [Macro6], 
+    [Pangya_Game_Macro].[Macro7] AS [Macro7], 
+    [Pangya_Game_Macro].[Macro8] AS [Macro8], 
+    [Pangya_Game_Macro].[Macro9] AS [Macro9], 
+    [Pangya_Game_Macro].[Macro10] AS [Macro10]
+    FROM [dbo].[Pangya_Game_Macro] AS [Pangya_Game_Macro]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="Pangya_Guild_Log" EntityType="Self.Pangya_Guild_Log" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [Pangya_Guild_Log].[UID] AS [UID], 
+    [Pangya_Guild_Log].[GUILD_ID] AS [GUILD_ID], 
+    [Pangya_Guild_Log].[GUILD_NAME] AS [GUILD_NAME], 
+    [Pangya_Guild_Log].[GUILD_ACTION] AS [GUILD_ACTION], 
+    [Pangya_Guild_Log].[GUILD_ACTION_DATE] AS [GUILD_ACTION_DATE]
+    FROM [dbo].[Pangya_Guild_Log] AS [Pangya_Guild_Log]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="Pangya_Item_Daily" EntityType="Self.Pangya_Item_Daily" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [Pangya_Item_Daily].[ID] AS [ID], 
+    [Pangya_Item_Daily].[Name] AS [Name], 
+    [Pangya_Item_Daily].[ItemTypeID] AS [ItemTypeID], 
+    [Pangya_Item_Daily].[Quantity] AS [Quantity], 
+    [Pangya_Item_Daily].[ItemType] AS [ItemType]
+    FROM [dbo].[Pangya_Item_Daily] AS [Pangya_Item_Daily]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="Pangya_Item_Daily_Log" EntityType="Self.Pangya_Item_Daily_Log" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [Pangya_Item_Daily_Log].[UID] AS [UID], 
+    [Pangya_Item_Daily_Log].[Counter] AS [Counter], 
+    [Pangya_Item_Daily_Log].[Item_TypeID] AS [Item_TypeID], 
+    [Pangya_Item_Daily_Log].[Item_Quantity] AS [Item_Quantity], 
+    [Pangya_Item_Daily_Log].[Item_TypeID_Next] AS [Item_TypeID_Next], 
+    [Pangya_Item_Daily_Log].[Item_Quantity_Next] AS [Item_Quantity_Next], 
+    [Pangya_Item_Daily_Log].[LoginCount] AS [LoginCount], 
+    [Pangya_Item_Daily_Log].[RegDate] AS [RegDate]
+    FROM [dbo].[Pangya_Item_Daily_Log] AS [Pangya_Item_Daily_Log]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="Pangya_Mascot" EntityType="Self.Pangya_Mascot" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [Pangya_Mascot].[MID] AS [MID], 
+    [Pangya_Mascot].[UID] AS [UID], 
+    [Pangya_Mascot].[MASCOT_TYPEID] AS [MASCOT_TYPEID], 
+    [Pangya_Mascot].[MESSAGE] AS [MESSAGE], 
+    [Pangya_Mascot].[DateEnd] AS [DateEnd], 
+    [Pangya_Mascot].[VALID] AS [VALID]
+    FROM [dbo].[Pangya_Mascot] AS [Pangya_Mascot]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="Pangya_Personal_Log" EntityType="Self.Pangya_Personal_Log" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [Pangya_Personal_Log].[LogID] AS [LogID], 
+    [Pangya_Personal_Log].[ActionType] AS [ActionType], 
+    [Pangya_Personal_Log].[Amount] AS [Amount], 
+    [Pangya_Personal_Log].[UID] AS [UID], 
+    [Pangya_Personal_Log].[LockerPang] AS [LockerPang]
+    FROM [dbo].[Pangya_Personal_Log] AS [Pangya_Personal_Log]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="Pangya_String" EntityType="Self.Pangya_String" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [Pangya_String].[Id] AS [Id], 
+    [Pangya_String].[str] AS [str]
+    FROM [dbo].[Pangya_String] AS [Pangya_String]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="Pangya_Transaction_Log" EntityType="Self.Pangya_Transaction_Log" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [Pangya_Transaction_Log].[ID] AS [ID], 
+    [Pangya_Transaction_Log].[UID] AS [UID], 
+    [Pangya_Transaction_Log].[String] AS [String], 
+    [Pangya_Transaction_Log].[ERROR_NUMBER] AS [ERROR_NUMBER], 
+    [Pangya_Transaction_Log].[ERROR_SEVERITY] AS [ERROR_SEVERITY], 
+    [Pangya_Transaction_Log].[ERROR_STATE] AS [ERROR_STATE], 
+    [Pangya_Transaction_Log].[ERROR_PROCEDURE] AS [ERROR_PROCEDURE], 
+    [Pangya_Transaction_Log].[ERROR_LINE] AS [ERROR_LINE], 
+    [Pangya_Transaction_Log].[ERROR_MESSAGE] AS [ERROR_MESSAGE]
+    FROM [dbo].[Pangya_Transaction_Log] AS [Pangya_Transaction_Log]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="Pangya_User_MatchHistory" EntityType="Self.Pangya_User_MatchHistory" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [Pangya_User_MatchHistory].[UID] AS [UID], 
+    [Pangya_User_MatchHistory].[UID1] AS [UID1], 
+    [Pangya_User_MatchHistory].[UID2] AS [UID2], 
+    [Pangya_User_MatchHistory].[UID3] AS [UID3], 
+    [Pangya_User_MatchHistory].[UID4] AS [UID4], 
+    [Pangya_User_MatchHistory].[UID5] AS [UID5]
+    FROM [dbo].[Pangya_User_MatchHistory] AS [Pangya_User_MatchHistory]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="Pangya_User_Statistics" EntityType="Self.Pangya_User_Statistics" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [Pangya_User_Statistics].[UID] AS [UID], 
+    [Pangya_User_Statistics].[Drive] AS [Drive], 
+    [Pangya_User_Statistics].[Putt] AS [Putt], 
+    [Pangya_User_Statistics].[Playtime] AS [Playtime], 
+    [Pangya_User_Statistics].[Longest] AS [Longest], 
+    [Pangya_User_Statistics].[Distance] AS [Distance], 
+    [Pangya_User_Statistics].[Pangya] AS [Pangya], 
+    [Pangya_User_Statistics].[Hole] AS [Hole], 
+    [Pangya_User_Statistics].[TeamHole] AS [TeamHole], 
+    [Pangya_User_Statistics].[Holeinone] AS [Holeinone], 
+    [Pangya_User_Statistics].[OB] AS [OB], 
+    [Pangya_User_Statistics].[Bunker] AS [Bunker], 
+    [Pangya_User_Statistics].[Fairway] AS [Fairway], 
+    [Pangya_User_Statistics].[Albatross] AS [Albatross], 
+    [Pangya_User_Statistics].[Holein] AS [Holein], 
+    [Pangya_User_Statistics].[Pang] AS [Pang], 
+    [Pangya_User_Statistics].[Timeout] AS [Timeout], 
+    [Pangya_User_Statistics].[Game_Level] AS [Game_Level], 
+    [Pangya_User_Statistics].[Game_Point] AS [Game_Point], 
+    [Pangya_User_Statistics].[PuttIn] AS [PuttIn], 
+    [Pangya_User_Statistics].[LongestPuttIn] AS [LongestPuttIn], 
+    [Pangya_User_Statistics].[LongestChipIn] AS [LongestChipIn], 
+    [Pangya_User_Statistics].[NoMannerGameCount] AS [NoMannerGameCount], 
+    [Pangya_User_Statistics].[ShotTime] AS [ShotTime], 
+    [Pangya_User_Statistics].[GameCount] AS [GameCount], 
+    [Pangya_User_Statistics].[DisconnectGames] AS [DisconnectGames], 
+    [Pangya_User_Statistics].[wTeamWin] AS [wTeamWin], 
+    [Pangya_User_Statistics].[wTeamGames] AS [wTeamGames], 
+    [Pangya_User_Statistics].[LadderPoint] AS [LadderPoint], 
+    [Pangya_User_Statistics].[LadderWin] AS [LadderWin], 
+    [Pangya_User_Statistics].[LadderLose] AS [LadderLose], 
+    [Pangya_User_Statistics].[LadderDraw] AS [LadderDraw], 
+    [Pangya_User_Statistics].[ComboCount] AS [ComboCount], 
+    [Pangya_User_Statistics].[MaxComboCount] AS [MaxComboCount], 
+    [Pangya_User_Statistics].[TotalScore] AS [TotalScore], 
+    [Pangya_User_Statistics].[BestScore0] AS [BestScore0], 
+    [Pangya_User_Statistics].[BestScore1] AS [BestScore1], 
+    [Pangya_User_Statistics].[BestScore2] AS [BestScore2], 
+    [Pangya_User_Statistics].[BestScore3] AS [BestScore3], 
+    [Pangya_User_Statistics].[BESTSCORE4] AS [BESTSCORE4], 
+    [Pangya_User_Statistics].[MaxPang0] AS [MaxPang0], 
+    [Pangya_User_Statistics].[MaxPang1] AS [MaxPang1], 
+    [Pangya_User_Statistics].[MaxPang2] AS [MaxPang2], 
+    [Pangya_User_Statistics].[MaxPang3] AS [MaxPang3], 
+    [Pangya_User_Statistics].[MAXPANG4] AS [MAXPANG4], 
+    [Pangya_User_Statistics].[SumPang] AS [SumPang], 
+    [Pangya_User_Statistics].[LadderHole] AS [LadderHole], 
+    [Pangya_User_Statistics].[GameCountSeason] AS [GameCountSeason], 
+    [Pangya_User_Statistics].[SkinsPang] AS [SkinsPang], 
+    [Pangya_User_Statistics].[SkinsWin] AS [SkinsWin], 
+    [Pangya_User_Statistics].[SkinsLose] AS [SkinsLose], 
+    [Pangya_User_Statistics].[SkinsRunHoles] AS [SkinsRunHoles], 
+    [Pangya_User_Statistics].[SkinsStrikePoint] AS [SkinsStrikePoint], 
+    [Pangya_User_Statistics].[SkinsAllinCount] AS [SkinsAllinCount], 
+    [Pangya_User_Statistics].[EventValue] AS [EventValue], 
+    [Pangya_User_Statistics].[EventFlag] AS [EventFlag]
+    FROM [dbo].[Pangya_User_Statistics] AS [Pangya_User_Statistics]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="TD_ROOM_DATA" EntityType="Self.TD_ROOM_DATA" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [TD_ROOM_DATA].[IDX] AS [IDX], 
+    [TD_ROOM_DATA].[UID] AS [UID], 
+    [TD_ROOM_DATA].[TYPEID] AS [TYPEID], 
+    [TD_ROOM_DATA].[POS_X] AS [POS_X], 
+    [TD_ROOM_DATA].[POS_Y] AS [POS_Y], 
+    [TD_ROOM_DATA].[POS_Z] AS [POS_Z], 
+    [TD_ROOM_DATA].[POS_R] AS [POS_R], 
+    [TD_ROOM_DATA].[VALID] AS [VALID], 
+    [TD_ROOM_DATA].[GETDATE] AS [GETDATE]
+    FROM [dbo].[TD_ROOM_DATA] AS [TD_ROOM_DATA]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+</Schema>

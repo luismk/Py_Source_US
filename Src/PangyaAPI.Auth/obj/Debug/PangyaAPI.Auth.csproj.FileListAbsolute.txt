@@ -1,0 +1,14 @@
+C:\Users\Cleudiana\source\repos\Pangya-Server-Source\S7\Build\PangAPI.Auth.dll
+C:\Users\Cleudiana\source\repos\Pangya-Server-Source\S7\Build\PangAPI.Auth.pdb
+C:\Users\Cleudiana\source\repos\Pangya-Server-Source\S7\PangyaAPI.Auth\obj\Debug\PangyaAPI.Auth.csprojAssemblyReference.cache
+C:\Users\Cleudiana\source\repos\Pangya-Server-Source\S7\PangyaAPI.Auth\obj\Debug\PangyaAPI.Auth.csproj.CoreCompileInputs.cache
+C:\Users\Cleudiana\source\repos\Pangya-Server-Source\S7\PangyaAPI.Auth\obj\Debug\PangyaAPI.Auth.csproj.CopyComplete
+C:\Users\Cleudiana\source\repos\Pangya-Server-Source\S7\PangyaAPI.Auth\obj\Debug\PangAPI.Auth.dll
+C:\Users\Cleudiana\source\repos\Pangya-Server-Source\S7\PangyaAPI.Auth\obj\Debug\PangAPI.Auth.pdb
+C:\Users\Cleudiana\Desktop\Py_Source_US\Src\Build\PangAPI.Auth.dll
+C:\Users\Cleudiana\Desktop\Py_Source_US\Src\Build\PangAPI.Auth.pdb
+C:\Users\Cleudiana\Desktop\Py_Source_US\Src\PangyaAPI.Auth\obj\Debug\PangyaAPI.Auth.csprojAssemblyReference.cache
+C:\Users\Cleudiana\Desktop\Py_Source_US\Src\PangyaAPI.Auth\obj\Debug\PangyaAPI.Auth.csproj.CoreCompileInputs.cache
+C:\Users\Cleudiana\Desktop\Py_Source_US\Src\PangyaAPI.Auth\obj\Debug\PangyaAPI.Auth.csproj.CopyComplete
+C:\Users\Cleudiana\Desktop\Py_Source_US\Src\PangyaAPI.Auth\obj\Debug\PangAPI.Auth.dll
+C:\Users\Cleudiana\Desktop\Py_Source_US\Src\PangyaAPI.Auth\obj\Debug\PangAPI.Auth.pdb

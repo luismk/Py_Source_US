@@ -1,0 +1,58 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Cleudiana\\Desktop\\Py_Source_US\\Src\\PangyaAPI.SqlConnector\\PangyaAPI.SqlConnector.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Cleudiana\\Desktop\\Py_Source_US\\Src\\PangyaAPI.SqlConnector\\PangyaAPI.SqlConnector.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Cleudiana\\Desktop\\Py_Source_US\\Src\\PangyaAPI.SqlConnector\\PangyaAPI.SqlConnector.csproj",
+        "projectName": "PangyaAPI.SqlConnector",
+        "projectPath": "C:\\Users\\Cleudiana\\Desktop\\Py_Source_US\\Src\\PangyaAPI.SqlConnector\\PangyaAPI.SqlConnector.csproj",
+        "packagesPath": "C:\\Users\\Cleudiana\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Cleudiana\\Desktop\\Py_Source_US\\Src\\PangyaAPI.SqlConnector\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "configFilePaths": [
+          "C:\\Users\\Cleudiana\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net461"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.myget.org/F/supersocket/api/v3/index.json": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net461": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net461": {
+          "dependencies": {
+            "EntityFramework": {
+              "target": "Package",
+              "version": "[6.4.4, )"
+            }
+          }
+        }
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,9 @@
+C:\Users\Cleudiana\Desktop\Py_Source_US\Src\PangyaAPI\obj\Debug\PangyaAPI.csprojAssemblyReference.cache
+C:\Users\Cleudiana\Desktop\Py_Source_US\Src\PangyaAPI\obj\Debug\PangyaAPI.csproj.CoreCompileInputs.cache
+C:\Users\Cleudiana\Desktop\Py_Source_US\Src\Build\data\pangya_gb.iff
+C:\Users\Cleudiana\Desktop\Py_Source_US\Src\Build\data\invisible item.bat
+C:\Users\Cleudiana\Desktop\Py_Source_US\Src\Build\PangyaAPI.dll
+C:\Users\Cleudiana\Desktop\Py_Source_US\Src\Build\PangyaAPI.pdb
+C:\Users\Cleudiana\Desktop\Py_Source_US\Src\PangyaAPI\obj\Debug\PangyaAPI.csproj.CopyComplete
+C:\Users\Cleudiana\Desktop\Py_Source_US\Src\PangyaAPI\obj\Debug\PangyaAPI.dll
+C:\Users\Cleudiana\Desktop\Py_Source_US\Src\PangyaAPI\obj\Debug\PangyaAPI.pdb

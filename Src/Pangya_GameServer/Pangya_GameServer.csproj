@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{86C61790-F6DA-45BD-866A-6DBE61FEC985}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Pangya_GameServer</RootNamespace>
+    <AssemblyName>Pangya_GameServer</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Build\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Common\Action.cs" />
+    <Compile Include="Common\AddItem.cs" />
+    <Compile Include="Common\AddItemData.cs" />
+    <Compile Include="Common\BuyItemData.cs" />
+    <Compile Include="Common\CharacterInformation.cs" />
+    <Compile Include="Common\ClubStatus.cs" />
+    <Compile Include="Common\ClubUpgradeData.cs" />
+    <Compile Include="Common\ClubUpgradeTemporary.cs" />
+    <Compile Include="Common\GameData.cs" />
+    <Compile Include="Common\GameReward.cs" />
+    <Compile Include="Common\GameScoreData.cs" />
+    <Compile Include="Common\GameShopBuy.cs" />
+    <Compile Include="Common\GuildData.cs" />
+    <Compile Include="Common\HoleData.cs" />
+    <Compile Include="Common\HoleInformation.cs" />
+    <Compile Include="Common\ItemData.cs" />
+    <Compile Include="Common\ItemDecorationData.cs" />
+    <Compile Include="Common\ItemSlotData.cs" />
+    <Compile Include="Common\ItemUpgradeData.cs" />
+    <Compile Include="Common\LoginData.cs" />
+    <Compile Include="Common\ServerOptionsData.cs" />
+    <Compile Include="Common\ShotData.cs" />
+    <Compile Include="Common\VersusInfo.cs" />
+    <Compile Include="Flags\ActionFlag.cs" />
+    <Compile Include="Flags\ClubStatusFlag.cs" />
+    <Compile Include="Flags\ClubTypeFlag.cs" />
+    <Compile Include="Flags\GameActionFlag.cs" />
+    <Compile Include="Flags\GameCreateResultFlag.cs" />
+    <Compile Include="Flags\GameMapFlag.cs" />
+    <Compile Include="Flags\GameModeFlag.cs" />
+    <Compile Include="Flags\GamePacketFlag.cs" />
+    <Compile Include="Flags\GameShiftFlag.cs" />
+    <Compile Include="Flags\GameShopAction.cs" />
+    <Compile Include="Flags\GameShopFlag.cs" />
+    <Compile Include="Flags\GameStartFlag.cs" />
+    <Compile Include="Flags\GameTeamVersusFlag.cs" />
+    <Compile Include="Flags\GameTypeFlag.cs" />
+    <Compile Include="Flags\GM_CommandFlags.cs" />
+    <Compile Include="Flags\LobbyActionFlag.cs" />
+    <Compile Include="Flags\PlayerTypeFlag.cs" />
+    <Compile Include="Flags\PowerShotFlag.cs" />
+    <Compile Include="Flags\ServerOptionFlag.cs" />
+    <Compile Include="Flags\ShopTypeFlag.cs" />
+    <Compile Include="Flags\TutorialFlag.cs" />
+    <Compile Include="GamePlayer\Extension\GPlayerExtension.cs" />
+    <Compile Include="GamePlayer\Extension\InventoryExtension.cs" />
+    <Compile Include="GamePlayer\GPlayer.cs" />
+    <Compile Include="Game\Extension\HandleGamePacket.cs" />
+    <Compile Include="Handle\GamePacket\HandlePacketGame.cs" />
+    <Compile Include="Handle\LobbyPacket\HandlePacketLobby.cs" />
+    <Compile Include="Handle\LobbyPacket\SystemLobby.cs" />
+    <Compile Include="Handle\LoginPacket\SystemLogin.cs" />
+    <Compile Include="Models\Collections\CaddieCollection.cs" />
+    <Compile Include="Models\Collections\CardCollection.cs" />
+    <Compile Include="Models\Collections\CardEquipCollection.cs" />
+    <Compile Include="Models\Collections\CharacterCollection.cs" />
+    <Compile Include="Models\Collections\FurnitureCollection.cs" />
+    <Compile Include="Models\Collections\MascotCollection.cs" />
+    <Compile Include="Models\Collections\TransactionCollection.cs" />
+    <Compile Include="Models\Collections\TrophyCollection.cs" />
+    <Compile Include="Models\Collections\TrophySpecialCollection.cs" />
+    <Compile Include="Models\Collections\WarehouseCollection.cs" />
+    <Compile Include="Models\Data\CaddieData.cs" />
+    <Compile Include="Models\Data\CardData.cs" />
+    <Compile Include="Models\Data\CharacterData.cs" />
+    <Compile Include="Models\Data\FurnitureData.cs" />
+    <Compile Include="Models\Data\WarehouseData.cs" />
+    <Compile Include="Models\Data\MascotData.cs" />
+    <Compile Include="Models\Inventory.cs" />
+    <Compile Include="Game\Help.cs" />
+    <Compile Include="Game\Model\GameBase.cs" />
+    <Compile Include="Game\Collections\GameCollection.cs" />
+    <Compile Include="Game\Collections\GameHolesCollection.cs" />
+    <Compile Include="Game\Common\GameCommon.cs" />
+    <Compile Include="PacketCreator\Creator.cs" />
+    <Compile Include="PlayerLobby\Collection\LobbyList.cs" />
+    <Compile Include="PlayerLobby\Common\LobbyCommon.cs" />
+    <Compile Include="PlayerLobby\Lobby.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ServerTcp\GameServer.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="Config\Channel.ini">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Config\Game.ini">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="GamePlayer\Data\" />
+    <Folder Include="Game\Types\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PangyaAPI.Auth\PangyaAPI.Auth.csproj">
+      <Project>{E52D4A39-ABCE-418A-A172-643ED25A470C}</Project>
+      <Name>PangyaAPI.Auth</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PangyaAPI.Helper\PangyaAPI.Helper.csproj">
+      <Project>{16800272-4F2E-484B-9FB3-EE4C5E5E0E0A}</Project>
+      <Name>PangyaAPI.Helper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PangyaAPI.IFF\PangyaAPI.IFF.csproj">
+      <Project>{08FB39B9-13B4-4AC4-BF88-89BB4AACF697}</Project>
+      <Name>PangyaAPI.IFF</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PangyaAPI.SqlConnector\PangyaAPI.SqlConnector.csproj">
+      <Project>{22B62E33-ED03-4466-9203-C852D399DE71}</Project>
+      <Name>PangyaAPI.SqlConnector</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PangyaAPI\PangyaAPI.csproj">
+      <Project>{A53A1B9A-46E2-453A-BD76-F2D82B710CEC}</Project>
+      <Name>PangyaAPI</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="EntityFramework">
+      <Version>6.4.4</Version>
+    </PackageReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
